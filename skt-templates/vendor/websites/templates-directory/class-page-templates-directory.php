@@ -386,6 +386,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+			'moviemaker-elementor'              => array(
+					'title'       => __( 'SKT Movie Maker', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/moviemaker/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/moviemaker/moviemaker.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/moviemaker/moviemaker.json'),
+					'keywords'    => __( ' moviemaker, film producer, stage director, cinematographer, movie director, moviemaker, head master, headteacher, filmmaking, directing, producer, film, moviegoer, cinema, headmaster, stage performer, stage manager, head, directorial, videographer, artistic director, movies, manager, editor, director, director-level, film-makers, casting director, camera operator, pictures, stock footage, achiever, line producer, implementor, scenario writer, superintendent, film fan, theater director, cameraman, movie fan, moving pictures, camera guy, filmmakers, realizer, photographer, cinematographers, camera man, movie theater, president, cinematography, video, moviemakers, film buff, cinema operator, theatrical producer, film set, executive, ribbons, actor, actress, model, modelling, cast, crew, photographer, makeup, artist, makeup artist, hair styler, Movie Maker, movie, SKT Movie Maker' ),
+			),			
 			'therapist-elementor'              => array(
 					'title'       => __( 'SKT Therapist', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -1382,16 +1391,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/lights/lights.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/lights/lights.json'),
 					'keywords'    => __( ' lights, lighting company, lighting shop, led lights, led shop, interior accessories, decor items, handmade, ceramics items, chandelier stores, light bulbs retailers, fixtures shops, lamp posts, lighting accessories, designer lamp studio, Lights' ),
-				),				
-				'moviemaker-elementor'              => array(
-					'title'       => __( 'Movie Maker', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('#'),
-					'demo_url'    => esc_url('https://demosktthemes.com/free/moviemaker/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/moviemaker/moviemaker.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/moviemaker/moviemaker.json'),
-					'keywords'    => __( ' moviemaker, film producer, stage director, cinematographer, movie director, moviemaker, head master, headteacher, filmmaking, directing, producer, film, moviegoer, cinema, headmaster, stage performer, stage manager, head, directorial, videographer, artistic director, movies, manager, editor, director, director-level, film-makers, casting director, camera operator, pictures, stock footage, achiever, line producer, implementor, scenario writer, superintendent, film fan, theater director, cameraman, movie fan, moving pictures, camera guy, filmmakers, realizer, photographer, cinematographers, camera man, movie theater, president, cinematography, video, moviemakers, film buff, cinema operator, theatrical producer, film set, executive, ribbons, actor, actress, model, modelling, cast, crew, photographer, makeup, artist, makeup artist, hair styler, Movie Maker, movie' ),
-				),				
+				),								
 				'sktvideography-elementor'              => array(
 					'title'       => __( 'SKT Videography', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),

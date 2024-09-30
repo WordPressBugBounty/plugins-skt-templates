@@ -1695,7 +1695,14 @@ border-radius: 0; height: 54px; padding: 0 35px; transition: all 0.2s;}
 /* SKT Blocks Compatible */
 
 /* Moviemaker */
-.moviemaker-banner:after{content: ""; clear: both; display: block; height: 40px; background-color: #161616; width: 78%; margin: 0 auto;}
+.moviemaker-banner:after{content: ""; clear: both; display: block; height: 40px; background-color: #161616; width: 1000px; margin: 0 auto;}
+@media screen and (max-width:767px) {
+.moviemaker-banner:after{width:85%;}
+}
+
+@media screen and (max-width: 1169px) and (min-width: 767px) {
+.moviemaker-banner:after{width:85%;}
+}
 /* Moviemaker */
 
 /* Lights */
