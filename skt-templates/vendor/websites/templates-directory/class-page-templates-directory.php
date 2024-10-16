@@ -386,6 +386,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+			'gymmaster-elementor'              => array(
+					'title'       => __( 'Gym Master', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/gym-master/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/gym-master/gym-master.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/gym-master/gym-master.json'),
+					'keywords'    => __( ' gymmaster, health, fitness, coach, well-being, good physical condition, healthiness, fitness, physical fitness, haleness, good trim, good shape, fine fettle, good kilter, robustness, strength, vigour, soundness, discipline, yoga, meditation, reiki, healing, weight loss, pilates, stretching, relaxation, workout, mental, Gym Master, gym' ),
+			),				
 			'moviemaker-elementor'              => array(
 					'title'       => __( 'SKT Movie Maker', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -1193,16 +1202,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/nuptials/nuptials.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/nuptials/nuptials.json'),
 					'keywords'    => __( ' nuptials, marriage, marry, joining, nuptials, match, marital, bridal, rite, wedlock, marital, union, wedlock, marriage ceremony, rite, wedding party, matrimony, bride and groom, coupling, alliance, occasion, meeting, gathering, wedding, bride, groom, invite, family, celebration, sangeet, reception, haldi, act, business, function, marriage, banquet, celebration, parties, entertainment, barbecue, bash, social, reception, engagement, bride and groom, matrimonial, coupling, merging, fun, social, nuptials, marry, anniversary, commitment ceremony, ceremony, wedding receptions, combinations, unions, intermarriage, wedlock, consortium, coupling, holy matrimony, mating, monogamy, pledging, match, spousal, Nuptials' ),
-				),		
-				'gymmaster-elementor'              => array(
-					'title'       => __( 'Gym Master', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('#'),
-					'demo_url'    => esc_url('https://demosktthemes.com/free/gym-master/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/gym-master/gym-master.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/gym-master/gym-master.json'),
-					'keywords'    => __( ' gymmaster, health, fitness, coach, well-being, good physical condition, healthiness, fitness, physical fitness, haleness, good trim, good shape, fine fettle, good kilter, robustness, strength, vigour, soundness, discipline, yoga, meditation, reiki, healing, weight loss, pilates, stretching, relaxation, workout, mental, Gym Master, gym' ),
-				),		
+				),			
 				'massagecenter-elementor'              => array(
 					'title'       => __( 'Massage Center', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
