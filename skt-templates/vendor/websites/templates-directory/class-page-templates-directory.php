@@ -386,6 +386,24 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'lights-elementor'              => array(
+					'title'       => __( 'SKT Lights', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/lights/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/lights/lights.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/lights/lights.json'),
+					'keywords'    => __( ' lights, lighting company, lighting shop, led lights, led shop, interior accessories, decor items, handmade, ceramics items, chandelier stores, light bulbs retailers, fixtures shops, lamp posts, lighting accessories, designer lamp studio, Lights' ),
+				),			
+				'summercamp-elementor'              => array(
+					'title'       => __( 'SKT Camping', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/summercamp/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/summercamp/summer-camp.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/summercamp/summer-camp.json'),
+					'keywords'    => __( ' summercamp, traveling, trek, happy movement, expedition, cruise, backpack, visit, trips, tour, vacationing, voyage, roaming, action, go, roll, move, journey, saffari, touring, journey, trip, go abroad, peregrinate, riding, journey, motion, movement, change, taking a trip, stay, holidaying, spring break, vacation, furlough, summer vacation, vacancies, vacation time, tour, travel, vacay, breaks, offseason, vacationing, resort, summer vacation, breakdown, weekends, recesses, rests, package, outings, staying, summer holiday, summer break, summer recess, major holidays, high holidays, big holiday, great holiday, long vacations, break, summering, long vacation, summer recreation, holiday, summer activities, summer enjoyment, summer entertainment, summer fun, summer gaiety, summer joviality, summer joy, summer merriment, summer pleasure, summer relax, summer relaxation, summer rest, summertime, entertainment, summertime fun, summertime joy, summertime pleasure, holiday period, summer leisure activities, summer camps, great festivals, large parties, summertime, major festivals, major feasts, spend the summer, festivals, main festivals, spring, midsummer, estate, Summer Camp', 'skt-templates' ),
+				),				
 			'gymmaster-elementor'              => array(
 					'title'       => __( 'Gym Master', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -1292,16 +1310,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/municipality/municipality.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/municipality/municipality.json'),
 					'keywords'    => __( ' municipality, community, urban community, urban area, foundation, establishment, local government, city government, town government, policy, municipal government, municipal executive, municipal elections, Municipal law, municipal reform, welfare, district, village, city, town, metropolis, burg, province, non profit organization, NGO, governmental organizations, political jurisdictions, community resources, administrative agency, city club, food inspection, transportation, fire departments, Municipality', 'skt-templates' ),
-				),																		
-				'summercamp-elementor'              => array(
-					'title'       => __( 'Summer Camp', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('#'),
-					'demo_url'    => esc_url('https://demosktthemes.com/free/summercamp/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/summercamp/summer-camp.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/summercamp/summer-camp.json'),
-					'keywords'    => __( ' summercamp, traveling, trek, happy movement, expedition, cruise, backpack, visit, trips, tour, vacationing, voyage, roaming, action, go, roll, move, journey, saffari, touring, journey, trip, go abroad, peregrinate, riding, journey, motion, movement, change, taking a trip, stay, holidaying, spring break, vacation, furlough, summer vacation, vacancies, vacation time, tour, travel, vacay, breaks, offseason, vacationing, resort, summer vacation, breakdown, weekends, recesses, rests, package, outings, staying, summer holiday, summer break, summer recess, major holidays, high holidays, big holiday, great holiday, long vacations, break, summering, long vacation, summer recreation, holiday, summer activities, summer enjoyment, summer entertainment, summer fun, summer gaiety, summer joviality, summer joy, summer merriment, summer pleasure, summer relax, summer relaxation, summer rest, summertime, entertainment, summertime fun, summertime joy, summertime pleasure, holiday period, summer leisure activities, summer camps, great festivals, large parties, summertime, major festivals, major feasts, spend the summer, festivals, main festivals, spring, midsummer, estate, Summer Camp', 'skt-templates' ),
-				),							
+				),																								
 				'association-elementor'              => array(
 					'title'       => __( 'Association', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -1382,16 +1391,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/repairman/repairman.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/repairman/repairman.json'),
 					'keywords'    => __( ' repairman, window installations, Doors fixer, handyman, repair services, remodeling, window and door cleaning services, manufacturers, Aluminum Door manufacturing, Repair Business, UPVC Window, Suppliers, home improvement industry, strategic consultancy, local businesses, Sliding Windows installer, Repairman', 'skt-templates' ),
-				),					
-				'lights-elementor'              => array(
-					'title'       => __( 'Lights', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('#'),
-					'demo_url'    => esc_url('https://demosktthemes.com/free/lights/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/lights/lights.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/lights/lights.json'),
-					'keywords'    => __( ' lights, lighting company, lighting shop, led lights, led shop, interior accessories, decor items, handmade, ceramics items, chandelier stores, light bulbs retailers, fixtures shops, lamp posts, lighting accessories, designer lamp studio, Lights' ),
-				),								
+				),													
 				'sktvideography-elementor'              => array(
 					'title'       => __( 'SKT Videography', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
