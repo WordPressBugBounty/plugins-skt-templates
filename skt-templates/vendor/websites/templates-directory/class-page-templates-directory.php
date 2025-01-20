@@ -386,6 +386,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'juice-shakes-lite-elementor'              => array(
+					'title'       => __( 'Juice and Shakes', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://www.sktthemes.org/shop/free-smoothie-wordpress-theme/'),						
+					'demo_url'    => esc_url('https://demosktthemes.com/free/juice/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/juice/free-juice-shakes.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/juice/free-juice-shakes.json'),
+					'keywords'    => __( ' coffee, caffeine, tea, drink, milk, hot, brewery, cappuccino, espresso, brew, java, mocha, decaf, juice, shakes, Juice and Shakes, cold, coldrink, cold drink' ),
+				),			
 				'buther-lite-elementor'              => array(
 					'title'       => __( 'SKT Butcher Lite', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -1823,15 +1832,6 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/flat/free-flat.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/flat/free-flat.json'),
 					'keywords'    => __( ' corporate, business, consulting, agency, people, meeting, communal, working, workforce, office, material design, Flat' ),
-				),
-				'juice-shakes-lite-elementor'              => array(
-					'title'       => __( 'Juice and Shakes', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('https://www.sktthemes.org/shop/free-smoothie-wordpress-theme/'),						
-					'demo_url'    => esc_url('https://demosktthemes.com/free/juice/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/juice/free-juice-shakes.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/juice/free-juice-shakes.json'),
-					'keywords'    => __( ' coffee, caffeine, tea, drink, milk, hot, brewery, cappuccino, espresso, brew, java, mocha, decaf, juice, shakes, Juice and Shakes, cold, coldrink, cold drink' ),
 				),				
 				'organic-lite-elementor'              => array(
 					'title'       => __( 'Organic', 'skt-templates' ),
