@@ -386,6 +386,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-decoration-elementor'              => array(
+					'title'       => __( 'SKT Decoration', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://www.sktthemes.org/shop/decoration-wordpress-theme-free'),						
+					'demo_url'    => esc_url('https://demosktthemes.com/free/decor/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/decor/skt-decoration.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/decor/skt-decoration.json'),
+					'keywords'    => __( ' interior designs, designs, kitchen appliances, Whole Home Makeovers, Crowdsourcing Platform, Furniture Re-Upholsterer, E-decorating Service, Home Window Dresser, Resale Sites, Home Accessories Decorator, Designer Rooms, Eco-Friendly Home Décor Services, Makers And Manufacturers, home décor, interior construction, home decorating, decoration, décor, furnishing articles, interior equipment, internal design, interior set-up, interior fit-out, remodeling, overhaul, improvement, reconstruction, betterment, modernization, redo, new look, refashion, redecoration, repair, revamp, restore, rehabilitation, retreading, refitting, renovation, decor, decoration, Decor, SKT Decoration' ),
+				),
 				'juice-shakes-lite-elementor'              => array(
 					'title'       => __( 'Juice and Shakes', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
