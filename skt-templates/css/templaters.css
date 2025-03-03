@@ -5367,3 +5367,76 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .skt-decor-projects-details-slider .swiper-pagination { bottom:-10px !important;}
 }
 /* SKT Decor */
+
+/* SKT Psyche */
+.skt-pyschiatrist-sec2-img .elementor-widget-container{width: 100%;height:155px!important;display: flex;align-items: center;justify-content: center;border-radius: 100px;}
+.skt-pyschiatrist-sec2:after{content: "";width: 100%;height: 28%;position: absolute;left: 0;bottom: 0px;background:#faf5ef;}
+.skt-pyschiatrist-sec4-img .elementor-widget-container{width: 150px;height: 150px!important;display: flex;align-items: center;justify-content: center;border-radius: 100%;}
+.skt-pyschiatrist-sec4-img{display: flex!important;align-items: center!important;justify-content: center!important;}
+.skt-pyschiatrist-sec4-para p{margin-bottom:0!important;}
+.skt-pyschiatrist-sec4-number-hed .elementor-widget-container{align-items: center !important;display: flex !important;justify-content: center !important;width: 45px !important;height: 45px !important;border-radius: 100%;}
+.skt-pyschiatrist-sec4-number-hed {margin:0 auto!important;left: 70%;transform: translateX(-50%);position: absolute!important;}
+.skt-pyschiatrist-sec5-counter .elementor-widget-container{width: 100%;height: 160px!important;display: flex;align-items: center;justify-content: center;border-radius: 100px;}
+.skt-pyschiatrist-sec6-vedio .elementor-custom-embed-play{background: #3c2007;width: 98px;height: 98px;display: flex;align-items: center;justify-content: center;border-radius: 100%;border: 10px solid rgb(231, 232, 237);}
+.skt-pyschiatrist-sec6-right-col .e-con-inner{margin-left:0!important;}
+.skt-pyschiatrist-sec6-list .elementor-icon-list-icon{border-radius: 100px;padding: 14px 13px !important;background: #f6f0ea;}
+.skt-pyschiatrist-sec6-list .elementor-icon-list-text {padding-left: 25px !important;padding-right:65px;}
+.skt-pyschiatrist-sec6-list .elementor-icon-list-items{column-count: 2;}
+
+
+@media screen and (max-width:1300px) and (min-width:1025px){
+.skt-pyschiatrist-sec2-heading h2{font-size: 35px!important;}
+.skt-pyschiatrist-sec2-img .elementor-widget-container{width: 150px!important;height: 150px !important;}
+.skt-pyschiatrist-sec6-list .elementor-icon-list-text{padding-right:0!important;}
+.skt-pyschiatrist-sec5-counter .elementor-widget-container{width: 145px!important;height: 145px !important;}
+.skt-pyschiatrist-sec6-para .elementor-widget-container{padding:0!important;}
+.skt-pyschiatrist-sec6-head .elementor-widget-container{padding:0!important;}
+.skt-pyschiatrist-sec6-head h2{line-height:40px!important;}
+.skt-pyschiatrist-sec6-button .elementor-widget-container{padding-top:20px!important;}
+.skt-pyschiatrist-sec6right-col{padding-top:0!important;}
+.skt-pyschiatrist-sec6right-col {justify-content: center!important;}
+.skt-pyschiatrist-sec6-list-main-col .e-con-inner{padding-top:10px!important;padding-bottom:10px!important;}
+}
+
+@media screen and ( device-width: 1024px ){
+.skt-pyschiatrist-sec2:after{height: 42%!important;}
+.skt-pyschiatrist-sec2-img{display:block;margin:0 auto!important;}
+.skt-pyschiatrist-sec5-counter{display:block;margin:0 auto!important;}
+.skt-pyschiatrist-sec6right-col{justify-content: center!important;}
+.skt-pyschiatrist-sec6-para{padding-bottom: 25px!important;line-height: 28px!important;}
+}
+
+@media screen and (max-width:1024px) and (min-width:768px){
+.skt-pyschiatrist-sec5-counter{display:block;margin:0 auto!important;}
+.skt-pyschiatrist-sec6-list .elementor-icon-list-items{column-count: 1;display: flex;flex-direction: column;gap: 20px;}
+.skt-pyschiatrist-sec6-list .elementor-icon-list-items .elementor-icon-list-item{gap: 20px!important;}
+.skt-pyschiatrist-sec6-vedio img{height: 600px!important;object-fit: cover!important;}
+.skt-pyschiatrist-sec2-img .elementor-widget-container{width: 120px;height: 120px !important;}
+.skt-pyschiatrist-sec4-img .elementor-widget-container{width: 125px;height: 125px !important;}
+.skt-pyschiatrist-sec5-counter .elementor-widget-container{width:118px!important;height:118px!important;}
+.skt-pyschiatrist-sec6-list .elementor-icon-list-text{padding-right:0!important;padding-left:0!important;}
+.skt-pyschiatrist-sec6-para p{margin-bottom:0!important;}
+.skt-pyschiatrist-sec6-vedio .elementor-custom-embed-play{width: 75px!important;height: 75px!important;}
+}
+
+@media screen and (max-width:767px) and (min-width:540px){
+.skt-pyschiatrist-sec2-img-col{width:33.33%!important;padding-top:0!important;margin: 0 auto!important;}
+.skt-pyschiatrist-sec4-col{width:48%!important; margin-top:0!important;}
+.skt-pyschiatrist-sec4-main-col .e-con-inner{gap:20px!important;}
+.skt-pyschiatrist-sec5-col{width:33.33%!important; margin:0 auto!important;padding-top:0!important;}
+}
+
+@media screen and (max-width:767px){
+.skt-pyschiatrist-sec6-list .elementor-icon-list-items{column-count: 1;display: flex;flex-direction: column;gap: 20px;}
+.skt-pyschiatrist-sec6-list .elementor-icon-list-items .elementor-icon-list-item{gap: 20px!important;}
+
+.skt-pyschiatrist-sec2:after{display:none;}
+.skt-pyschiatrist-sec2-img .elementor-widget-container{width:165px!important;}
+.skt-pyschiatrist-sec2-img{display:block;margin:0 auto!important;}
+.skt-pyschiatrist-sec5-counter .elementor-widget-container{width: 160px!important;}
+.skt-pyschiatrist-sec5-counter{display:block!important;margin:0 auto!important;}
+.skt-pyschiatrist-sec6-vedio .elementor-custom-embed-play{width: 80px!important;height: 80px!important;}
+.skt-pyschiatrist-sec6-list .elementor-icon-list-text{padding-right:0!important;padding-left: 0 !important;}
+.skt-pyschiatrist-sec2-img-1 img{width:unset!important;}
+}
+/* SKT Psyche */

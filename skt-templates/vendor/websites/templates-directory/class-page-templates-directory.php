@@ -386,6 +386,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'psyche-lite-elementor'              => array(
+					'title'       => __( 'Psyche Lite', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://www.sktthemes.org/shop/free-psychologist-wordpress-theme'),						
+					'demo_url'    => esc_url('https://demosktthemes.com/free/psyche/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/psyche/psyche.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/psyche/psyche.json'),
+					'keywords'    => __( ' psychotherapy, psychology, Psyche, therapy, psychotherapist, psychologist, therapist, healing, psychoanalysis, counselling, wellness, mental illness, mental health, trauma therapy, mental health professionals, Psyche Lite, psyche lite' ),
+				),
 				'skt-decoration-elementor'              => array(
 					'title'       => __( 'SKT Decoration', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),

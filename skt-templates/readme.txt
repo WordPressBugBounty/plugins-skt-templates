@@ -1,10 +1,10 @@
 === SKT Templates - 100% free Elementor & Gutenberg templates ===
 Contributors: sonalsinha21
 Tags: gutenberg, elementor, themes, one click demo import, templates
-Requires at least: 5.0
+Requires at least: 5.6
 Tested up to: 6.7
-Requires PHP: 5.6
-Stable tag: 6.24
+Requires PHP: 7.4
+Stable tag: 6.25
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -79,6 +79,9 @@ Yes if your site import is done and you are currently editing via Elementor or i
 
 
 == Changelog ==
+= 6.25 =
+Added Psyche Lite in Elementor Templates.
+
 = 6.24 =
 Added SKT Decoration in Elementor Templates.
 
