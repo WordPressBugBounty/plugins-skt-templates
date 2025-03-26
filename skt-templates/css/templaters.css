@@ -5440,3 +5440,30 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .skt-pyschiatrist-sec2-img-1 img{width:unset!important;}
 }
 /* SKT Psyche */
+
+/* SKT Clover */
+.skt-clover-section2-left::after{content:''; position:absolute; right:-30px; top:50%; background:#ecf1e7; width:89px; height:513px;transform: translateY(-50%); z-index:1;}
+.skt-clover-section2::after{content: '';position: absolute;right: 0px;top: -45px;width: 259px;height: 195px;background: url(https://demosktthemes.com/free/clover/wp-content/uploads/2025/03/section2-sectionafter.png); background-repeat:no-repeat; background-size:100%;}
+.skt-clover-section2-left::before {content: '';position: absolute;left: -62px;top: -55px;width: 301px;height: 514px;background: url(https://demosktthemes.com/free/clover/wp-content/uploads/2025/03/section2-imge-before.jpg); background-repeat:no-repeat; background-size:100%;}
+.skt-clover-section2-left:after{content: ''; position: absolute; right: -30px; top: 50%; background: #ecf1e7; width: 89px; height: 513px; transform: translateY(-50%); z-index: 1;}
+
+
+.skt-clover-section5-left-icon-box .elementor-image-box-img{position:relative;}
+.skt-clover-section5-left-icon-box .elementor-image-box-img::before { content:''; position:absolute; background:#a4bf91; width:100px; height:100px; border-radius:100%;top:50%; left:50%; transform:translate(-50%,-50%);}
+.skt-clover-section5-left-icon-box .elementor-image-box-img img { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);width: 57px !important;height: 57px !important;object-fit: cover;}
+.skt-clover-section3-inner-icon-box .elementor-image-box-title a { position:relative !important; top:0 !important;transition: all 0.3s ease-in-out;}
+.skt-clover-section3-inner-icon-box .elementor-image-box-title a:hover {top:-10px !important;transition: all 0.3s ease-in-out;}
+.skt-clover-section5-left-icon-box .elementor-image-box-img{position:relative;}
+.skt-clover-section5-left-icon-box .elementor-image-box-img::before { content:''; position:absolute; background:#a4bf91; width:100px; height:100px; border-radius:100%;top:50%; left:50%; transform:translate(-50%,-50%);}
+.skt-clover-section5-left-icon-box .elementor-image-box-img img { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);width: 57px !important;height: 57px !important;object-fit: cover;}
+.skt-clover-section12-right-icon .elementor-widget-container { width:89px !important; height:89px; border-radius:100%; position:relative !important;}
+.skt-clover-section12-right-icon .elementor-widget-container img { position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.skt-clover-section12-right-btn .elementor-button-wrapper a { display:block; width:80% !important; margin:0 auto;}
+@media(max-width: 1023px){
+.skt-clover-section2-left::after{height: 350px; top: 41%;}	
+}
+@media(max-width: 767px){
+.skt-clover-section2::after{display: none;}
+.skt-clover-section5-left-icon-box .elementor-image-box-img{margin-bottom: 55px !important;}
+}
+/* SKT Clover */

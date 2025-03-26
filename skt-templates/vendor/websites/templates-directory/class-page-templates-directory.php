@@ -386,6 +386,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-clover-elementor'              => array(
+					'title'       => __( 'SKT Clover', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://www.sktthemes.org/shop/wordpress-flower-shop-theme-free'),						
+					'demo_url'    => esc_url('https://demosktthemes.com/free/clover/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/clover/skt-clover.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/clover/skt-clover.json'),
+					'keywords'    => __( ' clover, Clover, SKT Clover, skt clover, bouquet, floral, floral design, floral shop, floriculture, florist, florist shop, flower arrangement, flower decoration, flower shop, flowers, garden, gardening, plant, shop' ),
+				),
 				'psyche-lite-elementor'              => array(
 					'title'       => __( 'Psyche Lite', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
