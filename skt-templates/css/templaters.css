@@ -5467,3 +5467,29 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .skt-clover-section5-left-icon-box .elementor-image-box-img{margin-bottom: 55px !important;}
 }
 /* SKT Clover */
+
+/* SKT Plain */
+.minimalistic-section1-left::after {content:''; width:60%; height:134%; background:#fff; position:absolute; left:50%; top:-17%; transform: translateX(-50%); z-index:0}
+.minimalistic-section1-left-image1:after{width:0; height:0; border-top:79px solid #bebebe; border-left:117px solid transparent; content:''; position:absolute;  left:0px; bottom:-79px; z-index:-1;}
+.minimalistic-section1-right-image1:after{width:0; height:0; border-top:79px solid #bebebe; border-right:117px solid transparent; content:''; position:absolute; right:0px; bottom:-79px; z-index:-1;}
+.minimalistic-section1-left-image1 img, .minimalistic-section1-right-image1 img, .minimalistic-agency-image img {height:100% !important; object-fit:cover;}
+.minimalistic-agency::after {content: ''; width: 45%; height: 100%; position: absolute; right: 0; top: 0; background: #f6f6f6;}
+.minimalistic-bar .elementor-progress-percentage {position: absolute; right: 0; top: -35px;}
+.minimalistic-bar .elementor-progress-wrapper{margin-top:15px;}
+.minimalistic-bar-image-text {position: absolute !important; right: -88px !important; top: 25%;}
+.minimalistic-bar-image:after{content:''; background:url(https://demosktthemes.com/free/skt-plain/wp-content/uploads/2025/04/bar-dot-image.png) no-repeat; width:131px; height:129px; position:absolute; left:-60px; top:-60px;}
+
+@media screen and (max-width:63.938em) and (min-width:48.000em) {
+.minimalistic-section1-left-image1::after, .minimalistic-section1-right-image1::after {bottom:-79px;}
+.minimalistic-section1-left-image1 img, .minimalistic-section1-right-image1 img, .minimalistic-agency-image img {height:330px !important;}
+.minimalistic-section1-left::after {top:0%; height:130%; width:30%;}
+.minimalistic-bar-image::after {left:-10px; top:-35px; background-size:60%;}
+}
+
+@media screen and (max-width:72.438em) and (min-width:63.250em) {
+.minimalistic-section1-left-image1::after {border-top:60px solid #bebebe; bottom:-60px;}
+.minimalistic-section1-right-image1::after {border-top:60px solid #bebebe; bottom:-60px;}
+.minimalistic-section1-left::after {width:50%; top:-16%;}
+.minimalistic-bar-image::after {left:-10px; top:-35px; background-size:60%;}	
+}
+/* SKT Plain */
