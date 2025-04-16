@@ -2,9 +2,9 @@
 Contributors: sonalsinha21
 Tags: gutenberg, elementor, themes, one click demo import, templates
 Requires at least: 5.6
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 6.27
+Stable tag: 6.28
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -79,6 +79,9 @@ Yes if your site import is done and you are currently editing via Elementor or i
 
 
 == Changelog ==
+= 6.28 =
+Fixed: Avoided early translation loading for the skt-templates domain to comply with WordPress 6.7+ requirements.
+
 = 6.27 =
 Added SKT Plain in Elementor Templates.
 

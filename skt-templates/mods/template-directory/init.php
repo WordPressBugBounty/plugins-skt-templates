@@ -25,12 +25,21 @@ class Template_Directory_SKTB_Module extends Skt_Templates_Module_Abstract {
 	 * @since   1.0.0
 	 * @access  public
 	 */
+
 	public function __construct() {
 		parent::__construct();
-		$this->name           = __( 'Template Directory Module', 'skt-templates' );
-		$this->description    = __( 'The awesome template directory is aiming to provide a wide range of templates that you can import straight into your website.', 'skt-templates' );
+		$this->name           = 'Template Directory Module';
+		$this->description    = 'The awesome template directory is aiming to provide a wide range of templates that you can import straight into your website.';
 		$this->active_default = true;
 	}
+	
+	public function get_name() {
+		return __( $this->name, 'skt-templates' );
+	}
+	
+	public function get_description() {
+		return __( $this->description, 'skt-templates' );
+	}	
 
 	/**
 	 * Determine if module should be loaded.
