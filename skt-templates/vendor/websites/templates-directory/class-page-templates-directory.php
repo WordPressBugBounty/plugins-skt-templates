@@ -386,6 +386,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'industrial-lite-elementor'              => array(
+					'title'       => __( 'SKT Industrial', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('https://www.sktthemes.org/shop/free-industrial-wordpress-theme/'),					
+					'demo_url'    => esc_url('https://demosktthemes.com/free/industrial/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/industrial/free-industrial.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/industrial/free-industrial.json'),
+					'keywords'    => __( ' industry, factory, manufacturing, production, worker, construction, fabrication, welder, smithy, automation, machine, mechanized, mechanic, business, commerce, trade, union, Industrial', 'skt-templates' ),
+				),			
 				'skt-plain-elementor'              => array(
 					'title'       => __( 'SKT Plain', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -1769,15 +1778,6 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/winery/free-winery.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/winery/free-winery.json'),
 					'keywords'    => __( ' wine, champagne, alcohol, beverage, drink, liquor, spirits, booze, cocktail, beer, nectar, honey, brewery, Winery', 'skt-templates' ),
-				),
-				'industrial-lite-elementor'              => array(
-					'title'       => __( 'Industrial', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('https://www.sktthemes.org/shop/free-industrial-wordpress-theme/'),					
-					'demo_url'    => esc_url('https://demosktthemes.com/free/industrial/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/industrial/free-industrial.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/industrial/free-industrial.json'),
-					'keywords'    => __( ' industry, factory, manufacturing, production, worker, construction, fabrication, welder, smithy, automation, machine, mechanized, mechanic, business, commerce, trade, union, Industrial', 'skt-templates' ),
 				),
 				'free-coffee-elementor'              => array(
 					'title'       => __( 'Coffee', 'skt-templates' ),
