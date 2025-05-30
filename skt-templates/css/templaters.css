@@ -5497,3 +5497,65 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 /* Association */
 .association-bul-list li{padding-left:25px !important;}
 /* Association */
+
+/* SKT Eye Care Css Start */
+.skt-orthopedic-section-six-counter .elementor-counter-title{margin-top: 20px!important; text-align:center;}
+.skt-orthopedic-section-six-counter .elementor-counter-number-suffix{font-size: 20px!important;}
+.skt-orthopedic-section-seven-vedio img{visibility:hidden;}
+.skt-orthopedic-section-seven-vedio .elementor-custom-embed-play {background:#3facf9; border-radius:50px;padding-top:23px; padding-left: 29px;padding-right: 25px; padding-bottom:18px; left:40px!important;}
+.skt-orthopedic-section-seven-vedio-col{height:0!important;}
+.skt-orthopedic-section-seven-vedio-col .elementor-custom-embed-play{top:0!important;}
+.skt-orthopedic-section-seven-vedio .elementor-custom-embed-play svg {opacity:1; filter:inherit;}
+.skt-orthopedic-section-seven-button-one .elementor-button-icon .e-font-icon-svg {font-size:30px !important;}
+.skt-orthopedic-section-seven-button-one .elementor-button-text, .skt-orthopedic-section-seven-button-two .elementor-button-text{padding-top: 5px;}
+.skt-orthopedic-section-seven-button-two .elementor-button-icon .e-font-icon-svg {font-size:27px !important;}
+.skt-orthopedic-section-seven-vedio .elementor-widget-container{overflow: visible!important;}
+.skt-orthopedic-section-five-years-of-experidence{ position:absolute!important; right:-85px; bottom:100px;}
+.skt-orthopedic-section-five-list .elementor-icon-list-icon{border:2px solid #04a1eb; border-radius:100px; padding:9px!important;}
+.skt-orthopedic-section-five-list svg{position:absolute; top:-2px; left:6px;}
+.skt-orthopedic-section-five-list .elementor-icon-list-item{gap:15px!important;}
+.skt-orthopedic-section-five-para p{margin:0;}
+.skt-ophthalmology-section-one-vedio .elementor-custom-embed-play{position: absolute; top: 33%; right: -70px; left: unset !important; transform: translate(-50%, -50%); background: #0074dc; width: 148px; height: 155px; display: flex; align-items: center; justify-content: center; border-radius: 12px;}
+.skt-ophthalmology-section-five-col-one:hover .elementor-image-box-title{color: #0074dc !important;}
+.skt-ophthalmology-section-five-img-one img{filter: invert(100%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(100%) !important;}
+.skt-ophthalmology-section-five-col-one:hover img{filter: inherit !important;}
+.skt-ophthalmology-section-five-col-one:hover .elementor-image-box-title{color:#0074dc;}
+.skt-ophthalmology-section-five-col-one:hover .elementor-button-content-wrapper{color:#0074dc; fill:#0074dc;}
+.skt-ophthalmology-section-six-call .elementor-image-box-img{background: #013d73; display: flex!important; justify-content: center;
+border-radius: 100%; width: 95px!important; height:76px; align-items: center;}
+.skt-ophthalmology-section-six-call img{margin-top:10px;}
+.skt-ophthalmology-section-six-faq .elementor-accordion-item{margin-bottom:25px;}
+.skt-ophthalmology-section-six-faq  .elementor-tab-content{border-radius:0px 0px 10px 10px;}
+.skt-ophthalmology-section-six-faq  .elementor-tab-title.elementor-active {border-radius:10px 10px 0px 0px;}
+.skt-ophthalmology-section-six-faq .elementor-accordion-item{border-radius:10px;}
+.skt-ophthalmology-section-six-faq .elementor-tab-title{border-radius: 10px 10px 10px 10px;}
+.skt-ophthalmology-section-six-faq .elementor-tab-content p{margin-bottom:0!important;}
+
+@media screen and (min-width:1700px){
+.skt-ophthalmology-section-six-col-two .e-con-inner{margin-left:170px!important;}
+.skt-ophthalmology-section-six-img img{height:100%!important;}
+}
+
+@media screen and (max-width:1040px) and (min-width:1025px){
+.skt-ophthalmology-section-one-vedio .elementor-custom-embed-play{width: 125px!important; height: 125px!important; right: -60px!important;}
+.skt-ophthalmology-section-six-right-col{width:50%!important;}
+}
+
+@media screen and (max-width:1024px) and (min-width:768px){
+.skt-ophthalmology-section-one-vedio .elementor-custom-embed-play{width: 90px!important; height: 90px!important; right: -44px!important;}
+.skt-ophthalmology-section-twelve-col-two .e-con-inner{margin-left: 10px !important;}
+}
+
+@media screen and (max-width:1200px) and (min-width:1025px){
+.skt-orthopedic-section-six .e-con-inner{gap:10px!important;}
+.skt-orthopedic-section-seven-col-two .e-con-inner{gap:10px!important;}
+.skt-orthopedic-section-seven-button-one .elementor-button{padding: 18px 25px 18px 25px!important;}
+}
+
+@media screen and (max-width:767px){
+.skt-ophthalmology-section-one-vedio .elementor-custom-embed-play{position: absolute;top: 31%!important;background: #0074dc;width: 72px;height: 72px;display: flex;align-items: center;justify-content: center;border-radius: 12px;left: unset!important;right: -34px!important;}
+.skt-ophthalmology-section-six-call .elementor-image-box-wrapper{display: flex!important; align-items: center!important;}
+.skt-ophthalmology-section-six-call{width: max-content!important; display: block!important; margin: 0 auto!important;}
+.skt-ophthalmology-section-six-call .elementor-image-box-img{width: 115px !important; height: 80px!important;}
+} 
+/* SKT Eye Care Css End */
