@@ -5559,3 +5559,18 @@ border-radius: 100%; width: 95px!important; height:76px; align-items: center;}
 .skt-ophthalmology-section-six-call .elementor-image-box-img{width: 115px !important; height: 80px!important;}
 } 
 /* SKT Eye Care Css End */
+
+/* SKT eAuto */
+.skt-eauto-our-mission-img:before {content: ''; width: 224px; height: 100%; position: absolute; right: -50px; top: 70px; background: url(https://demosktthemes.com/free/skt-eauto/wp-content/uploads/2025/07/mission-pattern.png) no-repeat; z-index: -1;}
+.skt-eauto-ev-counter .elementor-widget-container, .skt-eauto-ev-counter{width: 165px !important; height: 165px; border-radius: 100%; margin:0 auto;}
+.skt-eauto-ev-counter .elementor-counter-number-wrapper {line-height:165px !important;}
+.skt-eauto-icon-btn .elementor-button-text small {font-size:14px; font-weight:400; display:block; padding-bottom:5px}
+.skt-eauto-icon-btn .elementor-button-icon i {font-size:40px !important;}
+.skt-eauto-icon-btn .elementor-button .fab {font-family: "Font Awesome 5 Brands" !important;}
+.skt-eauto-icon-btn .elementor-button-text {text-align: left;}
+
+@media(min-width: 768px) and (max-width: 1023px){
+.skt-eauto-ev-counter .elementor-widget-container, .skt-eauto-ev-counter{width: 140px !important; height: 140px;}
+.skt-eauto-ev-counter .elementor-counter-number-wrapper {line-height:140px !important;}
+}
+/* SKT eAuto */
