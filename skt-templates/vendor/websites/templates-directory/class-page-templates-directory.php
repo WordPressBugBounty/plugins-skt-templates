@@ -395,6 +395,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'import_file' => esc_url('https://demosktthemes.com/free/skt-eauto/skt-eauto.json'),
 					'keywords'    => __( ' eauto, Eauto, eAuto, electric car supplier, online store of parts, electric car dealer, electric vehicle service, auto, car repair, cars, charging, charging station, electric car, electric vehicle, ev charging, fuel, gas station, mechanic, repair, bike charging stations, car rental services, battery, bicycle, bike, car, charging points, charging stations, cycle, electric, electric bicycle, electric bike, electric mobility', 'skt-templates' ),
 				),
+				'skt-furniture'              => array(
+					'title'       => __( 'Furniture', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/furniture/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/furniture/furniture.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/furniture/furniture.json'),
+					'keywords'    => __( ' furniture, Furniture, craft items, decorative, innovative products, wooden business, innovative cabinet, kitchen utility, cutting board, luxury items, furniture, workshops, plywood manufacturing, interior, wall art, décor, construction woodwork, equipment, Woodworking Projects Tutorials, wooden chair', 'skt-templates' ),
+				),				
 				'skt-eye-care-elementor'              => array(
 					'title'       => __( 'SKT Eye Care', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),

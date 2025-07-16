@@ -3,7 +3,7 @@
  * Plugin Name: SKT Templates
  * Plugin URI: https://www.sktthemes.org/shop/ready-to-import-wordpress-sites/
  * Description: SKT Templates is an Elementor and Gutenberg themes library and allows you to select from over 100s of designs to choose from. All you need to do is view the demo and then select import and install. It takes care of the importing and allows you to edit the template from within your dashboard. It works with any popular theme or you can choose to use any theme from our <a href="https://www.sktthemes.org/product-category/free-wordpress-themes/" rel="nofollow ugc">SKT Themes free.</a> These templates allow you to import them into your existing website and edit them and use them to build professional websites. Importing a single page template is very easy and you can do it on your existing WordPress website as well.
- * Version: 6.32
+ * Version: 6.4
  * Author: SKT Themes
  * Author URI: https://www.sktthemes.org
  * Text Domain: skt-templates
@@ -99,9 +99,14 @@ register_deactivation_hook( __FILE__, function() {
 	delete_option( 'skt_templates_rules_flushed' );
 });
 
+add_action( 'wp_head', 'skt_templates_add_link_to_head' );
+function skt_templates_add_link_to_head() {
+	echo '<link rel="alternate" type="application/xml" href="' . esc_url( home_url( '/skt-templates.xml' ) ) . '" />';
+}
+
 // Render custom HTML output for /skt-templates.xml
 add_action( 'template_redirect', 'skt_templates_render_custom_html' );
-function skt_templates_render_custom_html() {
+function skt_templates_render_custom_html() {	
 	if ( get_query_var( 'skt_templates_xml' ) ) {
 		header( 'Content-Type: text/html; charset=utf-8' );
 		?>
