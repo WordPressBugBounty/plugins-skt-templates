@@ -386,6 +386,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-organic'              => array(
+					'title'       => __( 'SKT Organic', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-organic/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-organic/skt-organic.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-organic/skt-organic.json'),
+					'keywords'    => __( ' organic, Organic, nourishment, victuals, nutrient, nutriment, foodstuffs, goodness, beneficial, nurtures, edibles, eatables, vitamins, minerals, food products, chow, feed, grub, food items, mends, nutritional value, nutrimental, wholesomenes, fuel, meat, feeding, keep, nourishment, finger food, nosh, comestible, cuisine, diet, groceries, conditioners, nutriments, drugs, solids, agri-foodstuffs, health, fitness, herbal, homemade, good stuff, herbs, plant, vegetable, plant-based, herb tea, vegetable, crop, grassy, botanical, floral, herbal medicine, medicinal herbs, grass, verdant, herbaceous, grass up, botanic, medicinal plants, weed, herbage, plant origin, flavorer, herbarium, mossy, grasses, herbals, flavourer, herb garden, vegetative, phyto therapeutic, fruity, vegetal, planting, medicinal herb, herbal remedies, vegetable origin, flavouring, seasoner, herbal medicinal products, harvest, cultivate, agriculture, agriculture products, natural, biological, pesticide-free, organic fertilizer, fertilizer, ecologically, pure, quality, fresh, essential, life, biologic, organism, green', 'skt-templates' ),
+				),
 				'skt-eauto'              => array(
 					'title'       => __( 'SKT eAuto', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),

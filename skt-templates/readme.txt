@@ -3,7 +3,7 @@ Contributors: sonalsinha21
 Tags: gutenberg, elementor, themes, one click demo import, templates
 Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 6.4
+Stable tag: 6.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,9 @@ Yes if your site import is done and you are currently editing via Elementor or i
 
 
 == Changelog ==
+= 6.4.1 =
+Added SKT Organic in Elementor Templates.
+
 = 6.4 =
 Added Furniture in Elementor Templates.
 

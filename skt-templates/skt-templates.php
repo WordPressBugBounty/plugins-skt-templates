@@ -3,7 +3,7 @@
  * Plugin Name: SKT Templates
  * Plugin URI: https://www.sktthemes.org/shop/ready-to-import-wordpress-sites/
  * Description: SKT Templates is an Elementor and Gutenberg themes library and allows you to select from over 100s of designs to choose from. All you need to do is view the demo and then select import and install. It takes care of the importing and allows you to edit the template from within your dashboard. It works with any popular theme or you can choose to use any theme from our <a href="https://www.sktthemes.org/product-category/free-wordpress-themes/" rel="nofollow ugc">SKT Themes free.</a> These templates allow you to import them into your existing website and edit them and use them to build professional websites. Importing a single page template is very easy and you can do it on your existing WordPress website as well.
- * Version: 6.4
+ * Version: 6.4.1
  * Author: SKT Themes
  * Author URI: https://www.sktthemes.org
  * Text Domain: skt-templates
@@ -160,31 +160,28 @@ function skt_templates_render_custom_html() {
 		<h1><?php esc_html_e( 'Build Beautiful Websites with SKT Templates Plugin', 'skt-templates' ); ?></h1>
 	</div>
 	<div id="skt-templates-content">
+    	<center>
 		<?php
 		$paragraphs = array(
 			sprintf(
-				__( '<a href="%1$s" target="_blank">SKT Templates plugin</a> is made for WordPress. It helps you build websites without writing any code. You can choose from over 100 designs. These designs are called templates. You just need to look at the demo. Then you can click to import and install it. The process is simple and fast.', 'skt-templates' ),
-				esc_url( 'https://wordpress.org/plugins/skt-templates/' )
-			),
-			__( 'You can use SKT Templates with any theme. It works well with all popular WordPress themes. You can also use it with free SKT Themes. It supports both Elementor and Gutenberg editors. This gives you more choice and freedom. You do not need any design skills. Everything is ready to use.', 'skt-templates' ),
-			__( 'The plugin helps you import full pages. You can add them to your existing website. Or you can start with a fresh site. It is your choice. Just click and the page gets added. You can then edit it inside your WordPress dashboard. No need to leave the website. No need to touch any code.', 'skt-templates' ),
-			__( 'All the templates are hosted on the SKT Themes test server. This makes the import fast and safe. The designs cover many types of websites. You can use them for business or personal use. There are templates for hotels and spas. Some are for fitness and medical sites. You will find designs for blogs and charities too. Even pet care and home repair sites are included.', 'skt-templates' ),
-			__( 'The plugin is easy to use. Just see the demo. Choose the one you like. Click import. Your page is ready. You can change text and images using Elementor. You can also change colors and layout. Make it look the way you want. It is fun and simple.', 'skt-templates' ),
-			sprintf(
-				__( 'You can also extend the design. Use a free SKT theme. This will help you use the full features. This means the header and footer will match the template. You can make your site look just like the demo. If you want more pages and full theme features you can buy the theme. Visit the <a href="%1$s" target="_blank">SKT Themes</a> website to see all the options.', 'skt-templates' ),
+				__( 'Visit the <a href="%1$s" target="_blank">SKT Themes</a> website to see all the options.', 'skt-templates' ),
 				esc_url( 'https://www.sktthemes.org/' )
 			),
-			__( 'There is a full guide on how to use the plugin. You can check the documentation link. It will help you step by step. You do not need any special training.', 'skt-templates' ),
-			__( 'Many people ask if the plugin works with their current theme. Yes it does. It will work unless your theme has a problem with Elementor. All the templates in the plugin are free. In the beginning there are 60 templates. Soon there will be more than 100.', 'skt-templates' ),
-			__( 'You can import a template into any website. But it is better to test it on a new WordPress install. If your site has many plugins it may create some problems. So always take a backup before you try.', 'skt-templates' ),
-			__( 'Once you import and finish your design you can turn off the plugin. Your site will keep working. You can keep editing with Elementor as usual.', 'skt-templates' ),
-			__( 'Try SKT Templates plugin today. Build a great site with ease.', 'skt-templates' ),
+			sprintf(
+				__( 'Kindly check our <a href="%1$s" target="_blank">WordPress themes bundle</a>.', 'skt-templates' ),
+				esc_url( 'https://www.sktthemes.org/shop/all-themes/' )
+			),
+			sprintf(
+				__( 'Try our <a href="%1$s" target="_blank">free WordPress themes</a>.', 'skt-templates' ),
+				esc_url( 'https://www.sktthemes.org/product-category/free-wordpress-themes/' )
+			),						 
 		);
 
 		foreach ( $paragraphs as $para ) {
 			echo '<p>' . wp_kses_post( $para ) . '</p>';
 		}
 		?>
+        </center>
 	</div>
 </body>
 </html>
