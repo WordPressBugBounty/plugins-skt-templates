@@ -5772,3 +5772,202 @@ border-radius: 100%; width: 95px!important; height:76px; align-items: center;}
 .organic-sec8-title { margin:0 auto !important;}
 }
 /* SKT Organic */
+
+/* SKT Nurse */
+/** New CSS **/
+.skt-nurse-section1-heading::after {content: ''; width: 200px; height: 200px; background:rgba(255, 255, 255, 0.08); position:absolute; right:0; bottom: 0; border-radius: 100px; top: 0;   z-index: -1;}
+.skt-nurse-section1::after {content: ''; width: 400px; height: 400px; background: rgba(255, 255, 255, 0.1); position: absolute; right: -70px; bottom:-70px;border-radius: 100%;}
+.skt-nurse-introduction-content::after {content: ''; clip-path: polygon(50% 0%, 0% 50%, 50% 100%); background: #1c130e; width: 120px; height: 120px; position: absolute; right: -130px; bottom: -5px;  transform: rotate(45deg);}
+.skt-nurse-introduction-image-box .elementor-image-box-img {width:95px !important; height:67px !important; border-radius:100px; justify-content:center;  align-content:center; background:linear-gradient(140deg, #f4435f 50%, #ef783a 75%); text-align:center; padding-top:10px; margin-bottom:0px !important;}
+.skt-nurse-introduction-section .e-con-inner::before {content: ''; width:33.8%; height: 100%; position: absolute; left: 0px; top: 0; background: #fafafe;}
+.skt-nurse-idea-btn .elementor-widget-container {width: 200px !important; height: 200px !important; align-content: center;}
+.skt-nurse-idea-btn .elementor-widget-container svg{transform: rotate(-30deg);}
+.skt-nurse-video{height: 180px; width: 220px !important;}
+.skt-nurse-video img{width: 110px !important; height:100px; visibility: hidden;}
+.skt-nurse-video .elementor-custom-embed-play svg{ opacity:1; filter: inherit;}
+.skt-nurse-idea-title::after { content: ''; width: 220px; height: 220px; background: #000; position: absolute; left: -20px; top: -80px;border-radius: 100%; z-index: -1;}
+.skt-nurse-skill-bar .elementor-counter{height: 130px !important; width: 130px;}
+.skt-nurse-skill-bar .elementor-counter-number-suffix {font-size:18px; position:relative; top:-13px; font-family:Poppins; font-weight:500; right:-3px;}
+.skt-nurse-skill-bar .elementor-counter-number-wrapper{line-height:130px !important;}
+
+.skt-nurse-skill-small {position: absolute !important; bottom: -90px;}
+.skt-nurse-skill-small::after {content: ''; clip-path: polygon(50% 0%, 0% 50%, 50% 100%); background: #1c130e; width: 105px; height: 105px; position: absolute;right: -105px; bottom: -15px; transform: rotate(45deg);}
+.skt-nurse-work-tab .e-n-accordion-item-title-icon{transform:rotate(-45deg);}
+.skt-nurse-process-box .elementor-image-box-img {height:90px;}
+.skt-nurse-arrow-button.elementor-widget-icon svg{transform:rotate(-45deg);}
+.skt-nurse-work-tab [aria-expanded="true"] {border-radius: 20px 20px 0px 0px !important;}
+
+.skt-nurse-chooose-box .wp-caption {padding:0px; width:100% !important; max-width:100% !important;}
+.skt-nurse-chooose-box .wp-caption img{ width:100%; max-width:100% !important;}
+.skt-nurse-chooose-box .widget-image-caption{width:55%; margin:0 auto; position:absolute; top:50%; left: 50%; transform:translate(-50%,-50%); padding:0px;}
+.skt-nurse-chooose-box:hover .wp-caption img {opacity:0.3;}
+.skt-nurse-newsletter-form .wpcf7-email {background: no-repeat; border: none; border-bottom: solid 1px #fff; padding: 0px 0px 30px 0px; font-size: 17px;  margin: 0px; color:#fff;}
+.skt-nurse-newsletter-form .wpcf7-email::placeholder{ color:#fff !important; opacity:1 !important;}
+.skt-nurse-newsletter-form .wpcf7-submit{background: #fff !important; color: #282828 !important; font-size: 20px; font-weight: 500; border-radius: 100px;  padding: 15px 45px;}
+.skt-nurse-newsletter-content{position: absolute !important; left: 50%; width: 90% !important; top: 60%; transform: translate(-50%,-50%);}
+.skt-nurse-newsletter-form .wpcf7-response-output{ margin:0px !important;}
+.skt-nurse-newsletter-form .wpcf7-form-control-wrap{width:65% !important; float:left;}
+.skt-nurse-newsletter-form p{margin: 0px;}
+.skt-nurse-newsletter-form #wpcf7-f93-p10-o1{min-height:140px;}
+.skt-nurse-team-section::after {content:''; background:#fff; position:absolute; left:0; bottom:0px; width:100%; height:58%; clip-path:polygon(0% 60%, 100% 25%, 100% 100%, 0% 100%);}
+.skt-nurse-work-tab .e-n-accordion-item-title {box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.02);}
+.skt-nurse-choose-image-box .elementor-image-box-img {width:150px !important; height:150px; background:#33aabf; justify-content:center; align-content:center; border-radius:100%; margin:0 auto 30px !important;}
+.skt-nurse-choose-image-box .elementor-image-box-img img { display:inline-block !important;}
+.skt-nurse-choose-section::after {content:''; width:55%; height:100%; background:#edf3f4; position:absolute; right:0; top:0px;}
+.skt-nurse-counter-image .elementor-widget-image{width:120px !important; height:120px; background:#289aae; border-radius:100%; margin:0 auto; line-height:120px;}
+.skt-nurse-bottom-image {position:absolute !important; bottom:0; right:0;}
+.skt-nurse-counter-box-image .elementor-widget-container, .skt-nurse-counter-box-image {width: 90px !important; height: 90px !important; justify-content: center !important; align-content: center !important; border-radius: 100px; overflow:hidden;}
+.skt-nurse-counter-box .elementor-counter-number-prefix{display:none;}
+.skt-nurse-counter-box .elementor-counter-title{line-height:2 !important;}
+.skt-nurse-we-are-counter .elementor-widget-container, .skt-nurse-we-are-counter{height: 160px !important; width: 160px !important; margin: 0 auto; justify-content: center !important; align-content: center !important;}
+.skt-nurse-we-are-list{position: absolute !important; bottom: 0px;}
+.skt-nurse-work-number .elementor-widget-container, .skt-nurse-work-number{width: 100px; height: 100px !important; align-content: center !important;}
+.skt-nurse-work-section .e-con-inner{ position:relative;}
+.skt-nurse-work-section .e-con-inner::after{content: ''; width: 25%; height: 100%; background: #73c0cd; position: absolute; right: 0; top: 0;}
+.skt-nurse-care-image-box .elementor-image-box-img{width:90px !important; height: 90px; background: #33aabf; border-radius: 100%; align-content: center;}
+.skt-nurse-care-image-box .elementor-image-box-img img{display:inline-block !important;}
+.skt-nurse-care-image-box-sec-innerimg .elementor-image-box-img img{display:inline-block !important;}
+.skt-nurse-contact-box .elementor-image-box-img img{display:inline-block !important;}
+.skt-nurse-contact-section{position: absolute !important; top: 50%; transform: translateY(-50%);}
+.skt-nurse-contact-box .elementor-image-box-img{background: #33aabf; width: 125px !important; height: 95px !important; border-radius: 100%; align-content: center; text-align: center; margin: 0px !important; padding-top: 5px;}
+.skt-nurse-contact-box .elementor-image-box-content{padding-left: 40px;}
+.skt-nurse-welcome-video{width: 160px !important; height: 120px; position: absolute !important; right: 0; top: 30%; z-index: 99; overflow:visible !important; }
+.skt-nurse-work-section::after{content: ''; width: 35%; height: 100%; background: #73c0cd; position: absolute; right: 0; top: 0; left: auto;}
+.skt-nurse-welcome-video .elementor-custom-embed-image-overlay img{z-index:9999; position:absolute; width:auto !important; margin:0 auto; top:50% !important; left:50%; transform:translate(-50%,-50%);}
+.skt-nurse-welcome-video .elementor-custom-embed-play{background:#33aabf; border-radius:100%; z-index: 9; position: absolute; width:100px; height:100px;}
+.skt-nurse-welcome-video .elementor-custom-embed-play svg{opacity:1 !important; filter:inherit !important;}
+.skt-nurse-welcome-video{ position:relative;}
+.skt-nurse-welcome-video::after {background:rgba(51, 170, 191, 0.07); content:''; width:180px; height:180px; position:absolute; right:-10px; top:-30px;  border-radius:100%; z-index:-1;}
+.skt-nurse-counter-image-box .elementor-image-box-img img { display:inline-block !important;}
+@media screen and (max-width: 29.938em) {
+.skt-nurse-introduction-section .e-con-inner::before {width:100%; height:37%;}	
+}
+
+@media screen and (max-width:47.938em) and (min-width:30.000em) {
+.skt-nurse-introduction-content {width:30% !important; display:table; margin:-70px auto 0px !important;}
+.skt-nurse-introduction-section .e-con-inner::before {width:100%; height:48.5%;}
+.skt-nurse-chooose-box .wp-caption img {width:auto;}
+.skt-nurse-counter-box-outer {width:47% !important; margin:0 auto;}
+.skt-nurse-work-section::after {height:50% !important;}
+.skt-nurse-care-app-btn {margin-right:110px;}
+.skt-nurse-counter-image-box, .skt-nurse-care-image-box, .skt-nurse-care-image-box-sec {width:48.9% !important;}
+.skt-home-posts-column {width:33.33% !important; padding:0px 5px !important;}
+.skt-home-posts-content {padding:30px 15px !important;}
+.skt-nurse-choose-image-box {width:31.9% !important;}
+.skt-nurse-we-are-counter-outer {width:31.5% !important;}
+}
+
+@media screen and (max-width:63.938em) and (min-width:48.000em) {
+.skt-nurse-introduction-image-box .elementor-image-box-img {width:70px !important; height:50px !important; margin-bottom:0px !important; margin-right:5px !important;}
+.skt-nurse-introduction-image-box .elementor-image-box-description{letter-spacing:-1px;}
+.skt-nurse-idea-btn .elementor-widget-container {width:150px !important; height:150px !important;}
+.skt-nurse-video {height:130px; width:170px !important;}
+.skt-nurse-skill-bar .elementor-counter {height:95px !important; width:100px;}
+.skt-nurse-skill-small{width:75%; left:-40px;}
+.skt-nurse-chooose-box .widget-image-caption {width:80%;}
+.skt-case-studies-image {height:inherit;}
+.skt-case-studies .owl-nav{position:relative; left:auto; top:20px;}
+.skt-nurse-team-section {padding-bottom:60px !important;}
+.skt-nurse-introduction-content::after {right:-110px;}
+.skt-nurse-introduction-section .e-con-inner::before {width:26.8%;}
+.sectionrow {margin-left:0px; margin-right:0px;}
+.skt-nurse-team-section::after {height:82%;}
+#footer .footercols4{font-size: 17px;}
+.skt-nurse-process-box .elementor-image-box-img{ margin-bottom:15px !important;}
+.skt-nurse-process-box .elementor-image-box-content p {line-height:1.55;}
+.skt-nurse-arrow-button .elementor-icon {padding:20px !important;}
+.skt-nurse-choose-image-box .elementor-image-box-img {width:120px !important; height:120px; margin-bottom:15px !important;}
+.skt-nurse-choose-section{--display: inline-block !important; padding-left:15px !important; padding-right:15px !important;}
+.skt-nurse-choose-section-left, .skt-nurse-choose-section-right{ width:100% !important;}
+.skt-nurse-choose-section-left {text-align:center !important;}
+.skt-nurse-choose-section-right{ padding-top:60px !important;}
+.skt-nurse-choose-section::after {width:100%; height:53%; top:auto; bottom:0;}
+.skt-nurse-choose-section-left {padding-bottom:60px !important;}
+
+.skt-nurse-list-section{--display: inline-block !important;}
+.skt-nurse-list-left, .skt-nurse-counter-image{width:100% !important;}
+.skt-nurse-counter-image { margin-top:40px !important;}
+.skt-nurse-list-section{ padding-top:0px !important;}
+.skt-nurse-bottom-image{bottom:0; position:relative !important; left:0px !important; width:100%; top:30px; margin:0 auto;}
+.skt-nurse-welcome-video-image{ width:100% !important;}
+.skt-nurse-counter-box-image .elementor-widget-container, .skt-nurse-counter-box-image {width:65px !important; height:65px !important; padding:15px !important;}
+.skt-nurse-counter-box .elementor-counter-title {line-height:normal !important;}
+
+.skt-nurse-we-are-counter .elementor-widget-container, .skt-nurse-we-are-counter {height:120px !important; width:120px !important; max-width:none !important;}
+.skt-nurse-work-number .elementor-widget-container, .skt-nurse-work-number {width:70px; height:70px !important;}
+.skt-nurse-contact-box .elementor-image-box-img{width:100px !important; height:75px !important;}
+.skt-nurse-contact-box .elementor-image-box-content {padding-left:10px;}
+.skt-nurse-contact-form span.wpcf7-form-control-wrap { padding:5px;}
+.skt-nurse-welcome-video{right:-50px; top:15%;}
+.skt-nurse-work-section::after{width:25%;}
+.skt-nurse-welcome-content {width:54% !important;}
+.skt-nurse-welcome-image {width:40% !important;}
+.skt-nurse-list-left .elementor-icon-list-item {width:50% !important; float:left !important;}
+.skt-nurse-counter-image{ display:inherit !important;}
+.skt-nurse-counter-image .elementor-widget-image{ display:inline-block;}
+.skt-nurse-counter-image .elementor-widget-counter{display:inline-block; top: -10px; padding-left:10px;}
+.skt-nurse-counter-image{ padding:20px !important;}
+.skt-nurse-form-outer {padding-top:90px !important;}
+}
+
+@media screen and (max-width:72.438em) and (min-width:63.250em) {
+.skt-nurse-introduction-content{ margin-top:-30px !important;}
+.skt-nurse-skill-small {left:-50px;}
+.skt-case-studies .owl-nav{left:-400px;}
+.skt-case-studies-image {height:inherit;}
+.skt-testimonials-member-info {padding-left:30px;}
+.skt-nurse-newsletter-content {top:70%;}
+.skt-nurse-introduction-content::after {right:-115px;}
+.skt-nurse-introduction-section .e-con-inner::before {width:26.5%;}
+.skt-nurse-team-section::after {height:78%;}
+.skt-nurse-skill-bar .elementor-counter-number {font-size:50px !important;}
+.skt-nurse-user-image {height:170px !important;}
+.skt-nurse-arrow-button .elementor-icon {padding:20px !important;}
+.skt-nurse-skill-image-box {margin-bottom:20px !important; padding-bottom:40px !important;}
+.skt-nurse-idea-btn .elementor-widget-container {width:160px !important; height:160px !important;}
+.skt-nurse-video {height:150px;}
+.skt-nurse-video-section {width:80% !important; margin:0 auto !important;}
+.skt-nurse-counter-box-image .elementor-widget-container, .skt-nurse-counter-box-image {width:80px !important; height:80px !important;}
+.skt-nurse-we-are-list {padding:50px 50px !important;}
+.skt-nurse-welcome-video{right:-30px;}
+.skt-nurse-work-section::after {width:25%;}
+.skt-nurse-work-section .e-con-inner{ padding-bottom:0px !important;}
+.skt-nurse-work-section-left{ padding-bottom:60px !important;}
+.skt-nurse-work-section-right{--justify-content: flex-end !important;}
+.skt-nurse-contact-form .wpcf7-form-control-wrap select{background-position-x:185px;}
+.skt-nurse-care-app-btn {margin-right:20px;}
+.skt-nurse-contact-section {padding:80px 15px 80px 20px !important; top:48% !important;}
+}
+@media(max-width: 479px){
+.skt-nurse-bottom-image {position:relative !important; }
+}
+@media(max-width: 575px){	
+.skt-nurse-welcome-video{width:100px !important; right:-10px; top:20%;}
+}
+
+@media(max-width: 639px){
+.skt-nurse-idea-title::after {width:110px; height:110px; left:0px; top:-30px;}
+.skt-nurse-contact-form .wpcf7-form-control-wrap select{background-position-x:90%;}
+.skt-nurse-contact-form span.wpcf7-form-control-wrap{width:100%; padding:5px;}
+}
+
+@media(max-width: 767px){
+.skt-nurse-choose-section::after {width:100%; height:40%; bottom:0px; top:auto;}
+.skt-nurse-counter-box-image .elementor-widget-container, .skt-nurse-counter-box-image { margin:0 auto;}
+.skt-nurse-we-are-list {position:relative !important;}
+.skt-nurse-work-number .elementor-widget-container, .skt-nurse-work-number { margin:0 auto;}
+.skt-nurse-work-section .e-con-inner::after { display:none;}
+.skt-nurse-work-section::after {height:32%; top:auto; bottom:0px; width:100%;}
+.skt-nurse-contact-box .elementor-image-box-content {padding-left:0px;}
+.skt-nurse-contact-box .elementor-image-box-img{ height:125px !important; margin-bottom:20px !important;}
+.skt-nurse-contact-section {position:relative !important; top:auto; transform:inherit;}
+.skt-nurse-contact-form .wpcf7-form-control-wrap select{background-position-x:95%;}
+.skt-nurse-welcome-video{right:50px;}
+.skt-nurse-work-section-right::after { display:none;}
+}
+
+@media(max-width: 1023px){
+.skt-nurse-welcome-video::after { display:none;}
+.skt-nurse-work-section-right::after { display:none;}
+}
+/* SKT Nurse */
