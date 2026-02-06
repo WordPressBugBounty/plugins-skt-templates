@@ -1,30 +1,28 @@
-=== SKT Templates - 100% free templates for Elementor and Gutenberg ===
+=== SKT Templates - 100% Free Templates for Elementor & Gutenberg ===
 Contributors: sonalsinha21
-Tags: gutenberg, elementor, themes, one click demo import, templates
+Tags: gutenberg, elementor, templates, page builder, one click import
 Requires at least: 5.0
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 6.4.4
+Stable tag: 6.30.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-SKT Templates is an Elementor template library with over 200+ 100% free templates to choose from and select and use them with either SKT Themes free or with any popular themes from the WordPress repository.
+Import professionally designed Elementor and Gutenberg website templates with one click. Build websites faster without coding.
 
 == Description ==
 
 https://www.youtube.com/watch?v=2QVEhff55d4
 
-SKT Templates is an Elementor and Gutenberg themes library and allows you to select from over 100s of designs to choose from. All you need to do is view the demo and then select import and install. It takes care of the importing and allows you to edit the template from within your dashboard. It works with any popular theme or you can choose to use any theme from our <a href="https://www.sktthemes.org/product-category/free-wordpress-themes/" rel="nofollow ugc">SKT Themes free.</a>
+SKT Templates is a free template library for **Elementor** and **Gutenberg** that helps you create professional websites quickly and easily.
+
+With SKT Templates, you can browse ready made designs, preview demos, and import templates directly into your WordPress website. All templates can be customized using Elementor or the Gutenberg block editor.
+
+The plugin works with any popular theme or you can choose to use any theme from our <a href="https://www.sktthemes.org/product-category/free-wordpress-themes/" rel="nofollow ugc">SKT Themes free.</a>
 
 These templates allow you to import them into your existing website and edit them and use them to build professional websites.
 
-Importing a single page template is very easy and you can do it on your existing WordPress website as well.
-
 All of the templates are being downloaded from our test server at SKT Themes.
-
-== Documentation ==
-
-Kindly check documentation : **[click here](https://sktthemesdemo.net/documentation/skt-templates-plugin-doc)**
 
 = Can be used for any business or personal site = 
 
@@ -38,7 +36,51 @@ Extend the functionality by choosing any of our SKT free themes from our website
 
 In case you like any of the themes displayed and want to get all the pages of the theme and show just like shown in demo on our website then you can choose to buy the single theme from our https://www.sktthemes.org/themes/ page.
 
-However as said earlier you can still use the plugin and the templates with any of your existing theme or websites.
+However as said earlier The plugin works with **any WordPress theme**, including SKT Themes and other popular themes available in the WordPress repository.
+
+= Key Features = 
+
+* One-click template import
+* Works with Elementor and Gutenberg
+* 100% free templates
+* Compatible with all WordPress themes
+* Professional and modern layouts
+* Easy customization inside your dashboard
+* Regularly updated with new templates
+* Lightweight and performance-friendly
+
+= Template Categories =
+
+Templates are available for a wide range of websites, including:
+
+* Business & Corporate
+* Construction & Services
+* Hotels & Hospitality
+* Fitness & Gym
+* Medical & Health
+* Blog & Personal Websites
+* Charity & Non-profit
+* Portfolio & Creative
+
+New templates are added regularly.
+
+= Elementor & Gutenberg Support = 
+
+* **Elementor Templates:** Import full pages and sections and customize them visually.
+* **Gutenberg Templates:** Use modern block-based layouts built for the WordPress editor.
+
+You can mix templates and adapt them to your brand easily.
+
+= Compatibility & Reliability = 
+
+* Works with any WordPress theme
+* Compatible with the latest WordPress versions
+* Follows WordPress coding standards
+* Actively maintained and improved
+
+== Documentation ==
+
+Please check the full documentation here : **[click here](https://sktthemesdemo.net/documentation/skt-templates-plugin-doc)**
 
 == Installation ==
 
@@ -59,26 +101,59 @@ Activating the SKT Templates plugin is just like any other plugin.
 4. Template Responsive Check
 5. Template Import In Elementor
 
-== FAQs ==
+== Frequently Asked Questions ==
 
 = Will the SKT Templates plugin work with my theme? =
 
-Of course it will work with any WordPress theme provided it does not conflicts with Elementor plugin.
+Yes. SKT Templates works with all WordPress themes.
+
+= Is this plugin beginner friendly? =
+Yes. Templates can be imported with one click and easily customized.
 
 = Are all the templates FREE? =
 
-All the templates displayed in our plugin backend are 100% free of cost. In the initial release we are launching 60 designs. However we will soon to updating the list to over 100+ within a month's time.
+Yes. All templates available in the plugin are 100% free.
 
 = Can i import in an existing website? =
 
-Yes you can however its recommended to use it in a fresh or blank WordPress installation because if your existing website has plugins or your existing website theme conflicts with Elementor you might land up in trouble. So either take a backup of your existing site before doing so or else install in a fresh/blank WordPress website to test it.
+Yes. You can import templates into an existing website. We recommend taking a backup before importing.
+
+= Is Elementor required? =
+
+Elementor is required only for Elementor templates. Gutenberg templates work with the default WordPress editor.
 
 = Can i deactivate the plugin afterwards? =
 
 Yes if your site import is done and you are currently editing via Elementor or if you have already set up the site you can deactivate the plugin.
 
+= Will this slow down my site? =
+
+No. The plugin is lightweight and loads only when needed.
 
 == Changelog ==
+
+= 6.30.0 =
+* Resolved the Elementor markup issue in the following Elementor templates: SKT Auditor, Night Club, SKT Bulldozer, SKT Religious, Attorney, SKT Nurse, SKT Organic, SKT eAuto, Furniture, SKT Eyecare, Association, SKT Industrial, SKT Plain and SKT Clover.
+ 
+= 6.5 =
+* Added pagination to the Elementor and Gutenberg template pages.
+* Resolved import issues for the GB Nature, GB Hotel, GB Charity, GB Fitness, and GB Construction Gutenberg templates.
+
+= 6.4.9 =
+Added SKT Auditor in Elementor Templates.
+
+= 6.4.8 =
+Reordering Night Club in Elementor Templates.
+
+= 6.4.7 =
+Added SKT Bulldozer in Elementor Templates.
+
+= 6.4.6 =
+Added SKT Religious in Elementor Templates.
+
+= 6.4.5 =
+Reordering Attorney in Elementor Templates.
+
 = 6.4.4 =
 Elementor Trademark Update.
 

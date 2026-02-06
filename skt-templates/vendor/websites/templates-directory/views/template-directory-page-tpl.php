@@ -13,124 +13,171 @@ $preview_url = add_query_arg( 'sktb_templates', '', home_url() ); // Define quer
 $html = '';
 if ( is_array( $templates_array ) ) { ?>
 	<div class="sktb-template-dir wrap">
-        <h2 class="wp-heading-inline sktb-first-heading"> <?php echo apply_filters( 'sktb_template_dir_page_title', __( 'SKT Templates Directory', 'skt-templates' ) ); ?></h2>
-        	<?php
-        	$mode = isset($_POST['mode']) ? $_POST['mode']: '';
-        	$search = isset($_POST['search']) ? $_POST['search']: '';
-			$url = $_SERVER['REQUEST_URI'];  
-			$template_text = 'skt_template_directory';
-			$get_admin_url = get_admin_url();
-			?>
-            <div class="sktb-form-area">
-            <form method="post" id="sktb-searchform-template"> 
-                    	<span> 
-                        	<input type="hidden" name="mode" value="action">
-                            <input type="text" name="search" placeholder="<?php if (strpos($url, $template_text)!==false){echo "Find Elementor Templates";}else{echo "Find Gutenberg Templates";} ?>" value="" required>
-                            <input type="submit" id="searchsubmit" value="Find"> 
-                    	</span>
-                    </form>
-            </div>
-            <?php 
-				$template_text_elementor = 'skt_template_directory';
-				$template_text_gutenberg = 'skt_template_gutenberg';
-			?>
-            <div class="sktb-templates-button-area">
-            	<div class="sktb-template-button-left"><a class="<?php if (strpos($url, $template_text_elementor)!==false){echo'activepage';}?>" href="<?php echo esc_url($get_admin_url)."admin.php?page=skt_template_directory"; ?>"><?php esc_attr_e('Elementor Templates','skt-templates');?></a></div>
-                <div class="sktb-template-button-right"><a class="<?php if (strpos($url, $template_text_gutenberg)!==false){echo'activepage';}?>" href="<?php echo esc_url($get_admin_url)."admin.php?page=skt_template_gutenberg"; ?>"><?php esc_attr_e('Gutenberg Templates','skt-templates');?></a></div>
-                <div class="clear"></div>
-            </div>
-        <?php
-        	if($mode=="action"){
-        		$get_admin_url = get_admin_url();
-        ?>
-        <div class="sktb-search-result">
-        	<?php echo 'search result for <span>'.esc_attr($search).'</span>'; ?>
-        	<a href="<?php if (strpos($url, $template_text)!==false){echo esc_url($get_admin_url)."admin.php?page=skt_template_directory";}else{echo esc_url($get_admin_url)."admin.php?page=skt_template_gutenberg";} ?>"><img src="<?php echo esc_url( SKTB_URL ); ?>images/delete-search.png" title="" class="sktb-delete-search"/></a>
-        </div>
-    	<?php } ?>
-        <div class="sktb-template-browser">
-		<?php
-		$search_found = false;
-		foreach ( $templates_array as $template => $properties ) {
-		if($mode=="action"){
-		$keywords = $properties['keywords'];
-		$title = $properties['title'];
-		$pos = strpos($keywords, $search);
-		if ($title==$search) { ?>
-    		<div class="sktb-template">
-					<?php if ( isset( $properties['has_badge'] ) ) { ?>
-						<span class="badge"><?php echo esc_html( $properties['has_badge'] ); ?></span>
-					<?php } ?>
-					<div class="more-details sktb-preview-template"
-						 data-demo-url="<?php echo esc_url( $properties['demo_url'] ); ?>"
-						 data-template-slug="<?php echo esc_attr( $template ); ?>">
-						<span><?php echo __( 'More Details', 'skt-templates' ); ?></span></div>
-					<div class="sktb-template-screenshot">
-						<img src="<?php echo esc_url( $properties['screenshot'] ); ?>"
-							 alt="<?php echo esc_html( $properties['title'] ); ?>">
-					</div>
-					<h2 class="template-name template-header"><?php echo esc_html( $properties['title'] ); ?></h2>
-					<div class="sktb-template-actions">
-						<?php if ( ! empty( $properties['demo_url'] ) ) { ?>
-							<a class="button sktb-preview-template"
-							   data-demo-url="<?php echo esc_url( $properties['demo_url'] ); ?>"
-							   data-template-slug="<?php echo esc_attr( $template ); ?>"><?php echo __( 'Preview', 'skt-templates' ); ?></a>
-						<?php } ?>
-					</div>
-				</div>
-		<?php  $search_found = true;	} elseif($pos == true ) {	?>
-				<div class="sktb-template">
-					<?php if ( isset( $properties['has_badge'] ) ) { ?>
-						<span class="badge"><?php echo esc_html( $properties['has_badge'] ); ?></span>
-					<?php } ?>
-					<div class="more-details sktb-preview-template"
-						 data-demo-url="<?php echo esc_url( $properties['demo_url'] ); ?>"
-						 data-template-slug="<?php echo esc_attr( $template ); ?>">
-						<span><?php echo __( 'More Details', 'skt-templates' ); ?></span></div>
-					<div class="sktb-template-screenshot">
-						<img src="<?php echo esc_url( $properties['screenshot'] ); ?>"
-							 alt="<?php echo esc_html( $properties['title'] ); ?>">
-					</div>
-					<h2 class="template-name template-header"><?php echo esc_html( $properties['title'] ); ?></h2>
-					<div class="sktb-template-actions">
-						<?php if ( ! empty( $properties['demo_url'] ) ) { ?>
-							<a class="button sktb-preview-template"
-							   data-demo-url="<?php echo esc_url( $properties['demo_url'] ); ?>"
-							   data-template-slug="<?php echo esc_attr( $template ); ?>"><?php echo __( 'Preview', 'skt-templates' ); ?></a>
-						<?php } ?>
-					</div>
-				</div>
-			<?php  $search_found = true; } }elseif($mode=="")  { ?>
-				<div class="sktb-template">
-					<?php if ( isset( $properties['has_badge'] ) ) { ?>
-						<span class="badge"><?php echo esc_html( $properties['has_badge'] ); ?></span>
-					<?php } ?>
-					<div class="more-details sktb-preview-template"
-						 data-demo-url="<?php echo esc_url( $properties['demo_url'] ); ?>"
-						 data-template-slug="<?php echo esc_attr( $template ); ?>">
-						<span><?php echo __( 'More Details', 'skt-templates' ); ?></span></div>
-					<div class="sktb-template-screenshot">
-						<img src="<?php echo esc_url( $properties['screenshot'] ); ?>"
-							 alt="<?php echo esc_html( $properties['title'] ); ?>">
-					</div>
-					<h2 class="template-name template-header"><?php echo esc_html( $properties['title'] ); ?></h2>
-					<div class="sktb-template-actions">
 
-						<?php if ( ! empty( $properties['demo_url'] ) ) { ?>
-							<a class="button sktb-preview-template"
-							   data-demo-url="<?php echo esc_url( $properties['demo_url'] ); ?>"
-							   data-template-slug="<?php echo esc_attr( $template ); ?>"><?php echo __( 'Preview', 'skt-templates' ); ?></a>
-						<?php } ?>
-					</div>
-				</div>
-		<?php	$search_found = true;}
-		} 
-		if (!$search_found) {
-		    echo 'No records found';
-		}
-		?>
-		</div>
-	</div>
+    <h2 class="wp-heading-inline sktb-first-heading">
+        <?php echo apply_filters(
+            'sktb_template_dir_page_title',
+            __( 'SKT Templates Directory', 'skt-templates' )
+        ); ?>
+    </h2>
+
+<?php
+/* ===============================
+   BASIC SETUP
+   =============================== */
+
+$mode   = isset($_POST['mode']) ? sanitize_text_field($_POST['mode']) : '';
+$search = isset($_POST['search']) ? sanitize_text_field($_POST['search']) : '';
+$url    = $_SERVER['REQUEST_URI'];
+$template_text = 'skt_template_directory';
+
+$current_admin_page = isset($_GET['page']) ? sanitize_key($_GET['page']) : '';
+$get_admin_url = get_admin_url();
+?>
+
+    <!-- SEARCH FORM -->
+    <div class="sktb-form-area">
+        <form method="post" id="sktb-searchform-template">
+            <span>
+                <input type="hidden" name="mode" value="action">
+                <input type="text" name="search"
+                       placeholder="<?php echo (strpos($url,'skt_template_directory') !== false) ? 'Find Elementor Templates' : 'Find Gutenberg Templates'; ?>"
+                       required>
+                <input type="submit" id="searchsubmit" value="Find"> 
+            </span>
+        </form>
+    </div>
+
+    <!-- PAGE SWITCH BUTTONS -->
+    <div class="sktb-templates-button-area">
+        <div class="sktb-template-button-left">
+            <a class="<?php if ($current_admin_page === 'skt_template_directory') echo 'activepage'; ?>"
+               href="<?php echo esc_url($get_admin_url . 'admin.php?page=skt_template_directory'); ?>">
+               <?php esc_html_e('Elementor Templates','skt-templates'); ?>
+            </a>
+        </div>
+
+        <div class="sktb-template-button-right">
+            <a class="<?php if ($current_admin_page === 'skt_template_gutenberg') echo 'activepage'; ?>"
+               href="<?php echo esc_url($get_admin_url . 'admin.php?page=skt_template_gutenberg'); ?>">
+               <?php esc_html_e('Gutenberg Templates','skt-templates'); ?>
+            </a>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+<?php if ($mode === 'action') : ?>
+    <!-- SEARCH RESULT HEADER -->
+    <div class="sktb-search-result">
+        <?php echo 'Search result for <span>' . esc_html($search) . '</span>'; ?>
+        <a href="<?php echo esc_url($get_admin_url . 'admin.php?page=' . $current_admin_page); ?>">
+            <img src="<?php echo esc_url(SKTB_URL . 'images/delete-search.png'); ?>" class="sktb-delete-search">
+        </a>
+    </div>
+<?php endif; ?>
+
+    <!-- TEMPLATE LIST -->
+    <div class="sktb-template-browser">
+
+<?php
+$per_page    = 16;
+$current_page = isset($_GET['spage']) ? max(1, intval($_GET['spage'])) : 1;
+
+/* Search → no pagination */
+if ($mode === 'action') {
+    $templates_array_paginated = $templates_array;
+    $total_pages = 0;
+} else {
+    $total_templates = count($templates_array);
+    $total_pages = ceil($total_templates / $per_page);
+    $offset = ($current_page - 1) * $per_page;
+    $templates_array_paginated = array_slice($templates_array, $offset, $per_page, true);
+}
+
+$search_found = false;
+
+foreach ($templates_array_paginated as $template => $properties) {
+
+    if ($mode === 'action') {
+
+        if (
+            $properties['title'] === $search ||
+            strpos($properties['keywords'], $search) !== false
+        ) {
+            $search_found = true;
+        } else {
+            continue;
+        }
+    }
+
+    $search_found = true;
+?>
+        <div class="sktb-template">
+            <?php if (!empty($properties['has_badge'])) : ?>
+                <span class="badge"><?php echo esc_html($properties['has_badge']); ?></span>
+            <?php endif; ?>
+
+            <div class="more-details sktb-preview-template"
+                 data-demo-url="<?php echo esc_url($properties['demo_url']); ?>"
+                 data-template-slug="<?php echo esc_attr($template); ?>">
+                <span><?php esc_html_e('More Details', 'skt-templates'); ?></span>
+            </div>
+
+            <div class="sktb-template-screenshot">
+                <img src="<?php echo esc_url($properties['screenshot']); ?>"
+                     alt="<?php echo esc_attr($properties['title']); ?>">
+            </div>
+
+            <h2 class="template-name template-header">
+                <?php echo esc_html($properties['title']); ?>
+            </h2>
+
+            <div class="sktb-template-actions">
+                <a class="button sktb-preview-template"
+                   data-demo-url="<?php echo esc_url($properties['demo_url']); ?>"
+                   data-template-slug="<?php echo esc_attr($template); ?>">
+                   <?php esc_html_e('Preview', 'skt-templates'); ?>
+                </a>
+            </div>
+        </div>
+<?php
+}
+
+if (!$search_found) {
+    echo '<p>No records found</p>';
+}
+?>
+    </div>
+
+<?php
+/* ===============================
+   PAGINATION UI (NO SEARCH)
+   =============================== */
+if ($mode !== 'action' && $total_pages > 1) :
+    $base_url = admin_url('admin.php?page=' . $current_admin_page);
+?>
+    <div class="sktb-pagination">
+
+        <?php if ($current_page > 1) : ?>
+            <a href="<?php echo esc_url($base_url . '&spage=' . ($current_page - 1)); ?>">« Prev</a>
+        <?php endif; ?>
+
+        <?php for ($i = 1; $i <= $total_pages; $i++) : ?>
+            <a href="<?php echo esc_url($base_url . '&spage=' . $i); ?>"
+               class="<?php echo ($i === $current_page) ? 'active' : ''; ?>">
+               <?php echo $i; ?>
+            </a>
+        <?php endfor; ?>
+
+        <?php if ($current_page < $total_pages) : ?>
+            <a href="<?php echo esc_url($base_url . '&spage=' . ($current_page + 1)); ?>">Next »</a>
+        <?php endif; ?>
+
+    </div>
+<?php endif; ?>
+
+</div>
+
 	<div class="wp-clearfix clearfix"></div>
 <?php } // End if().
 ?>

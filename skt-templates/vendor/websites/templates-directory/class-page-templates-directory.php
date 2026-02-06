@@ -324,8 +324,8 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
 					'theme_url'   => esc_url('https://www.sktthemes.org/shop/gutenberg-wordpress-theme/'),
 					'demo_url'    => esc_url('https://sktperfectdemo.com/themepack/gbnature/'),
-					'screenshot'  => esc_url('https://www.themes21.net/themedemos/gbnature/free-gbnature.jpg'),
-					'import_file' => esc_url('https://www.themes21.net/themedemos/gbnature/gb-nature.json'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/gb-nature/gb-nature.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/gb-nature/gb-nature.json'),
 					'keywords'    => __( ' Gutenberg, gutenberg, atmosphere, environmental, climate, nature, world, ecology, science, surrounding, natural world, surround, locality, neighborhood, psychology, scenery, sphere, scene, nature, spot, mother nature, wildlife, ecosystem, work, area, place, god gift, globe, environmental organizations, non profit, NGO, charity, donations, clean, fresh, good looking, greenery, green color, house, landscape, creation, flora, locus, air, planet, healing, circumambience, GB Nature' ),
 				),
 				'gbhotel-gutenberg'              => array(
@@ -333,8 +333,8 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
 					'theme_url'   => esc_url('https://www.sktthemes.org/shop/gutenberg-wordpress-theme/'),
 					'demo_url'    => esc_url('https://sktperfectdemo.com/themepack/gbhotel/'),
-					'screenshot'  => esc_url('https://www.themes21.net/themedemos/gbhotel/gb-hotel.jpg'),
-					'import_file' => esc_url('https://www.themes21.net/themedemos/gbhotel/gb-hotel.json'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/gb-hotel/gb-hotel.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/gb-hotel/gb-hotel.json'),
 					'keywords'    => __( ' Gutenberg, gutenberg, Motels, accommodation, Motel accommodation, Hostels, backpackers , Apartments, Bed & Breakfasts, Holiday Homes, Homestays, Holiday Parks, Campgrounds, Farmstays, Luxury Lodges, Boutiques, Lodges, houses, pavilions, stays, gatehouse, hall, club, reside, rent rooms, inhabits, cottage, retreat, main building, clubhouse, hostelry, stays, lodging, pubs, traveler, service, hospices, room, hoteles, guests, facilities, hotel staff, location, hospitality, hotel management, catering, hostelries, roadhouses, bars, resort, canal, innkeeper, hotel accommodation, reservations, hotel business, place, in hotels, settlements, schools, establishments, institutions, properties, farmhouses, GB Hotel' ),
 				),
 				'gbcharity-gutenberg'              => array(
@@ -342,8 +342,8 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
 					'theme_url'   => esc_url('https://www.sktthemes.org/shop/gutenberg-wordpress-theme/'),
 					'demo_url'    => esc_url('https://sktperfectdemo.com/themepack/gbcharity/'),
-					'screenshot'  => esc_url('https://www.themes21.net/themedemos/gbcharity/gb-charity.jpg'),
-					'import_file' => esc_url('https://www.themes21.net/themedemos/gbcharity/gb-charity.json'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/gb-charity/gb-charity.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/gb-charity/gb-charity.json'),
 					'keywords'    => __( ' Gutenberg, gutenberg, kindness, kindliness, compassion, feeling, goodwill, generosity, gentleness, charitableness, tolerance, mercy, humanitarianism, understanding, kindliness, liberality,nurture, relief, generosity, help, leniency, allowance, kindliness, favor, selflessness, unselfishness, love, kindheartedness, support, tenderness, goodness, donation, charitable foundation, offering, indulgence, kindliness, fund, assistance, benefaction, contribution, generosity, brotherly love, caring, clemency, concern, pity, sympathy, benignity, empathy, welfare, charities, gift, aid, help, grace, GB Charity, charity' ),
 				),
 				'gbfitness-gutenberg'              => array(
@@ -351,8 +351,8 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
 					'theme_url'   => esc_url('https://www.sktthemes.org/shop/gutenberg-wordpress-theme/'),
 					'demo_url'    => esc_url('https://sktperfectdemo.com/themepack/gbfitness/'),
-					'screenshot'  => esc_url('https://www.themes21.net/themedemos/gbfitness/gb-fitness.jpg'),
-					'import_file' => esc_url('https://www.themes21.net/themedemos/gbfitness/gb-fitness.json'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/gb-fitness/gb-fitness.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/gb-fitness/gb-fitness.json'),
 					'keywords'    => __( ' Gutenberg, gutenberg, health, fitness, coach, well-being, good physical condition, healthiness, fitness, physical fitness, haleness, good trim, good shape, fine fettle, good kilter, robustness, strength, vigour, soundness, discipline, yoga, meditation, reiki, healing, weight loss, pilates, stretching, relaxation, workout, mental, gymnasium, theater, action, arena, gymnastics, exercise, health club, fitness room, health spa, work out, weight room, working out, sports hall, welfare centre, fitness club, wellness area, workout room, spa, high school, sport club, athletic club, fitness studio, health farm, establishment, gym membership, junior high, sports club, health-care centre, exercise room, training room, fitness suite, health centre, beauty centre, my gym, country club, fite, gym class, medical clinic, med centre, free clinic, medical facilities, dispensary, health posts, healing center, health care facility, medical station, health care establishment, health establishment, medical establishment, centre de santé, medical centres, medical, hospital, polyclinic, healthcare facilities, treatment centre, medical institutions, health care institution, health units, GB Fitness' ),
 				),
 				'gbconstruction-gutenberg'              => array(
@@ -360,8 +360,8 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
 					'theme_url'   => esc_url('https://www.sktthemes.org/shop/gutenberg-wordpress-theme/'),
 					'demo_url'    => esc_url('https://sktperfectdemo.com/themepack/gbconstruction/'),
-					'screenshot'  => esc_url('https://www.themes21.net/themedemos/gbconstruction/gb-construction.jpg'),
-					'import_file' => esc_url('https://www.themes21.net/themedemos/gbconstruction/gb-construction.json'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/gb-construction/gb-construction.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/gb-construction/gb-construction.json'),
 					'keywords'    => __( ' Gutenberg, gutenberg, inventor, originator, founder, maker, mastermind, engineer, builder, planner, designer, patron, originator, initiator, entrepreneur, deviser, author, director, manufacturer, designers, artificer, artist, person, agent, innovator, constructor, architecture, draftsman, planner, designer, progenitor, director, producer, planner, craftsmen, peacemaker, agent, artisan, producer, maker, generator, fabricator, craftsperson, structure, design, organizer, architectural, pioneer, founding father, author, brains, originators, instigators, implementer, contractor, contriver, real estate developer, building contractor, design engineer, property developer, brick layer, land developer, establisher, handyman, maintenance, decor, laborer, land consulting, roofing, artist, portfolio, profile, roofttop, repair, real estate, colorful, adornments, cenery, surroundings, home decor, color scheme, embellishment, garnish, furnishings, interior decorations, interiors, set design, scenography, flourish, design, redecorating, decorative style, ornaments, environments, designs, interior construction, painting, trimming, interior decorating, decoration, emblazonry, home decorating, GB Construction' ),
 				),
 				);
@@ -386,6 +386,51 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-auditor-elementor'              => array(
+					'title'       => __( 'SKT Auditor', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-auditor/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-auditor/skt-auditor.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-auditor/skt-auditor.json'),
+					'keywords'    => __( ' tax advisor, tax specialist, tax planner, tax expert, financial consultant, tax preparer, tax strategist, tax analyst, tax accountant, tax professional, examiner, assessor, inspector, reviewer, evaluator, financial analyst, compliance officer, accountant, appraiser, controller, tax counsel, auditor, skt auditor' ),
+				),			
+				'nightclub-elementor'              => array(
+					'title'       => __( 'Night Club', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/nightclub/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/nightclub/nightclub.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/nightclub/nightclub.json'),
+					'keywords'    => __( ' nightclub, parties, events, night clubs, music club, dancing club and night life, parties, music, dance, bands, disco, jockey, Trance and House Event, DJ, Trance Party, Musicians,Disc Jockey,groups, music, video gallery, Concert, cafes, restaurants, cafes, bars, bistros, bakeries, pubs, cafeteria, pizzerias, Night Club, party, nightlife, night life' ),
+				),				
+				'skt-bulldozer-elementor'              => array(
+					'title'       => __( 'SKT Bulldozer', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),						
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-bulldozer/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-bulldozer/skt-bulldozer.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-bulldozer/skt-bulldozer.json'),
+					'keywords'    => __( ' bulldozer, Bulldozer' ),
+				),			
+				'skt-religious-elementor'              => array(
+					'title'       => __( 'SKT Religious', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),						
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-religious/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-religious/skt-religious.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-religious/skt-religious.json'),
+					'keywords'    => __( ' church, divine, holy, spiritual, godly, monk, religion, devotional, saintly, devout, belief, faithful, churchgoing, faith-based, monastic, order, prayerful, moral, religious, Religious' ),
+				),
+				'ele-attorney-lite-elementor'              => array(
+					'title'       => __( 'Attorney', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),						
+					'demo_url'    => esc_url('https://demosktthemes.com/free/attorney/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/attorney/ele-attorney.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/attorney/ele-attorney.json'),
+					'keywords'    => __( ' corporate, business, consulting, agency, people, meeting, communal, working, workforce, office, accounting, lawyer, coaching, advocate, advice, suggestion, therapy, mental wellness, attorney, Attorney' ),
+				),			
 				'skt-nurse'              => array(
 					'title'       => __( 'SKT Nurse', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -880,8 +925,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-specialist/specialist-home.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/skt-specialist/specialist-home.json'),
 					'keywords'    => __( ' specialist, corporate, business, consulting, agency, people, meeting, communal, working, workforce, office, accounting, lawyer, coaching, advocate, advice, suggestion, information security, computer based, computer security, biosecurity, information technology, insurance, Specialist Home', 'skt-templates' ),
-				),
-				
+				),				
 				'sktspecialistabout-elementor'              => array(
 					'title'       => __( 'Specialist About', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -900,8 +944,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-specialist/specialist-services.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/skt-specialist/specialist-services.json'),
 					'keywords'    => __( ' specialist, corporate, business, consulting, agency, people, meeting, communal, working, workforce, office, accounting, lawyer, coaching, advocate, advice, suggestion, information security, computer based, computer security, biosecurity, information technology, insurance, Specialist Services, services', 'skt-templates' ),
-				),	
-				
+				),					
 				'sktspecialistcontact-elementor'              => array(
 					'title'       => __( 'Specialist Contact', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -911,7 +954,6 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'import_file' => esc_url('https://demosktthemes.com/free/skt-specialist/specialist-contact.json'),
 					'keywords'    => __( ' specialist, corporate, business, consulting, agency, people, meeting, communal, working, workforce, office, accounting, lawyer, coaching, advocate, advice, suggestion, information security, computer based, computer security, biosecurity, information technology, insurance, Specialist Contact, contact', 'skt-templates' ),
 				),															
-
 				'sktecology-elementor'              => array(
 					'title'       => __( 'SKT Ecology', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -920,8 +962,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-ecology/skt-ecology.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/skt-ecology/skt-ecology.json'),
 					'keywords'    => __( ' ecology, eco products, natural, cultivation Website, organic farming, ecosystem service, welfare organizations, forest ecosystem, non profit organizations, NGO, carbon storage, ecological services, renewable energy, eco friendly, solar, recycle, reusable, conservation, agriculture, agro, SKT Ecology', 'skt-templates' ),
-				),			
-			
+				),						
 				'palmhealinglite-elementor'              => array(
 					'title'       => __( 'Palm Healing Lite', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -930,8 +971,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/palm-healing/palm-healing.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/palm-healing/palm-healing.json'),
 					'keywords'    => __( ' reiki, healing touch, donation, emotional issues, stress relief, radiation, chemotherapy, treatments, palm healing, crown chakra, third eye chakra, throat chakra, heart chakra, solar plexus, sacral chakra, root chakra, exercise, health club, fitness room, health spa, fitness, yoga studio, teaching yoga, acupuncture, ayurveda, yogis, homeopathy, physical exercise, philosophy, body,spiritual discipline, ascetic, Palm Healing Lite, palm', 'skt-templates' ),
-				),				
-					
+				),									
 				'sktwomanhome-elementor'              => array(
 					'title'       => __( 'Woman Home', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -1274,15 +1314,6 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/blendit/blendit.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/blendit/blendit.json'),
 					'keywords'    => __( ' blendit, design agency, creative agency, branding company, design studio, development company, marketing agency, marketing services, promotional services, interior design, digital studio, corporate, consultancy, information technology services, IT services, maintenance services, duty, office, group of people, firm, instrument, business, agent, representation, department, office, authority, corporation, government agency, service provider, IT service providers, repairing services, Blendit' ),
-				),	
-				'nightclub-elementor'              => array(
-					'title'       => __( 'Night Club', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('#'),
-					'demo_url'    => esc_url('https://demosktthemes.com/free/nightclub/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/nightclub/nightclub.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/nightclub/nightclub.json'),
-					'keywords'    => __( ' nightclub, parties, events, night clubs, music club, dancing club and night life, parties, music, dance, bands, disco, jockey, Trance and House Event, DJ, Trance Party, Musicians,Disc Jockey,groups, music, video gallery, Concert, cafes, restaurants, cafes, bars, bistros, bakeries, pubs, cafeteria, pizzerias, Night Club, party, nightlife, night life' ),
 				),			
 				'painting-elementor'              => array(
 					'title'       => __( 'Painting', 'skt-templates' ),
@@ -2021,15 +2052,6 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 					'screenshot'  => esc_url('https://demosktthemes.com/free/makeup/ele-makeup-lite.jpg'),
 					'import_file' => esc_url('https://demosktthemes.com/free/makeup/ele-makeup-lite.json'),
 					'keywords'    => __( ' corporate, business, consulting, agency, people, meeting, communal, working, workforce, office, accounting, lawyer, coaching, advocate, advice, suggestion, therapy, mental wellness, attorney, Makeup, artist, makeup artist, makeover, make over' ),
-				),
-				'ele-attorney-lite-elementor'              => array(
-					'title'       => __( 'Attorney', 'skt-templates' ),
-					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
-					'theme_url'   => esc_url('https://www.sktthemes.org/shop/free-law-firm-wordpress-theme/'),						
-					'demo_url'    => esc_url('https://demosktthemes.com/free/attorney/'),
-					'screenshot'  => esc_url('https://demosktthemes.com/free/attorney/ele-attorney.jpg'),
-					'import_file' => esc_url('https://demosktthemes.com/free/attorney/ele-attorney.json'),
-					'keywords'    => __( ' corporate, business, consulting, agency, people, meeting, communal, working, workforce, office, accounting, lawyer, coaching, advocate, advice, suggestion, therapy, mental wellness, attorney, Attorney' ),
 				),
 				'poultry-farm-lite-elementor'              => array(
 					'title'       => __( 'Poultry Farm', 'skt-templates' ),

@@ -261,8 +261,8 @@
 .industrial-skills .elementor-progress-wrapper{width: 58%; position: static; margin-left: 32%;}
 .industrial-skills span.elementor-progress-text{position: absolute; left: 0; padding: 0; overflow: inherit!important;}
 .industrial-skills span.elementor-progress-percentage{position: absolute; right: 0; padding: 0;}
-
-.industrial-feature-box .elementor-image-box-img img{display: inline-block;}
+.industrial-feature-box .elementor-image-box-img img, .industrial-feature-box .elementor-image-box-img{display: inline-block !important;}
+.industrial-services-row .elementor-image-box-img img, .industrial-services-row .elementor-image-box-img img{display: inline-block !important;}
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 .industrial-skills .elementor-progress-text, .industrial-skills .elementor-progress-percentage{font-size: 17px!important;}
@@ -384,6 +384,7 @@
 /* Ele Attorney Lite Start*/
 .attorney-services .elementor-image-box-img img, .attorney-practice .elementor-image-box-img img, .attorney-choose-us .elementor-image-box-img img{display:inline-block;}
 .attorney-services .elementor-image-box-title, .attorney-practice .elementor-image-box-title, .attorney-choose-us .elementor-image-box-title{margin:0;}
+.attorney-practice .elementor-image-box-img img{display:inline-block !important;}
 /* Ele Attorney Lite End*/
 
 /* Poultry Farm Lite Start*/
@@ -649,6 +650,7 @@
 .gbcharity-help-block1{padding-right:20px;}
 .gbcharity-help-block2 p{margin: 0 0 5px !important;}
 .gbcharity-help-block3 img {position: absolute; right: -5px; z-index: 9; top: 11px;}
+.money-bar .skt-blocks-advanced-column-child{width: 70%; border-radius: 100px; padding: 23px; padding-bottom: 23px; padding-left: 23px; padding-bottom: 10px; padding-left: 30px;}
 @media only screen and (max-width: 639px) {
 .gbcharity-help-block1{padding-right: 0!important;}
 .gbcharity-help-block1 .wp-block-uagb-advanced-heading{margin-bottom: 20px;}
@@ -656,7 +658,6 @@
 .gbcharity-help-block3 img { position: relative!important;}
 }
 /* SKT GB CHARITY */
-
 
 /* SKT GB FITNESS */
 .gbfitness-section1-col .uagb-ifb-imgicon-wrap .uagb-ifb-image-content{z-index: 1;}
@@ -1383,7 +1384,8 @@ border-radius: 0; height: 54px; padding: 0 35px; transition: all 0.2s;}
 .gbnature-section-1 .skt-blocks-ifb-content{background-image:linear-gradient(to top right, #6adedd, #62e1b6); padding:50px 0px; height:100px;}
 .gbnature-section-1 .wp-block-image{margin:0px; text-align:center;}
 .gbnature-section-1 .wp-block-image img{ width:100% !important;}
-.gbnature-section-2 figure{margin-left: 0px; margin-right: 0px;}
+.gbnature-section-2 figure{margin-left: 0px; margin-right: 0px; padding-top:15px;}
+.gbnature-section-5{clear:both; overflow:hidden;}
 .gbnature-section-5 .skt-blocks-team-avatar:before{ width:100%; height:100%; content:''; position:absolute; left:0px; top:0px; background:rgba(17,194,139, 0.5); z-index:9; border-radius:5px; display:none;}
 .gbnature-section-5 .skt-blocks-team-avatar-img{ border-radius:5px;}
 .gbnature-section-5 .skt-blocks-block-team:nth-child(2n+2) .skt-blocks-team-content .skt-blocks-team-name{position:absolute; top:-20px; margin:0 auto; text-align:center; display:table; width:100%;}
@@ -1490,7 +1492,7 @@ border-radius: 0; height: 54px; padding: 0 35px; transition: all 0.2s;}
 .gbcharity-section1 .skt-blocks-buttons-repeater a{ color:#fff !important;}
 .gbcharity-mission-box .skt-blocks-infobox__outer-wrap{ background:none !important;}
 .gbcharity-mission-box .skt-blocks-infobox__outer-wrap:hover{ background:#fff !important;}
-.gbcharity-sec2 .has-text-color, .charity-sec-5 .has-text-color{ font-size:18px !important; font-family:Assistant !important; color:#3a3a3a !important; line-height:normal; font-weight:500;}
+.gbcharity-sec2 .has-text-color, .gbcharity-sec-5 .has-text-color{ font-size:18px !important; font-family:Assistant !important; color:#3a3a3a !important; line-height:normal; font-weight:500;}
 .gbcharity-poor-people-conten {background:#3cc88f; border-radius:8px; padding:20px; padding-bottom:10px;}
 .gbcharity-poor-people-conten:after{position:absolute; content:" "; width:100px; height:100%; background-color:#3cc88f; right:-75px; top:0; z-index:1;}
 .gbcharity-poor-people-conten {margin-top:40px !important;}
@@ -5456,9 +5458,10 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .skt-clover-section5-left-icon-box .elementor-image-box-img{position:relative;}
 .skt-clover-section5-left-icon-box .elementor-image-box-img::before { content:''; position:absolute; background:#a4bf91; width:100px; height:100px; border-radius:100%;top:50%; left:50%; transform:translate(-50%,-50%);}
 .skt-clover-section5-left-icon-box .elementor-image-box-img img { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);width: 57px !important;height: 57px !important;object-fit: cover;}
-.skt-clover-section12-right-icon .elementor-widget-container { width:89px !important; height:89px; border-radius:100%; position:relative !important;}
-.skt-clover-section12-right-icon .elementor-widget-container img { position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
-.skt-clover-section12-right-btn .elementor-button-wrapper a { display:block; width:80% !important; margin:0 auto;}
+.skt-clover-section12-right-icon .elementor-widget-container, .skt-clover-section12-right-icon { width:89px !important; height:89px; border-radius:100%; position:relative !important;}
+.skt-clover-section12-right-icon .elementor-widget-container img, .skt-clover-section12-right-icon img { position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.skt-clover-section12-right-btn .elementor-button { display:block; width:80% !important; margin:0 auto;}
+
 @media(max-width: 1023px){
 .skt-clover-section2-left::after{height: 350px; top: 41%;}	
 }
@@ -5496,6 +5499,19 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 
 /* Association */
 .association-bul-list li{padding-left:25px !important;}
+.association-get-involved-btn a{ position:relative; left:105px;}
+
+@media(max-width: 479px){
+.association-get-involved-btn a{ position:relative; left:0px !important;}	
+}
+
+@media screen and (max-width:63.938em) and (min-width:48.000em) {
+.association-get-involved-btn a{ position:relative; left:0px !important;}	
+}
+
+@media screen and (max-width:72.438em) and (min-width:63.250em) {
+.association-get-involved-btn a{ position:relative; left:0px !important;}	
+}
 /* Association */
 
 /* SKT Eye Care Css Start */
@@ -5771,6 +5787,11 @@ border-radius: 100%; width: 95px!important; height:76px; align-items: center;}
 .organic-sec8 {--display: block !important;}
 .organic-sec8-title { margin:0 auto !important;}
 }
+
+@media screen and (max-width: 29.938em) {
+.organic-sec2-inner-rightin1-img .elementor-widget-container, .organic-sec2-inner-rightin1-img{ width:308px !important; height:280px !important;align-content: center !important; margin:0 auto;}
+.organic-sec9-left-inner-icon-box .elementor-image-box-img{width:75px !important; height:75px !important; margin-bottom:10px !important;}
+}
 /* SKT Organic */
 
 /* SKT Nurse */
@@ -5971,3 +5992,187 @@ border-radius: 100%; width: 95px!important; height:76px; align-items: center;}
 .skt-nurse-work-section-right::after { display:none;}
 }
 /* SKT Nurse */
+
+/* SKT Religious */
+.religious-sec1-left::before{position:absolute; content:''; left:-100px; top:0; width:100px; height:100%; background-color:#019ade;}
+.religious-sec2-img::after{position:absolute; content:''; right:125px; top:-35px; width:260px; height:260px; border:35px solid #d14f42; border-radius:100%; background-color:transparent; z-index:-1;}
+.religious-sec3-right::before{position:absolute; content:''; left:30px; top:-60px; width:260px; height:260px; border:35px solid #ffbd11; border-radius:100%; background-color:transparent; z-index:-1;}
+.religious-sec3-right::after{position:absolute; content:''; left:30px; top:-60px; width:725px; height:631px; background-image: url(https://demosktthemes.com/free/skt-religious/wp-content/uploads/2025/10/sec3-bg.png); z-index:-1;}
+.religious-service-icon .elementor-image-box-img{background-color: #d14f42 ; width: 150px !important; height: 150px !important; border-radius: 100%;}
+.religious-service-icon .elementor-image-box-img img{position: absolute;top: 30%;left: 50%;transform: translate(-50%,-30%);}
+.religious-service-icon .elementor-image-box-img:hover{background-color: #019ade;}
+.religious-sec3-right .elementor-image-box-wrapper{flex-direction: unset !important; text-align: center !important; display: block !important;}
+.religious-sec3-right .elementor-image-box-wrapper img{display:inline-block;}
+.religious-sec3-right .elementor-image-box-wrapper .elementor-image-box-img{margin:0px;}
+
+@media(max-width: 479px){
+.skt-religious-frist-sec-icon figure img{display: inherit !important;}
+.religious-sec3-right::after{width:100% !important; height:auto !important;}
+.religious-home-section3 .elementor-image-box-img img{display: inherit !important;}
+.religious-evone .elementor-image-box-img img{display: inherit !important;}
+}
+/* SKT Religious */
+
+/* SKT Bulldozer */
+.skt-bulldozer-sec1-right-box .elementor-image-box-img img{display: inline-block !important;}
+.skt-bulldozer-sec1-right-box-counter { width:117px !important; height:117px !important;}
+.skt-bulldozer-sec1-right-box-counter .elementor-counter { margin-top:37px;}
+.skt-bulldozer-sec1 {position:relative !important;}
+.skt-bulldozer-sec1:after { content:''; position:absolute; left:0%; bottom:0; width:100%; height:22%; background:#ffffff;}
+.skt-bulldozer-sec4-title .elementor-heading-title {background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(255, 188, 8)) !important;
+  -webkit-background-clip: text !important;-webkit-text-fill-color: transparent !important;}
+.skt-bulldozer-sec4 { position:relative !important;}
+.skt-bulldozer-sec4:after { content:''; position:absolute; right:0; bottom:0; width:49%; height:100%; background:#141318;}
+.skt-bulldozer-sec9-right-faq .e-n-accordion-item-title { margin-top:13px !important;}
+.skt-bulldozer-sec9-right-faq.elementor-widget-n-accordion .e-n-accordion-item[open]>.e-n-accordion-item-title {border-radius:10px 10px 0 0 !important;}
+.skt-bulldozer-sec9-right-faq .e-n-accordion-item-title-icon {position: absolute !important;right: 40px !important;}
+.skt-bulldozer-sec9-right-faq .e-n-accordion-item { position:relative !important;}
+
+@media screen and (max-width:63.938em) and (min-width:48.000em) {
+.skt-bulldozer-sec1-right-box-counter {width: 97px !important;height: 97px !important;}
+.skt-bulldozer-sec1-right-box-counter .elementor-counter { margin-top:30px;}
+}
+/* SKT Bulldozer */
+
+/* SKT Night Club */
+.night-club-box .elementor-image-box-img img {
+  display: inline-block !important;
+}
+/* SKT Night Club */
+
+/* SKT Auditor */
+.skt-accountant-sec2-vedio img{border-radius: 20px 20px 20px 20px!important;}
+.skt-accountant-sec2:after{content: '' !important;background: #f9eeeb;width: 30%;height:30%;position: absolute;top: 0;left: 0;z-index: -1;}
+.skt-accountant-sec2-list svg{margin:0!important;}
+.skt-accountant-sec2-list .elementor-icon-list-icon{border-radius: 100px;padding: 5px 4px !important;background: #13c27e;}
+.skt-accountant-sec2-list .elementor-icon-list-item{gap:10px!important;}
+.skt-accountant-sec2-vedio .elementor-custom-embed-play{background: #181725;width:80px;height: 80px;display: flex;align-items: center;justify-content: center;border-radius:15px;}
+.skt-accountant-sec2-vedio .elementor-widget-container, .skt-accountant-sec2-vedio{overflow: visible!important;}
+.skt-accountant-sec2-vedio .elementor-custom-embed-play{transform:unset!important;left: -30%;right:unset!important;bottom:0!important;top:unset!important;}
+.skt-accountant-sec2-img-cir img{padding:8px;width: 95px!important;height: 95px!important;}
+.skt-accountant-sec2-vedio:after{content: '' !important;background: #f9eeeb;width: 20.8%;height: 60px;right: 19px;position: absolute;top:-60px;border-radius: 0 10px 0 0;}
+
+@media screen and (max-width:1200px) and (min-width:1025px){
+.skt-accountant-sec2-vedio .elementor-custom-embed-play{left: -35%!important;}
+.skt-accountant-sec2-small-main-col{padding-top:25px!important;}
+.skt-accountant-sec2-head .elementor-widget-container{padding: 0px 0px 20px 0px!important;}
+.skt-accountant-sec2-img-cir img{height:85px!important;width:85px!important;}
+}
+
+@media screen and (max-width:1024px) and (min-width:938px){
+.skt-accountant-sec2-small-main-col{padding-top: 30px!important;}
+.skt-accountant-sec2-small-main-col	.elementor-widget-container{padding: 0px 0px 20px 0px!important;}
+}
+
+.skt-accountant-sec8-counter .elementor-counter-number-prefix{display:none!important;}
+.skt-accountant-sec8-counter p{font-size:23px;font-weight: 500;margin-top: -10px;}
+.skt-accountant-sec9-vedio .elementor-custom-embed-play {background: #fff;width: 60px;height: 60px;display: flex;align-items: center;justify-content: center;border-radius: 100%;}
+.skt-accountant-sec9-img{margin: 0 auto;}
+.skt-accountant-sec9-img .elementor-widget-container, .skt-accountant-sec9-img {width: 130px;height: 130px!important;display: flex;align-items: center !important;justify-content: center !important;border-radius:75px;border: 13px solid #5cc1be;}
+.skt-accountant-sec9-heading{position: relative;}
+.skt-accountant-sec9-heading h2:after{content: "";background:#fff;width: 50px;height: 2px;position: absolute;left: 50%;transform: translateX(-50%);bottom: -25px;}
+.skt-accountant-sec9-col{animation: pulse 2s linear infinite;}
+.skt-accountant-sec10-icon .elementor-icon:after{content:"";background:#13c27e;width:50px;height:50px;position: absolute;bottom:0;clip-path: polygon(100% 0, 0 100%, 100% 100%);right: 0;}
+.skt-accountant-sec10-icon svg{z-index: 2;margin-right: 7px;}
+.skt-accountant-sec10-icon .elementor-icon-wrapper{position: absolute;right: 0;bottom: 0;}
+.skt-accountant-sec11-col1{overflow: hidden!important;}
+.skt-accountant-sec11-img{margin: 0 auto;}
+.skt-accountant-sec11-img .elementor-widget-container, .skt-accountant-sec11-img {width: 230px;height: 230px!important;display: flex;align-items: center !important;justify-content: center !important;margin-top: -80px;border-radius: 100%;}
+.skt-accountant-sec11-img img{margin-top:60px!important;}
+.skt-accountant-sec11-col1{animation: pulse 4s linear infinite;}
+
+@keyframes pulse {
+0% {
+-webkit-transform: scale3d(1, 1, 1);
+transform: scale3d(1, 1, 1);
+}
+50% {
+-webkit-transform: scale3d(1.05, 1.05, 1.05);
+transform: scale3d(1.05, 1.05, 1.05);
+}
+100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+}
+
+@media screen and (max-width:1250px){
+.skt-accountant-sec11-col1{animation:none!important;}
+.skt-accountant-sec9-col{animation:none!important;}
+.skt-accountant-sec5-contact-sc-main-col{animation:none!important;}
+}
+
+@media screen and (max-width:1200px) and (min-width:1025px){
+.skt-accountant-sec2-vedio .elementor-custom-embed-play{left: -35%!important;}
+.skt-accountant-sec2-small-main-col{padding-top:25px!important;}
+.skt-accountant-sec2-head .elementor-widget-container, .skt-accountant-sec2-head {padding: 0px 0px 20px 0px!important;}
+.skt-accountant-sec2-img-cir img{height:85px!important;width:85px!important;}
+}
+
+@media screen and (max-width:1024px) and (min-width:938px){
+.skt-accountant-sec2-small-main-col{padding-top: 30px!important;}
+.skt-accountant-sec2-small-main-col	.elementor-widget-container, .skt-accountant-sec2-small-main-col{padding: 0px 0px 20px 0px!important;}
+}
+
+@media screen and (max-width:1300px) and (min-width:1025px){
+.skt-accountant-sec2-head h2{font-size: 48px!important;line-height: 48px!important;}
+.skt-accountant-sec3-main-head .elementor-widget-container, .skt-accountant-sec3-main-head {padding: 0px 200px 40px 200px!important;}
+.skt-accountant-sec6-main-head .elementor-widget-container, .skt-accountant-sec6-main-head {padding: 0px 200px 60px 200px!important;}
+.skt-accountant-sec8-head h2{font-size: 38px!important;line-height: 47px!important;}
+.skt-accountant-sec9-head h2 {font-size: 47px!important;line-height: 55px!important;}
+.skt-accountant-sec10-heading h2{font-size: 44px!important;line-height: 50px!important;}
+.skt-accountant-sec11-img .elementor-widget-container, .skt-accountant-sec11-img {width: 200px;height: 200px !important;}
+.skt-accountant-sec12-main-heading .elementor-widget-container, .skt-accountant-sec12-main-heading {padding: 0px 200px 50px 200px!important;}
+}
+
+
+@media screen and (max-width:1024px) and (min-width:768px){
+.skt-accountant-sec2-vedio:after{width:19%!important;}
+.skt-accountant-sec2-vedio .elementor-custom-embed-play{left: -45%!important;}
+.skt-accountant-sec13-sc .skt-home-posts-title{padding-right:0!important;}
+.skt-accountant-sec11-img .elementor-widget-container, .skt-accountant-sec11-img {width: 155px;height: 180px !important;}
+.skt-accountant-sec5-contact-sc .wpcf7-form-control-wrap{margin-right: 25px;}
+.skt-accountant-sec5-contact-sc .wpcf7-submit{background-position-x: 80% !important;}
+}
+
+@media screen and (max-width:1023px) and (min-width:768px){
+.skt-accountant-sec4-right-col{width:100%!important;}
+.skt-accountant-sec4-left-col{width:100%!important;}
+.skt-accountant-sec4-sub-title h5{text-align: center;}
+.skt-accountant-sec4-title h2{text-align: center;}
+}
+
+@media screen and (max-width:991px) and (min-width:768px){
+.skt-accountant-sec2-img-cir img{height:75px!important;width: 75px !important;}
+}
+
+@media screen and (max-width:767px) and (min-width:540px){
+.skt-accountant-sec11-col1{margin-top:0!important;}
+.skt-accountant-sec9-col{margin-top: 0 !important;}
+.skt-accountant-sec11-col1{width:47.5%!important;}
+.skt-accountant-sec11-col1-outer-col {gap: 20px!important;}
+.skt-accountant-sec5-contact-sc-main-col{width:80%!important;display: block;margin:0 auto!important;}
+.skt-accountant-sec8-counter-col{width:30%!important;}
+.skt-accountant-sec9-col{width:48%!important;}
+.skt-accountant-sec9-outer-col .e-con-inner{gap: 20px!important;}
+}
+ 
+@media screen and (max-width:767px){
+.skt-accountant-sec5-contact-sc .wpcf7-form-control-wrap{width:100%!important;}
+.skt-accountant-sec2-vedio{position: unset!important;width:100%!important;}
+.skt-accountant-sec2-vedio .elementor-custom-embed-play{top: 50%!important;left: 50%!important;transform: translate(-50%, -50%)!important;}
+.skt-accountant-sec2-vedio .elementor-custom-embed-play{width:60px!important;height:60px!important;}
+.skt-accountant-sec2-img1:after{display:none!important;}
+.skt-accountant-sec2:after{display:none!important;}
+.skt-casestudies-title{font-size: 22px!important;}
+.skt-accountant-sec5-contact-sc .wpcf7-submit{width:100%!important;}
+.skt-accountant-sec5-img{display: none!important;}
+.skt-accountant-sec5-discount .elementor-widget-container, .skt-accountant-sec5-discount {position:unset!important;}
+.skt-accountant-sec5-contact-sc .wpcf7-submit{background-image:unset!important;}
+.skt-accountant-sec8-counter .elementor-counter{align-items: center!important;}
+.skt-accountant-sec11-img .elementor-widget-container, .skt-accountant-sec11-img {width: 195px!important;height: 195px !important;}
+.skt-accountant-sec8-right-img img{width:unset!important;}
+.skt-accountant-sec5-contact-sc select{padding: 10px 5px !important;}
+.skt-accountant-sec5-contact-sc .wpcf7-form-control-wrap input{padding: 10px 5px !important;}
+}
+/* SKT Auditor */
