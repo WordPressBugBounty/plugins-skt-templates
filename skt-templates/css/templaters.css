@@ -6176,3 +6176,42 @@ transform: scale3d(1.05, 1.05, 1.05);
 .skt-accountant-sec5-contact-sc .wpcf7-form-control-wrap input{padding: 10px 5px !important;}
 }
 /* SKT Auditor */
+
+/* SKT Logistics */
+.logistics-sec2-left { position:relative !important;}
+.logistics-sec2-left::after {content: '';width: 490%;height: 100%;position: absolute;left: -413%;top: 0;background: #fac12e;}
+.logistics-sec2-left-plus .elementor-widget-container, .logistics-sec2-left-plus { width:43px !important; height:43px !important;}
+.logistics-sec3-img .elementor-widget-container, .logistics-sec3-img { width:125px !important; height:125px !important; align-content: center !important;}
+.logistics-sec3-left-img .elementor-widget-container, .logistics-sec3-left-img { width:133px !important; height:133px !important; align-content: center !important; max-width:133px !important;}
+.logistics-sec3-right { position:relative !important;}
+.logistics-sec3-right::after {content: '';width: 490%;height: 100%;position: absolute;right: -490%;top: 0;background: #ffffff;}
+.logistics-sec5-left-img1 .elementor-widget-container, .logistics-sec5-left-img1 { width:182px !important; height:182px !important; align-content: center !important; max-width:182px !important;}
+.logistics-sec7-inner2-box-img .elementor-widget-container, .logistics-sec7-inner2-box-img { width:153px !important; height:153px !important; align-content: center !important; margin:0 auto;}
+.logistics-sec7-inner2-box-img { position:relative !important;}
+.logistics-sec7-inner2-box-img::after {content: '';position: absolute;right: -201px;top: -40px;background: url(https://demosktthemes.com/free/skt-logistics/wp-content/uploads/2026/03/sec7-img-after.png);width: 241px;height: 58px;background-size: 100%;background-repeat: no-repeat;}
+.logistics-sec7-inner2-box-img.logistics-sec7-inner2-box-img-last::after { display:none;}
+@media(max-width: 767px){
+.logistics-sec2-left::after { left:0 !important; width:100% !important}
+.logistics-sec7-inner2-box-img::after { display:none !important;}
+.logistics-sec13-right-form .wpcf7-form-control-wrap:nth-child(5) { width:100% !important;}
+.logistics-sec14-inner-right-img .elementor-widget-container img, .logistics-sec14-inner-right-img img { width:auto !important;}
+.logistics-sec6-inner-left-img .elementor-widget-container img, .logistics-sec6-inner-left-img img { width:auto !important;}
+.logistics-sec4-inner2-box-img .elementor-widget-container img, .logistics-sec4-inner2-box-img img { width:auto !important;}
+.logistics-sec5-left-img2 .elementor-widget-container img, .logistics-sec5-left-img2 img { width:100% !important;}
+}
+@media(min-width: 1024px) and (max-width: 1199px){
+.logistics-sec11-mid {--width: 3% !important;}
+.logistics-sec11-right {--width: 57% !important;}
+.logistics-sec11-right-inner1-right .elementor-button {padding: 35px 20px 35px 20px !important;}
+.logistics-sec10-contact-form .wpcf7-submit { left:0 !important;}
+.logistics-sec7-inner2-box-img::after { top:-48px !important;}
+.logistics-sec6-inner-left-img .elementor-widget-container img, .logistics-sec6-inner-left-img img {width: 50% !important;}
+.logistics-sec6-inner-right-btn .elementor-button { padding:23px 50px !important;}
+.logistics-sec6-inner-right-inner1 {--margin-top: 58px !important;}
+.logistics-sec5-left-img2 .elementor-widget-container img, .logistics-sec5-left-img2 img { width:100% !important;}
+.logistics-sec8 {--padding-left: 20px !important;--padding-right: 20px !important;}
+.logistics-sec11-right-inner1  { margin-top:30px !important;}
+.logistics-sec13-right-form .wpcf7-form-control-wrap { margin-right:20px !important;}
+.logistics-inner-service-page .services-box-content .content-outer { padding:0 !important;}
+}
+/* SKT Logistics */

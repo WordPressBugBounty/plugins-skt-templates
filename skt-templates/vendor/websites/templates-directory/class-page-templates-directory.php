@@ -386,6 +386,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-logistics'              => array(
+					'title'       => __( 'SKT Logistics', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-logistics/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-logistics/skt-logistics.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-logistics/skt-logistics.json'),
+					'keywords'    => __( ' logistics, logistic, Logistics, sales logistics, movers and packers, procurement, production, recovery, recycling , procuring raw materials, warehouse, material management, distribution in factories, product management, shipping, recycling products, packaging, recycling recyclable products, recovering products, freight companies, freight forwarders, import, export, carriers, outsourced logistics, transportation, storage services, logistics department, small package, parcel delivery, air cargo, international commerce, ocean transport, bulk carriers, container ships, tankers, refrigerated ships' ),
+				),
 				'skt-auditor-elementor'              => array(
 					'title'       => __( 'SKT Auditor', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
