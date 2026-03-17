@@ -5371,14 +5371,14 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 /* SKT Decor */
 
 /* SKT Psyche */
-.skt-pyschiatrist-sec2-img .elementor-widget-container{width: 100%;height:155px!important;display: flex;align-items: center;justify-content: center;border-radius: 100px;}
+.skt-pyschiatrist-sec2-img .elementor-widget-container, .skt-pyschiatrist-sec2-img{width: 100%;height:155px!important;display: flex;align-items: center !important;justify-content: center !important;border-radius: 100px;}
 .skt-pyschiatrist-sec2:after{content: "";width: 100%;height: 28%;position: absolute;left: 0;bottom: 0px;background:#faf5ef;}
-.skt-pyschiatrist-sec4-img .elementor-widget-container{width: 150px;height: 150px!important;display: flex;align-items: center;justify-content: center;border-radius: 100%;}
+.skt-pyschiatrist-sec4-img .elementor-widget-container, .skt-pyschiatrist-sec4-img {width: 150px;height: 150px!important;display: flex;align-items: center !important;justify-content: center !important;border-radius: 100%; margin:0 auto !important;}
 .skt-pyschiatrist-sec4-img{display: flex!important;align-items: center!important;justify-content: center!important;}
 .skt-pyschiatrist-sec4-para p{margin-bottom:0!important;}
-.skt-pyschiatrist-sec4-number-hed .elementor-widget-container{align-items: center !important;display: flex !important;justify-content: center !important;width: 45px !important;height: 45px !important;border-radius: 100%;}
+.skt-pyschiatrist-sec4-number-hed .elementor-widget-container, .skt-pyschiatrist-sec4-number-hed {align-items: center !important;display: flex !important;justify-content: center !important;width: 45px !important;height: 45px !important;border-radius: 100%;}
 .skt-pyschiatrist-sec4-number-hed {margin:0 auto!important;left: 70%;transform: translateX(-50%);position: absolute!important;}
-.skt-pyschiatrist-sec5-counter .elementor-widget-container{width: 100%;height: 160px!important;display: flex;align-items: center;justify-content: center;border-radius: 100px;}
+.skt-pyschiatrist-sec5-counter .elementor-widget-container, .skt-pyschiatrist-sec5-counter {width: 100%;height: 160px!important;display: flex;align-items: center !important;justify-content: center !important;border-radius: 100px;}
 .skt-pyschiatrist-sec6-vedio .elementor-custom-embed-play{background: #3c2007;width: 98px;height: 98px;display: flex;align-items: center;justify-content: center;border-radius: 100%;border: 10px solid rgb(231, 232, 237);}
 .skt-pyschiatrist-sec6-right-col .e-con-inner{margin-left:0!important;}
 .skt-pyschiatrist-sec6-list .elementor-icon-list-icon{border-radius: 100px;padding: 14px 13px !important;background: #f6f0ea;}
@@ -5388,9 +5388,9 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 
 @media screen and (max-width:1300px) and (min-width:1025px){
 .skt-pyschiatrist-sec2-heading h2{font-size: 35px!important;}
-.skt-pyschiatrist-sec2-img .elementor-widget-container{width: 150px!important;height: 150px !important;}
+.skt-pyschiatrist-sec2-img .elementor-widget-container, .skt-pyschiatrist-sec2-img{width: 150px!important;height: 150px !important;}
 .skt-pyschiatrist-sec6-list .elementor-icon-list-text{padding-right:0!important;}
-.skt-pyschiatrist-sec5-counter .elementor-widget-container{width: 145px!important;height: 145px !important;}
+.skt-pyschiatrist-sec5-counter .elementor-widget-container, .skt-pyschiatrist-sec5-counter{width: 145px!important;height: 145px !important;}
 .skt-pyschiatrist-sec6-para .elementor-widget-container{padding:0!important;}
 .skt-pyschiatrist-sec6-head .elementor-widget-container{padding:0!important;}
 .skt-pyschiatrist-sec6-head h2{line-height:40px!important;}
@@ -5409,13 +5409,13 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 }
 
 @media screen and (max-width:1024px) and (min-width:768px){
-.skt-pyschiatrist-sec5-counter{display:block;margin:0 auto!important;}
+.skt-pyschiatrist-sec5-counter{margin:0 auto!important;}
 .skt-pyschiatrist-sec6-list .elementor-icon-list-items{column-count: 1;display: flex;flex-direction: column;gap: 20px;}
 .skt-pyschiatrist-sec6-list .elementor-icon-list-items .elementor-icon-list-item{gap: 20px!important;}
 .skt-pyschiatrist-sec6-vedio img{height: 600px!important;object-fit: cover!important;}
-.skt-pyschiatrist-sec2-img .elementor-widget-container{width: 120px;height: 120px !important;}
-.skt-pyschiatrist-sec4-img .elementor-widget-container{width: 125px;height: 125px !important;}
-.skt-pyschiatrist-sec5-counter .elementor-widget-container{width:118px!important;height:118px!important;}
+.skt-pyschiatrist-sec2-img .elementor-widget-container, .skt-pyschiatrist-sec2-img{width: 120px;height: 120px !important;}
+.skt-pyschiatrist-sec4-img .elementor-widget-container, .skt-pyschiatrist-sec4-img{width: 125px;height: 125px !important;}
+.skt-pyschiatrist-sec5-counter .elementor-widget-container, .skt-pyschiatrist-sec5-counter{width:118px!important;height:118px!important;}
 .skt-pyschiatrist-sec6-list .elementor-icon-list-text{padding-right:0!important;padding-left:0!important;}
 .skt-pyschiatrist-sec6-para p{margin-bottom:0!important;}
 .skt-pyschiatrist-sec6-vedio .elementor-custom-embed-play{width: 75px!important;height: 75px!important;}
@@ -5433,10 +5433,10 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .skt-pyschiatrist-sec6-list .elementor-icon-list-items .elementor-icon-list-item{gap: 20px!important;}
 
 .skt-pyschiatrist-sec2:after{display:none;}
-.skt-pyschiatrist-sec2-img .elementor-widget-container{width:165px!important;}
-.skt-pyschiatrist-sec2-img{display:block;margin:0 auto!important;}
-.skt-pyschiatrist-sec5-counter .elementor-widget-container{width: 160px!important;}
-.skt-pyschiatrist-sec5-counter{display:block!important;margin:0 auto!important;}
+.skt-pyschiatrist-sec2-img .elementor-widget-container, .skt-pyschiatrist-sec2-img{width:165px!important;}
+.skt-pyschiatrist-sec2-img{margin:0 auto!important;}
+.skt-pyschiatrist-sec5-counter .elementor-widget-container, .skt-pyschiatrist-sec5-counter{width: 160px!important;}
+.skt-pyschiatrist-sec5-counter{margin:0 auto!important;}
 .skt-pyschiatrist-sec6-vedio .elementor-custom-embed-play{width: 80px!important;height: 80px!important;}
 .skt-pyschiatrist-sec6-list .elementor-icon-list-text{padding-right:0!important;padding-left: 0 !important;}
 .skt-pyschiatrist-sec2-img-1 img{width:unset!important;}
@@ -6215,3 +6215,65 @@ transform: scale3d(1.05, 1.05, 1.05);
 .logistics-inner-service-page .services-box-content .content-outer { padding:0 !important;}
 }
 /* SKT Logistics */
+
+/* SKT Carpet Cleaning */
+.skt-cleaning-company-sec-4-video  .elementor-open-lightbox img{border-radius: 100%;height: 504px;object-fit: cover !important;object-position: center !important;}
+.skt-cleaning-company-sec-4-video .elementor-custom-embed-play {background:#2a4db3;width: 115px;height: 115px;display: flex;align-items: center;justify-content: center;border-radius: 100%;border: 15px solid #123aac;outline: 15px solid #eff0f5;outline-offset: 0px;}
+.skt-cleaning-company-sec-4-video, .skt-cleaning-company-sec-4-video .elementor-widget-container{overflow: visible!important;}
+.skt-cleaning-company-sec-4-video .elementor-custom-embed-play{top:unset;left: 0;bottom: 0;transform:unset;}
+.skt-cleaning-company-sec-4-video .elementor-custom-embed-play:after{content: "";width: 110px;height: 110px;position: absolute;left: -90px;border-radius: 100%;border: 3px solid #ffb400;z-index: -1;top: 0;}
+.skt-cleaning-company-sec-4-video {position:relative;}
+.skt-cleaning-company-sec-4-video:after, .skt-cleaning-company-sec-4-video > .elementor-widget-container:after{content: "";position: absolute;top: 50%;left: 50%;width: 600px;height: 600px;border: 8px solid #09008e;border-radius: 100%;border-left-color: transparent;border-bottom-color: transparent;transform: translate(-50%, -50%) rotate(45deg);}
+.skt-cleaning-company-sec-4-video:before{background: #ffb400;content: "";position: absolute;left: 47.5%;width: 30px;height: 30px;border-radius: 100%;
+  transform: translate(-50%, -50%);top: -43px;z-index: 2;}
+.skt-cleaning-company-sec-4-video .elementor-open-lightbox:after{content: "";background: #123aac;position: absolute;width: 30px;height: 30px;border-radius: 100%;transform: translate(-50%, -50%);left: 47.5%;bottom: -73px;z-index: 2;}
+.skt-cleaning-company-sec-4-img-box .elementor-image-box-img{position:relative;}
+.skt-cleaning-company-sec-4-img-box .elementor-image-box-img:after{content: "";background:#f4f6fa;position: absolute;right: 0;width:65px;height:65px;border-radius: 100%;bottom: 9px;right: -20px;z-index: 1;}
+.skt-cleaning-company-sec-4-img-box .elementor-image-box-img img{z-index: 2;position: relative;}
+
+.cleaning-company-banner{position:relative;}
+.cleaning-company-banner::before{content: '' !important; width: 39.3% !important; height: 100% !important; background-color: #fff !important; position: absolute !important; left: 0px !important; z-index: 9; opacity: 1 !important;}
+
+@media screen and ( device-width: 1024px ){
+.skt-cleaning-company-sec-4-img img{width:200px!important;}
+.skt-cleaning-company-sec-4-video  .elementor-open-lightbox img{height:auto!important;}
+.skt-cleaning-company-sec-4-video:after, .skt-cleaning-company-sec-4-video > .elementor-widget-container:after{width: 500px!important;height: 500px!important;}
+}
+
+@media screen and (max-width:1024px){
+.skt-cleaning-company-sec-4-img img{height:auto!important;}
+}
+
+@media screen and (max-width:1200px) and (min-width:1025px){
+.skt-cleaning-company-sec-4-img{left:0!important;top:0!important;}
+.skt-cleaning-company-sec-4-video, .skt-cleaning-company-sec-4-video .elementor-widget-container{width:504px!important;}
+}
+
+@media screen and (max-width:1200px) and (min-width:1024px){
+.skt-cleaning-company-sec-4-main-head-right h2{font-size: 40px!important;line-height: 45px!important;}
+.skt-cleaning-company-sec-4-video .elementor-custom-embed-play:after{width: 60px; height: 60px;left: -45px;}
+}
+
+@media screen and (max-width:1023px) and (min-width:768px){
+.skt-cleaning-company-sec-4-img{top:-15px!important;}
+.skt-cleaning-company-sec-4-img-box .elementor-image-box-img:after{display:none;}
+.skt-cleaning-company-sec-4-video .elementor-custom-embed-play:after{width: 90px!important;
+height: 90px!important;top: 10px!important;left: -50px!important;}
+.skt-cleaning-company-sec-4-video .elementor-custom-embed-play{border: 10px solid #123aac!important;
+outline: 10px solid #eff0f5!important;width: 90px!important;height: 90px!important;}
+.skt-cleaning-company-sec-4-video .elementor-custom-embed-play{left:30px!important;}
+.skt-cleaning-company-sec-4-video, .skt-cleaning-company-sec-4-video .elementor-widget-container{border-width: 12px 12px 12px 12px!important;}
+.skt-cleaning-company-sec-4-img img{width:145px!important;}
+.skt-cleaning-company-sec-4-video, .skt-cleaning-company-sec-4-video .elementor-widget-container{width: 325px!important;}
+.skt-cleaning-company-sec-4-video:after, .skt-cleaning-company-sec-4-video > .elementor-widget-container:after{width:380px!important;
+height:380px!important;}
+.skt-cleaning-company-sec-4-video .elementor-open-lightbox img{height: 300px!important;}
+.skt-cleaning-company-sec-4-video:before{top: -35px!important;}
+.skt-cleaning-company-sec-4-video .elementor-open-lightbox:after{bottom: -68px!important;}
+}
+
+@media screen and (max-width:767px) and (min-width:540px){
+.skt-cleaning-company-sec-4-icon-col1{width: 50%!important;}
+.skt-cleaning-company-sec-4-icon-col3{width: 50%!important;padding-top:0!important;}
+}
+/* SKT Carpet Cleaning */

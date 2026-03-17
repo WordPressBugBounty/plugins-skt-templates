@@ -386,6 +386,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-cleaning-company'	=> array(
+					'title'       => __( 'SKT Cleaning Company', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-cleaning-company/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-cleaning-company/skt-cleaning-company.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-cleaning-company/skt-cleaning-company.json'),
+					'keywords'    => __( ' cleaning company, Cleaning Company, Window cleaning, Pressure washing, Chimney sweeping, Ceiling and wall cleaning, restoration, Apartment cleaning, Disaster cleansing, Paver and concrete cleaners, cleaning franchise, Waste Disposal, recycle, waste disposal services, dry cleaning services, car washing, scrubbing, purifying, rubbing, laundering' ),
+				),
 				'skt-logistics'              => array(
 					'title'       => __( 'SKT Logistics', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
