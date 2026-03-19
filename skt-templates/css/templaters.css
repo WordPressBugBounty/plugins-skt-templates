@@ -1711,6 +1711,7 @@ border-radius: 0; height: 54px; padding: 0 35px; transition: all 0.2s;}
 .led-lightining-img .swiper-slide-inner img {display: block;}
 .led-lightining-img .elementor-swiper-button {width:45px; height:45px; background-color:#71beb1;}
 .led-lightining-img .elementor-swiper-button i {display: table; margin: 0 auto; position: relative; top: 10px;}
+.led-lightining-img .elementor-swiper-button svg{margin:10px 0 0 10px;}
 .led-lightining-img .elementor-swiper-button-prev {top:45%;}
 .led-lightining-img .elementor-swiper-button-next {top:55%;}
 .led-lightining-img .elementor-swiper-button-prev {left: auto;right: 0;}
@@ -1812,6 +1813,7 @@ border-radius: 0; height: 54px; padding: 0 35px; transition: all 0.2s;}
 
 /* Summer Camp*/
 .summercamp-camping-list .elementor-image-box-img {width: 212px !important; height: 212px; padding-top: 50px; margin:0 auto; background-color:#ffffff; border-radius:100%; box-shadow: 0 0 50px #efeded;}
+.summercamp-camping-list .elementor-image-box-img img{display:inherit !important;}
 .summercamp-camping-list:hover .elementor-image-box-img {background-color:#ff9600;}
 .summercamp-camping-list:hover .elementor-image-box-img img {filter: invert(100%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(100%);}
 /* Summer Camp*/
@@ -4874,8 +4876,8 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .skt-ad-agency-sec3-right-title { position: absolute !important;left: -198px !important;transform: rotate(-90deg);bottom: 150px;}
 .skt-ad-agency-sec3-left-title1 { position:relative;}
 .skt-ad-agency-sec3-left-title1::after {content: '';position: absolute;right: -110px;top: 30px;width: 249px;height: 77px;    background: url(https://demosktthemes.com/free/ad-agency-lite/wp-content/uploads/2024/05/sec-1-arrow-before.png);background-repeat: no-repeat;background-size: 100%;}
-.skt-ad-agency-sec4-box-img .elementor-widget-container {width: 169px !important;height: 169px !important; position:relative; top:0; margin:0 auto;transition: all .5s ease-in-out !important;}
-.skt-ad-agency-sec4-box-img .elementor-widget-container img { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:100px; height:95px;object-fit: cover;}
+.skt-ad-agency-sec4-box-img .elementor-widget-container, .skt-ad-agency-sec4-box-img{width: 169px !important;height: 169px !important; position:relative; top:0; margin:0 auto;transition: all .5s ease-in-out !important;}
+.skt-ad-agency-sec4-box-img .elementor-widget-container img, .skt-ad-agency-sec4-box-img img{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:100px; height:95px;object-fit: cover;}
 .skt-ad-agency-sec4-box-img .elementor-widget-container:hover { top:-15px;transition: all .5s ease-in-out;background: linear-gradient(white, white) padding-box, linear-gradient(to right, #523dd0, #19b7f0) border-box;border: 2px solid transparent;}
 .skt-ad-agency-sec4-box-img .elementor-widget-container::after {content: '';position: absolute;bottom: -50px;left: 50%;transform: translateX(-50%); background: radial-gradient(50% 50%, #878787 0%, #fff 100%);width: 135px;height: 14px;border-radius: 100%; opacity:0;transition: all .5s ease-in-out;}
 .skt-ad-agency-sec4-box-img .elementor-widget-container:hover::after { opacity:1;transition: all .5s ease-in-out;}
@@ -4883,7 +4885,7 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .skt-ad-agency-sec10-title .elementor-widget-container {width: 100%;max-width: 1200px;margin: 0 auto;}
 .skt-ad-agency-sec10-text .elementor-widget-container {width: 100%;max-width: 1200px;margin: 0 auto;}
 .skt-ad-agency-sec10-img .elementor-widget-container {width: 100%;max-width: 1200px;margin: 0 auto; margin-bottom:-25px;}
-.skt-ad-agency-sec11-box-counter .elementor-widget-container { width:125px !important; height:125px !important; margin:0 auto; border-radius:100%;}
+.skt-ad-agency-sec11-box-counter .elementor-widget-container, .skt-ad-agency-sec11-box-counter{ width:125px !important; height:125px !important; margin:0 auto; border-radius:100%;}
 .skt-ad-agency-sec11-box1-title .elementor-widget-container { position:relative !important;}
 .skt-ad-agency-sec11-box1-title .elementor-widget-container::after {content: '';position: absolute;right: -15px;top: -40px;width: 244px;height: 45px;background: url(https://demosktthemes.com/free/ad-agency-lite/wp-content/uploads/2024/05/counter-arrow.png);background-repeat: no-repeat;background-size: 100%;}
 .skt-ad-agency-sec13-tab .elementor-tab-title { background:#ffffff; border-radius:50px; margin-bottom:20px;padding: 30px 50px !important;}
@@ -4951,7 +4953,7 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .vet-clinic-love-pet-content .elementor-widget-wrap.elementor-element-populated {width:575px;}
 .vet-clinic-love-pet-img .elementor-widget-wrap.elementor-element-populated {height:748px; overflow:hidden;}
 .vet-clinic-love-pet-box .elementor-counter-title {width:40%; margin:0 auto !important; padding-top:15px !important; text-align:center;}
-.vet-clinic-love-pet-box-outer .elementor-container {margin-left:-100px !important;}
+.vet-clinic-love-pet-box-outer .elementor-container, .vet-clinic-love-pet-box-outer{margin-left:-110px !important; margin-top:95px !important;}
 
 .vet-clinic-love-pet-video img {visibility:hidden !important;}
 .vet-clinic-love-pet-video{width:100px !important; height:110px; background:#002555 !important; position:absolute !important; z-index:99; right:0; bottom: 260px; margin-bottom:0px !important;}
@@ -4964,6 +4966,12 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .vet-clinic-tab .elementor-accordion-item {border-left:0px !important; border-right:0px !important;}
 .vet-clinic-choose-box .elementor-image-box-img {width:130px !important; height:130px; background:#fff; border-radius:100%; align-items:center !important; display:flex !important; justify-content:center !important; margin:0 auto !important; margin-bottom: 25px !important;}
 .vet-clinic-choose-box:hover .elementor-image-box-title {color:#fff !important;}
+
+@media screen and (max-width:47.938em) and (min-width:20.000em) {
+.vet-clinic-special-care-member .elementor-image-box-img img{display:inherit !important;}
+.vet-clinic-love-pet-box-outer .elementor-container, .vet-clinic-love-pet-box-outer{margin:0 !important;}
+}
+
 @media screen and (max-width:63.938em) and (min-width:48.000em) {
 .vet-clinic-love-pet-img {width:100% !important;}
 .vet-clinic-love-pet-content-outer {width:100% !important;}
@@ -4974,6 +4982,7 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .vet-clinic-choose-left, .vet-clinic-choose-right {width:100% !important;}
 .vet-clinic-choose-right{ padding-top:40px !important;}
 .vet-clinic-blog-content, .vet-clinic-blog {width:100% !important;}
+.vet-clinic-love-pet-box-outer .elementor-container, .vet-clinic-love-pet-box-outer{margin-left:0 !important; margin-top:-27px !important;}
 }
 
 @media screen and (max-width:72.438em) and (min-width:63.250em) {
@@ -5186,8 +5195,8 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .skt-decor-sec2-left { position:relative;}
 .skt-decor-sec2-left .elementor-custom-embed-image-overlay{width: 130px;height: 130px;border-radius: 100%;background: #fff;align-items: center !important;display: flex !important;justify-content: center !important;box-shadow: 0px 0px 90px 0px rgba(0, 0, 0, 0.1);}
 .skt-decor-sec2-left .elementor-custom-embed-image-overlay img {width: 28px !important;height: 36px;}
-.skt-decor-sec2-right-iconbox .elementor-widget-image .elementor-widget-container {width: 154px !important;height: 154px !important; margin: 0 auto;border-radius: 100%;}
-.skt-decor-sec2-right-iconbox .elementor-widget-image .elementor-widget-container img { margin-top:40px;}
+.skt-decor-sec2-right-iconbox .elementor-widget-image .elementor-widget-container, .skt-decor-sec2-right-iconbox .elementor-widget-image{width: 154px !important;height: 154px !important; margin: 0 auto;border-radius: 100%;}
+.skt-decor-sec2-right-iconbox .elementor-widget-image .elementor-widget-container img, .skt-decor-sec2-right-iconbox img{ margin-top:40px;}
 .skt-decor-sec2-left-video {width: auto !important;position: absolute !important;top: 60%;right: -120px;transform: translateY(-50%);}
 .skt-decor-sec2-left-video .elementor-open-lightbox { padding:50px;}
 .skt-decor-sec2-left::after {content: '';position: absolute;right: -100px;bottom: 6px;width: 0;height: 0;border-top: 174px solid #1c130e;border-right: 100px solid transparent;}
