@@ -4,7 +4,7 @@ Tags: gutenberg, elementor, templates, page builder, one click import
 Requires at least: 5.0
 Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 6.30.3
+Stable tag: 6.30.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -131,6 +131,9 @@ Yes if your site import is done and you are currently editing via Elementor or i
 No. The plugin is lightweight and loads only when needed.
 
 == Changelog ==
+
+= 6.30.4 =
+* Fixed Elementor Optimize Markup issue in the following Elementor templates: Garden Care Lite, Nail Salon Lite, Furniture Lite, SKT Nutritionist Coach, SKT Barbecue, SKT Gardening, Construction, Solar Energy, Adventure Lite, FilmMaker, SKT Hotel, Maintenance Services
 
 = 6.30.3 =
 * Resolved the Elementor markup issue in the following Elementor templates: Psyche Lite, SKT Decoration, Juice and Shakes, SKT Butcher Lite, SKT Lights, SKT Camping, Gym Master, SKT Movie Maker, Therapist, Windows And Doors, SKT Enterprise, SKT Roofing Lite, Vet Clinic Lite, Parallax Me, SKT Yogi Lite, Ad Agency Lite
