@@ -3,7 +3,7 @@
  * Plugin Name: SKT Templates
  * Plugin URI: https://www.sktthemes.org/shop/ready-to-import-wordpress-sites/
  * Description: SKT Templates is an Elementor and Gutenberg themes library and allows you to select from over 100s of designs to choose from. All you need to do is view the demo and then select import and install. It takes care of the importing and allows you to edit the template from within your dashboard. It works with any popular theme or you can choose to use any theme from our <a href="https://www.sktthemes.org/product-category/free-wordpress-themes/" rel="nofollow ugc">SKT Themes free.</a> These templates allow you to import them into your existing website and edit them and use them to build professional websites. Importing a single page template is very easy and you can do it on your existing WordPress website as well.
- * Version: 6.30.4
+ * Version: 6.30.6
  * Author: SKT Themes
  * Author URI: https://www.sktthemes.org
  * Text Domain: skt-templates
@@ -16,31 +16,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-if ( ! function_exists( 'st_fs' ) ) {
-	function st_fs() {
-		global $st_fs;
-		if ( ! isset( $st_fs ) ) {
-			require_once dirname(__FILE__) . '/freemius/start.php';
-			$st_fs = fs_dynamic_init( array(
-				'id'         => '9291',
-				'slug'       => 'skt-templates',
-				'type'       => 'plugin',
-				'public_key' => 'pk_6353fc4cd917b8f995b2c4a5ddac7',
-				'is_premium' => false,
-				'has_addons' => false,
-				'has_paid_plans' => false,
-				'menu'       => array(
-					'first-path' => 'admin.php?page=skt_template_directory',
-					'account'    => false,
-					'support'    => false,
-				),
-			) );
-		}
-		return $st_fs;
-	}
-	st_fs();
-	do_action( 'st_fs_loaded' );
-}
+// Freemius disabled to prevent fatal error
 
 // Set up the activation redirect
 register_activation_hook( __FILE__, 'skt_templates_activate' );
@@ -54,6 +30,12 @@ function skt_templates_activate() {
 		return;
 	}
 	add_option( 'skt_templates_activation_redirect', wp_get_current_user()->ID );
+	// Reset welcome banner so it shows again on each fresh activation.
+	$uid = get_current_user_id();
+	if ( $uid ) {
+		delete_user_meta( $uid, 'skt_welcome_dismissed' );
+		delete_user_meta( $uid, 'skt_templates_ignore_visit_dashboard_notice' );
+	}
 }
 
 /**

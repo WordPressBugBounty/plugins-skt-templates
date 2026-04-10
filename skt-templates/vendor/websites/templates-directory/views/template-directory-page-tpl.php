@@ -1,13 +1,6 @@
 <?php
 /**
  * The View for Rendering the Template Directory Main Dashboard Page.
- *
- * @link       https://www.sktthemes.org
- * @since      1.0.0
- *
- * @package    SktThemes
- * @subpackage SktThemes/PageTemplatesDirectory
- * @codeCoverageIgnore
  */
 $preview_url = add_query_arg( 'sktb_templates', '', home_url() ); // Define query arg for custom endpoint.
 $html = '';
@@ -234,7 +227,7 @@ if ($mode !== 'action' && $total_pages > 1) :
 					</div>
 					<div class="theme-details">
                     	<?php esc_html_e('Use this layout for your business or personal website. Just click on the import to start using this template for your next website. All the blocks as shown with images will appear on your edit area.', 'skt-templates');?>   
-                        <p><a href="<?php echo esc_url('https://www.sktthemes.org/shop/all-themes/');?>" target="_blank"><?php esc_html_e('Buy All Themes', 'skt-templates'); ?></a><i><?php esc_html_e( ' (399+ templates) for just $69. Features include inner pages, page/post layouts, header/footer layouts, site layout, color/font options and 1 year unlimited support.', 'skt-templates' ); ?></i></p>
+                        <p><a href="<?php echo esc_url('https://www.sktthemes.org/shop/all-themes/');?>" target="_blank"><?php esc_html_e('Buy All Themes', 'skt-templates'); ?></a><i><?php esc_html_e( ' (420+ templates) for just $69. Features include inner pages, page/post layouts, header/footer layouts, site layout, color/font options and 1 year unlimited support.', 'skt-templates' ); ?></i></p>
 					</div>
 					<?php
 					if ( ! empty( $properties['required_plugins'] ) && is_array( $properties['required_plugins'] ) ) { ?>

@@ -6292,3 +6292,75 @@ height:380px!important;}
 .skt-cleaning-company-sec-4-icon-col3{width: 50%!important;padding-top:0!important;}
 }
 /* SKT Carpet Cleaning */
+
+/* SKT Eatsy */
+.skt-eatsy-pro-sec2-left-inner-img { width:133px !important; height:133px !important;align-content: center !important; margin:0 auto !important;}
+.skt-eatsy-pro-sec2-right-img  {position:relative !important;}
+.skt-eatsy-pro-sec2-right-img::after {content: '';position: absolute;left: -50px;top: 50%;transform: translateY(-50%);width: 13%;    height: 70%;background: #ffffff;border-radius: 20px 0 0 20px;z-index: -1;}
+.skt-eatsy-pro-sec3-inner-box .elementor-heading-title span { font-size:16px !important; margin:0 10px !important;}
+.skt-eatsy-pro-sec4-left-counter { width:197px !important; height:197px !important;border-radius: 100%;align-content: center !important;}
+.skt-eatsy-pro-sec4-left-counter .elementor-counter-number-suffix {font-size:26px !important; margin-left:5px; margin-top:8px;}
+.skt-eatsy-pro-sec4-left-counter .elementor-counter-number-suffix span { display:block !important;}
+.skt-eatsy-pro-sec4-left { position:relative !important;}
+.skt-eatsy-pro-sec4-left-counter { position:absolute !important; right:-50px; bottom:10px;}
+.skt-eatsy-pro-sec4-right-inner-title .elementor-heading-title span {font-size: 24px;font-weight: 500;text-decoration: line-through;letter-spacing: -0.6px;color: #A6A49D; margin-left:20px; position:relative; top:-5px;}
+@-webkit-keyframes qodefBounce {
+ 0%,
+ 100% {
+  -webkit-transform:translateY(0);
+  transform:translateY(0);
+ }
+ 50% {
+  -webkit-transform:translateY(-5px);
+  transform:translateY(-5px);
+ }
+}
+.skt-eatsy-pro-sec4-left img{animation: pizza 40s linear infinite;}
+
+@keyframes pizza {
+ 0%{
+    transform: rotate(0deg);
+   }
+100%{
+    transform: rotate(360deg);
+   }
+}
+
+@media screen and (max-width: 29.938em) {
+.skt-eatsy-pro-sec4-left { overflow:hidden !important;}
+.skt-eatsy-pro-sec3-inner-box-leftimg img, .skt-eatsy-pro-sec3-inner-box-center img, .skt-eatsy-pro-sec3-inner-box-rightimg img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec4-left img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec7-left-icon-img img {width: auto !important;height: auto !important;}
+}
+
+@media screen and (max-width:47.938em) and (min-width:30.000em) {
+.skt-eatsy-pro-sec2-right-img::after { display:none;}
+.skt-eatsy-pro-sec4-left-counter {right: 5px;}
+.elementor-element.skt-eatsy-pro-sec4-left-counter {width: 137px !important;height: 137px !important;}
+.elementor-element.skt-eatsy-pro-sec4-left-counter .elementor-counter-number-suffix {font-size: 17px !important;}
+.skt-eatsy-pro-sec4-left-counter { right:5px !important;}
+.skt-eatsy-pro-sec2-left-inner-column { width:29.5% !important;}
+.skt-eatsy-pro-sec2-left-inner-img img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec3-inner-box-leftimg img, .skt-eatsy-pro-sec3-inner-box-center img, .skt-eatsy-pro-sec3-inner-box-rightimg img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec4-left img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec6-inner-box-img img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec7-left-icon-img img {width: auto !important;height: auto !important;}
+}
+
+@media screen and (max-width:63.938em) and (min-width:48.000em) {
+.skt-eatsy-pro-sec2-left-inner-img img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec4-left img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec7-left-icon-img img {width: auto !important;height: auto !important;}
+}
+
+@media screen and (max-width:72.438em) and (min-width:63.250em) {
+.skt-eatsy-pro-sec4-left { overflow:hidden !important;}
+.skt-eatsy-pro-sec4-right-inner2-left { width:50% !important;}
+.skt-eatsy-pro-sec4-right-inner2 {--margin-top: 50px !important;--column-gap: 0 !important;}
+.skt-eatsy-pro-sec2-left-inner-img img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec3-inner-box-leftimg img, .skt-eatsy-pro-sec3-inner-box-center img, .skt-eatsy-pro-sec3-inner-box-rightimg img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec4-left img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec7-left-icon-img img {width: auto !important;height: auto !important;}
+.skt-eatsy-pro-sec8-right-box-img img {width: auto !important;height: auto !important;}	
+}
+/* SKT Eatsy */

@@ -165,6 +165,7 @@ class Skt_Templates {
 
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'load_modules' );
 		$this->loader->add_action( 'admin_init', $plugin_admin, 'visit_dashboard_notice_dismiss' );
+		$this->loader->add_action( 'wp_ajax_skt_dismiss_welcome', $plugin_admin, 'ajax_dismiss_welcome' );
 		$this->loader->add_action( 'admin_menu', $plugin_admin, 'menu_pages' );
 		$this->loader->add_action( 'admin_notices', $plugin_admin, 'visit_dashboard_notice' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );

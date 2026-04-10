@@ -34,7 +34,10 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 		protected function init() {
 			add_action( 'rest_api_init', array( $this, 'register_endpoints' ) );
 			add_action( 'rest_api_init', array( $this, 'register_endpoints_gutenberg' ) );
-			
+
+			// Boot the Elementor panel integration (widget category + browser modal).
+			add_action( 'init', array( $this, 'load_elementor_panel' ), 20 );
+
 			//Add dashboard menu page.
 			add_action( 'admin_menu', array( $this, 'add_menu_page' ), 100 );
 			//Add rewrite endpoint.
@@ -127,6 +130,14 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 			register_rest_route( $this->slug, '/fetch_templates', array(
 				'methods'             => 'POST',
 				'callback'            => array( $this, 'fetch_templates' ),
+				'permission_callback' => function () {
+					return current_user_can( 'manage_options' );
+				},
+			) );
+			// New endpoint: import template sections INTO an existing page (appends, no new page created).
+			register_rest_route( $this->slug, '/import_into_page', array(
+				'methods'             => 'POST',
+				'callback'            => array( $this, 'import_into_page' ),
 				'permission_callback' => function () {
 					return current_user_can( 'manage_options' );
 				},
@@ -386,6 +397,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-easty'	=> array(
+					'title'       => __( 'SKT Eatsy', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-eatsy/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-eatsy/skt-eatsy.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-eatsy/skt-eatsy.json'),
+					'keywords'    => __( ' food delivery, meal delivery, online food ordering, restaurant delivery, takeaway service, food courier, home food delivery, food ordering app, express meal service, local food delivery, contactless delivery, fast food delivery, food delivery platform, meal service, doorstep delivery, delivery restaurant, food delivery app, instant food delivery, grocery and food delivery, hot meal delivery, eatsy, Eatsy, eat' ),
+				),
 				'skt-cleaning-company'	=> array(
 					'title'       => __( 'SKT Cleaning Company', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
@@ -2552,6 +2572,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 			$elementor_edit_mode_meta = get_post_meta( $template_id, '_elementor_edit_mode' );
 			$elementor_css_meta       = get_post_meta( $template_id, '_elementor_css' );
 
+			// ── Sideload all remote images into the local media library ─────────────
+			if ( ! empty( $elementor_data_meta[0] ) ) {
+				$el_data_arr = json_decode( $elementor_data_meta[0], true );
+				if ( is_array( $el_data_arr ) ) {
+					$el_data_arr      = $this->skt_replace_media_urls( $el_data_arr, 0 );
+					$elementor_data_meta[0] = wp_json_encode( $el_data_arr );
+				}
+			}
+
 			$elementor_metas = array(
 				'_elementor_data'      => ! empty( $elementor_data_meta[0] ) ? wp_slash( $elementor_data_meta[0] ) : '',
 				'_elementor_version'   => ! empty( $elementor_ver_meta[0] ) ? $elementor_ver_meta[0] : '',
@@ -2587,6 +2616,268 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 			), admin_url( 'post.php' ) );
 
 			return ( $redirect_url );
+		}
+
+		/**
+		 * Import template sections INTO an existing page (appends to current page content).
+		 * Called from the Elementor panel – does NOT create a new page.
+		 *
+		 * @param \WP_REST_Request $request
+		 * @return \WP_REST_Response|string
+		 */
+		public function import_into_page( \WP_REST_Request $request ) {
+			if ( ! defined( 'ELEMENTOR_VERSION' ) ) {
+				return new \WP_REST_Response( array( 'success' => false, 'message' => 'no-elementor' ), 200 );
+			}
+
+			$params       = $request->get_params();
+			$template_url = isset( $params['template_url'] ) ? esc_url_raw( $params['template_url'] ) : '';
+			$template_name = isset( $params['template_name'] ) ? sanitize_text_field( $params['template_name'] ) : '';
+			$post_id      = isset( $params['post_id'] ) ? intval( $params['post_id'] ) : 0;
+
+			if ( ! $template_url || ! $post_id ) {
+				return new \WP_REST_Response( array( 'success' => false, 'message' => 'missing-params' ), 200 );
+			}
+
+			// Verify the target post exists and user can edit it.
+			$post = get_post( $post_id );
+			if ( ! $post || ! current_user_can( 'edit_post', $post_id ) ) {
+				return new \WP_REST_Response( array( 'success' => false, 'message' => 'no-permission' ), 200 );
+			}
+
+			require_once( ABSPATH . 'wp-admin/includes/file.php' );
+			require_once( ABSPATH . 'wp-admin/includes/image.php' );
+
+			// Download and parse the template JSON.
+			$tmp_file = download_url( $template_url );
+			if ( is_wp_error( $tmp_file ) ) {
+				return new \WP_REST_Response( array( 'success' => false, 'message' => 'download-failed' ), 200 );
+			}
+
+			$json_content = file_get_contents( $tmp_file );
+			@unlink( $tmp_file );
+
+			if ( ! $json_content ) {
+				return new \WP_REST_Response( array( 'success' => false, 'message' => 'empty-file' ), 200 );
+			}
+
+			$template_data = json_decode( $json_content, true );
+			if ( json_last_error() !== JSON_ERROR_NONE || ! is_array( $template_data ) ) {
+				return new \WP_REST_Response( array( 'success' => false, 'message' => 'invalid-json' ), 200 );
+			}
+
+			// Extract the sections array — Elementor JSON can be a direct array or wrapped in content/data key.
+			$new_sections = array();
+			if ( isset( $template_data['content'] ) && is_array( $template_data['content'] ) ) {
+				$new_sections = $template_data['content'];
+			} elseif ( isset( $template_data[0] ) ) {
+				$new_sections = $template_data;
+			}
+
+			if ( empty( $new_sections ) ) {
+				return new \WP_REST_Response( array( 'success' => false, 'message' => 'no-sections' ), 200 );
+			}
+
+			// Load existing Elementor data for this page.
+			$existing_raw = get_post_meta( $post_id, '_elementor_data', true );
+			$existing_sections = array();
+			if ( ! empty( $existing_raw ) ) {
+				$decoded = json_decode( $existing_raw, true );
+				if ( is_array( $decoded ) ) {
+					$existing_sections = $decoded;
+				}
+			}
+
+			// ── Sideload all remote images into the local media library ─────────────
+			$new_sections = $this->skt_replace_media_urls( $new_sections, $post_id );
+
+			// Re-generate IDs for the new sections so there are no collisions.
+			$new_sections = $this->regenerate_elementor_ids( $new_sections );
+
+			// APPEND new sections after existing ones.
+			$merged = array_merge( $existing_sections, $new_sections );
+
+			// Persist back to the page.
+			$merged_json = wp_slash( wp_json_encode( $merged ) );
+			update_post_meta( $post_id, '_elementor_data', $merged_json );
+			update_post_meta( $post_id, '_elementor_edit_mode', 'builder' );
+
+			// Clear Elementor CSS cache for this page.
+			\Elementor\Plugin::$instance->files_manager->clear_cache();
+
+			return new \WP_REST_Response( array( 'success' => true, 'post_id' => $post_id ), 200 );
+		}
+
+		/**
+		 * Download a remote image and sideload it into the WordPress media library.
+		 * Returns the new local URL on success, or the original URL on failure.
+		 * Skips images that are already hosted on this site.
+		 *
+		 * @param string $url     Remote image URL.
+		 * @param int    $post_id Post to attach the attachment to (0 = unattached).
+		 * @return string Local URL or original URL if sideload failed.
+		 */
+		private function skt_import_media( $url, $post_id = 0 ) {
+			if ( empty( $url ) ) {
+				return $url;
+			}
+
+			// Skip data URIs.
+			if ( strpos( $url, 'data:' ) === 0 ) {
+				return $url;
+			}
+
+			// Skip images already on this site.
+			$site_url = trailingslashit( get_site_url() );
+			if ( strpos( $url, $site_url ) === 0 ) {
+				return $url;
+			}
+
+			// Check if we already imported this exact remote URL in a previous run
+			// (stored as post_meta on the attachment).
+			$existing_attachments = get_posts( array(
+				'post_type'      => 'attachment',
+				'posts_per_page' => 1,
+				'meta_query'     => array(
+					array(
+						'key'   => '_skt_source_url',
+						'value' => $url,
+					),
+				),
+			) );
+
+			if ( ! empty( $existing_attachments ) ) {
+				return wp_get_attachment_url( $existing_attachments[0]->ID );
+			}
+
+			require_once ABSPATH . 'wp-admin/includes/file.php';
+			require_once ABSPATH . 'wp-admin/includes/image.php';
+			require_once ABSPATH . 'wp-admin/includes/media.php';
+
+			// Build a file array for media_handle_sideload.
+			$tmp = download_url( $url );
+			if ( is_wp_error( $tmp ) ) {
+				return $url; // Network error — keep original.
+			}
+
+			$file_array = array(
+				'name'     => basename( strtok( $url, '?' ) ),
+				'tmp_name' => $tmp,
+			);
+
+			$attachment_id = media_handle_sideload( $file_array, $post_id );
+
+			// Clean up temp file if sideload failed.
+			if ( is_wp_error( $attachment_id ) ) {
+				@unlink( $tmp );
+				return $url;
+			}
+
+			// Store the original remote URL so we can skip re-downloading later.
+			update_post_meta( $attachment_id, '_skt_source_url', $url );
+
+			return wp_get_attachment_url( $attachment_id );
+		}
+
+		/**
+		 * Recursively walk Elementor JSON data and replace every remote image URL
+		 * with a locally-sideloaded copy.  Handles all widget setting keys that
+		 * Elementor uses for images (url, background_image, src, image, etc.).
+		 *
+		 * @param mixed $data    Array of Elementor elements (or any nested value).
+		 * @param int   $post_id Post ID to attach imported media to.
+		 * @return mixed The same structure with URLs rewritten.
+		 */
+		private function skt_replace_media_urls( $data, $post_id = 0 ) {
+    if ( ! is_array( $data ) ) {
+        return $data;
+    }
+
+    // Keys in Elementor widget settings that hold image URLs directly.
+    $url_keys = array( 'url', 'src', 'image_url', 'background_image_url' );
+
+    // Keys that hold an array with a 'url' sub-key (Elementor image control).
+    $image_control_keys = array(
+        'image', 'background_image', 'logo', 'photo', 'thumbnail',
+        'site_logo', 'image_hover', 'background_overlay_image',
+    );
+
+    foreach ( $data as $key => &$value ) {
+        if ( is_array( $value ) ) {
+
+            // Elementor image control: { url: '...', id: N, alt: '...' }
+            if ( in_array( $key, $image_control_keys, true ) 
+                && isset( $value['url'] ) 
+                && is_string( $value['url'] ) 
+                && ! empty( $value['url'] ) ) {
+
+                $original_url = $value['url'];
+                $local_url    = $this->skt_import_media( $original_url, $post_id );
+
+                $value['url'] = $local_url;
+
+                // Update attachment ID only if URL changed
+                if ( $local_url && $local_url !== $original_url ) {
+                    $att_id = attachment_url_to_postid( $local_url );
+                    if ( $att_id ) {
+                        $value['id'] = $att_id;
+                    }
+                }
+
+            } else {
+                // Recurse into nested arrays
+                $value = $this->skt_replace_media_urls( $value, $post_id );
+            }
+
+        } elseif ( is_string( $value ) ) {
+
+            // Direct URL string in known keys
+            if ( in_array( $key, $url_keys, true ) 
+                && ! empty( $value ) 
+                && filter_var( $value, FILTER_VALIDATE_URL ) ) {
+
+                if ( preg_match( '/\.(jpe?g|png|gif|webp|svg|bmp|tiff?)$/i', strtok( $value, '?' ) ) ) {
+                    $value = $this->skt_import_media( $value, $post_id );
+                }
+            }
+
+            //CSS background-image URLs
+            if ( $key === 'custom_css' || $key === 'background_css' ) {
+                $value = preg_replace_callback(
+                    "/url\\(['\"]?(https?:\\/\\/[^'\")]+\\.(jpe?g|png|gif|webp|svg|bmp))['\"]?\\)/i",
+                    function( $matches ) use ( $post_id ) {
+                        $local = $this->skt_import_media( $matches[1], $post_id );
+                        return 'url("' . $local . '")';
+                    },
+                    $value
+						);
+					}
+				}
+			}
+		
+			unset( $value ); // break reference
+		
+			return $data;
+		}
+
+		/**
+		 * Recursively regenerate Elementor element IDs to avoid conflicts when
+		 * appending imported sections to an existing page.
+		 *
+		 * @param array $elements
+		 * @return array
+		 */
+		private function regenerate_elementor_ids( $elements ) {
+			if ( ! is_array( $elements ) ) {
+				return $elements;
+			}
+			foreach ( $elements as &$element ) {
+				$element['id'] = substr( md5( uniqid( rand(), true ) ), 0, 7 );
+				if ( ! empty( $element['elements'] ) && is_array( $element['elements'] ) ) {
+					$element['elements'] = $this->regenerate_elementor_ids( $element['elements'] );
+				}
+			}
+			return $elements;
 		}
 
 		/**
@@ -2675,6 +2966,18 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 			if ( class_exists( '\SktThemes\FullWidthTemplates' ) ) {
 				\SktThemes\FullWidthTemplates::instance();
 			}
+		}
+
+		/**
+		 * Boot the Elementor panel integration (widget category + template browser modal).
+		 * Only loads when Elementor is active.
+		 */
+		public function load_elementor_panel() {
+			if ( ! defined( 'ELEMENTOR_VERSION' ) ) {
+				return;
+			}
+			require_once dirname( __FILE__ ) . '/class-skt-elementor-panel.php';
+			\SktThemes\SktElementorPanel::instance();
 		}
 
 		/**

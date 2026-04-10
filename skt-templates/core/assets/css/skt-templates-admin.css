@@ -474,7 +474,8 @@ html {
 }
 
 .sktb-wrapper h2 {
-	font-size: 4rem;
+	font-size: 2rem;
+	font-weight:400;
 }
 
 .sktb-wrapper h3 {
@@ -3966,21 +3967,20 @@ body.toplevel_page_skt_template_import:after{content:'Importing Please Wait'; po
 }
 
 /* Video */
-.sktb-video-wrapper {
+
+.skt-video-wrapper {
     position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 12px;
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px; /* control max width */
+    margin: 0 auto; /* center horizontally */
+    aspect-ratio: 16 / 9; /* modern responsive ratio */
 }
 
-.sktb-video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+.skt-video-wrapper iframe {
     width: 100%;
     height: 100%;
+    border-radius: 12px; /* smooth modern look */
+	margin-bottom:20px;
 }
 
 /* Content */
