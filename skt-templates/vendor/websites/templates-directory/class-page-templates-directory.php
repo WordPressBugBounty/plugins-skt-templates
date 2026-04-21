@@ -397,6 +397,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-chemical'	=> array(
+					'title'       => __( 'SKT Chemical', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-chemical/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-chemical/skt-chemical.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-chemical/skt-chemical.json'),
+					'keywords'    => __( ' chemical, Chemical, SKT Chemical, skt chemical, chemical production, pharmaceutical plants, industrial processing factories, gas companies, oil companies, energy companies, research laboratories, petrochemical suppliers, pesticide companies, fertilizer companies, coatings manufacturers, paint manufacturers, industrial raw materials suppliers, chemical manufacturing industry, pharma manufacturing units, oil and gas industry, industrial chemical suppliers, agrochemical companies, specialty chemicals, bulk chemical production' ),
+				),
 				'skt-easty'	=> array(
 					'title'       => __( 'SKT Eatsy', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),

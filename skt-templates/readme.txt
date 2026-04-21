@@ -4,7 +4,7 @@ Tags: gutenberg, elementor, templates, page builder, one click import
 Requires at least: 5.0
 Tested up to: 6.9
 Requires PHP: 5.6
-Stable tag: 6.30.6
+Stable tag: 6.30.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -131,6 +131,9 @@ Yes if your site import is done and you are currently editing via Elementor or i
 No. The plugin is lightweight and loads only when needed.
 
 == Changelog ==
+
+= 6.30.7 =
+* Added SKT Chemical in Elementor Templates.
 
 = 6.30.6 =
 New Feature: Import templates directly inside Elementor with one click. No page switching—just open the editor, click “SKT Templates”, and instantly insert from 200+ ready templates.

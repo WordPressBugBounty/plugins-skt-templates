@@ -117,7 +117,7 @@
 
 					var btn = $(
 						'<button id="skt-editor-btn" class="skt-editor-toolbar-btn" title="Browse Free SKT Templates">' +
-							'<img src="/wp-content/plugins/skt-templates/images/logo.png" width="15" height="15" />' +
+							'<img src="' + sktTemplates.pluginUrl + 'images/logo.png" width="15" height="15" />' +
 							'<span class="skt-btn-label"> SKT Templates</span>' +
 						'</button>'
 					);

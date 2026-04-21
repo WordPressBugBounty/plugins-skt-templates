@@ -79,6 +79,14 @@ if ( ! class_exists( '\SktThemes\SktElementorPanel' ) ) {
 				'1.0.0',
 				true
 			);
+			
+			wp_localize_script(
+				'skt-elementor-panel',
+				'sktTemplates',
+				array(
+					'pluginUrl' => plugins_url('/', dirname(__FILE__, 3)),
+				)
+			);			
 
 			wp_localize_script(
 				'skt-elementor-panel',
@@ -98,7 +106,7 @@ if ( ! class_exists( '\SktThemes\SktElementorPanel' ) ) {
 						'searchPlaceholder' => __( 'Find Your Template', 'skt-templates' ),
 					),
 				)
-			);
+			);						
 		}
 
 		// ------------------------------------------------------------------ //
