@@ -5,6 +5,9 @@
 .elementor-icon-box-title{margin: 0;}
 .page-template-builder-fullwidth-std section{padding:0;}
 .elementor-widget-video .elementor-wrapper.elementor-open-lightbox {--video-aspect-ratio: initial !important;}
+.has-text-align-center, .aligncenter{text-align:center;}
+.has-text-align-right, .alignright{text-align:right;}
+.has-text-align-left, .alignleft{text-align:left;}
 /* Common CSS End*/
 
 /* MyDog */
@@ -2855,8 +2858,8 @@ padding-bottom:10px !important; transition: 0.3s;}
 .specialist-about-img1 img {width:85% !important;}
 .specialist-section-3-business { position:relative; left:0; top:0;}
 .specialist-section-3-marketing { position:relative; right:0; top:0;}
-.specialist-section-3-global  { position:relative; left:0; top:0;}
-.specialist-section-3-risk  { position:relative; right:0; top:0;}
+.specialist-section-3-global  { position:relative; left:0; top:185px;}
+.specialist-section-3-risk  { position:relative; right:0; top:185px;}
 .specialist-section-3-right .elementor-image-box-title { padding:0 10px;}
 .specialist-footer-form input[type="submit"] {right: 7px;top: 15px;font-size: 15px;padding: 10px 35px;}
 .specialist-footer-form input[type="text"] {padding-right: 50px !important;}
@@ -2901,7 +2904,7 @@ padding-bottom:10px !important; transition: 0.3s;}
 .skt-resort-welcome-column-img img{height:307px !important; object-fit:cover;}
 .skt-resort-welcome-rating-column .elementor-container {margin:0 !important;}
 .skt-resort-welcome-column .elementor-container {float:right !important;}
-.skt-resort-amenities-icon .elementor-widget-container {height: 145px; line-height: 145px;}
+.skt-resort-amenities-icon .elementor-widget-container, .skt-resort-amenities-icon{height: 145px; line-height: 145px;}
 .skt-resort-stay-img .widget-image-caption {position: absolute; bottom: 20%; width: 100%;}
 .skt-resort-relax-resort-img{height: 700px;}
 
@@ -3042,32 +3045,35 @@ padding-bottom:10px !important; transition: 0.3s;}
 .ui-ux-counter:hover .elementor-counter-number{ color:#fff;}
 .ui-ux-business-box2 {position:absolute !important; width:60% !important; top:0px; right:0px; z-index:999; padding:25px !important; background:#fff; box-shadow:0px 0px 30px 0px rgba(0, 0, 0, 0.15);}
 .ui-ux-business-box2 {margin-top:95px; margin-right:3px;}
-.ui-ux-business-box2::before {content:''; position:absolute; left:-50px; bottom:-65px; background:url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/business-dots-img.png) no-repeat; width:161px; height:129px;}
+.ui-ux-business-box2::before{content:''; position:absolute; left:-50px; bottom:-65px; background:url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/business-dots-img.png) no-repeat; width:161px; height:129px;}
+
+.elementor-element.ui-ux-business-boxinner::before{content:''; position:absolute; left: -80px; top: 390px; bottom:-65px; background:url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/business-dots-img.png) no-repeat; width:161px; height:129px;}
+
 .ui-ux-section-title span{ color:#ed5561 !important;}
 .ui-ux-mission-img {position:relative !important; bottom:-70px !important;}
-.ui-ux-mission-img::before {content:''; position:absolute; right:-60px; bottom:-27px; background: url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/our-mission-dot.png) no-repeat; width:131px; height:129px;}
+.elementor-element.ui-ux-mission-img::before {content:''; position:absolute; right:-60px; bottom:-27px; background: url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/our-mission-dot.png) no-repeat; width:131px; height:129px;}
 .ui-ux-misssion-button{position:absolute !important; bottom:70px; left:-40px;}
-.ui-ux-skills-img::before {content:''; position:absolute; left:-60px; top:-60px; background: url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/our-skill-dots.png) no-repeat; width:131px; height:129px;}
+.elementor-element.ui-ux-skills-img::before {content:''; position:absolute; left:-60px; top:-60px; background: url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/our-skill-dots.png) no-repeat; width:131px; height:129px;}
 .ui-ux-skill-bar .elementor-progress-wrapper{ overflow:visible !important; margin-top:10px;}
 .ui-ux-design-text {transform:rotate(-90deg); position:absolute !important; right:-90px; top:130px;}
 .ui-ux-skill-bar .elementor-progress-percentage{position:absolute; right:0; top:-30px;}
-.ui-ux-expertise-section::before {height:700px; width:700px; border-radius:100%; background-image:linear-gradient(to right, #ffefec , #fef8e3); content:''; position:absolute; left:-110px; top:-80px;}
-.ui-ux-expertise-section::after {box-shadow: 0 200px 250px 200px #fff;}
-.ui-ux-expertise-section::after {height:560px; width:560px; border-radius:100%; background:#fff; content:''; position:absolute; left:-40px; top:-10px; margin:0 auto;}
-.ui-ux-pricing-section::before {height:250px; width:250px; border-radius:100%; background-image: linear-gradient(to right, #ffefec , #fef8e3); content:''; position:absolute; left:-20px; top:150px;}
-.ui-ux-pricing-section::after {height:170px; width:170px; border-radius:100%; background:#fff; content:''; position:absolute; left:20px; top:190px; margin:0 auto;}
-.ui-ux-popular-title {position:absolute !important; right:-4px; top:33px; transform:rotate(46deg);}
-.ui-ux-popular-title::before {width:0; height:0; border-bottom: 37px solid #ffcc2e; border-right: 40px solid transparent; content:''; position:absolute; top:3px; left:-37px; transform:rotate(-93deg);}	
-.ui-ux-popular-title::after {width:0; height:0; border-top: 41px solid #ffcc2e; border-right:41px solid transparent; content:''; position:absolute; bottom:0px; right:-40px; transform:rotate(-90deg);}	
-.better-product-video .elementor-widget-video:before{content:''; position:absolute; left:-78px; top:-95px; background:url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/our-skill-dots.png) no-repeat; width:80px; height:80px; background-size:100% !important;}
-.better-product-video .elementor-widget-video:after{content:''; position:absolute; right:-45px; bottom:-45px; background:url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/our-mission-dot.png) no-repeat; width:80px; height:80px; background-size:100% !important;}
-.better-product-video::before {width:60%; height:97%; background:#fff; content:''; position:absolute; left:95px; top:10px; padding-left:60px !important; border-radius:5px; box-shadow:0px 0px 45px 10px rgba(0, 0, 0, 0.05);}
+.elementor-element.ui-ux-expertise-section::before {height:700px; width:700px; border-radius:100%; background-image:linear-gradient(to right, #ffefec , #fef8e3); content:''; position:absolute; left:-110px; top:-80px;}
+.elementor-element.ui-ux-expertise-section::after {box-shadow: 0 200px 250px 200px #fff;}
+.elementor-element.ui-ux-expertise-section::after {height:560px; width:560px; border-radius:100%; background:#fff; content:''; position:absolute; left:-40px; top:-10px; margin:0 auto;}
+.elementor-element.ui-ux-pricing-section::before {height:250px; width:250px; border-radius:100%; background-image: linear-gradient(to right, #ffefec , #fef8e3); content:''; position:absolute; left:-20px; top:150px;}
+.elementor-element.ui-ux-pricing-section::after {height:170px; width:170px; border-radius:100%; background:#fff; content:''; position:absolute; left:20px; top:190px; margin:0 auto;}
+.elementor-element.ui-ux-popular-title {position:absolute !important; right:-4px; top:33px; transform:rotate(46deg);}
+.elementor-element.ui-ux-popular-title::before {width:0; height:0; border-bottom: 37px solid #ffcc2e; border-right: 40px solid transparent; content:''; position:absolute; top:3px; left:-37px; transform:rotate(-93deg);}	
+.elementor-element.ui-ux-popular-title::after {width:0; height:0; border-top: 41px solid #ffcc2e; border-right:41px solid transparent; content:''; position:absolute; bottom:0px; right:-40px; transform:rotate(-90deg);}	
+.elementor-element.better-product-video .elementor-widget-video:before{content:''; position:absolute; left:-78px; top:-95px; background:url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/our-skill-dots.png) no-repeat; width:80px; height:80px; background-size:100% !important;}
+.elementor-element.better-product-video .elementor-widget-video:after{content:''; position:absolute; right:-45px; bottom:-45px; background:url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/our-mission-dot.png) no-repeat; width:80px; height:80px; background-size:100% !important;}
+.elementor-element.better-product-video::before {width:60%; height:97%; background:#fff; content:''; position:absolute; left:0; top:10px; padding-left:60px !important; border-radius:5px; box-shadow:0px 0px 45px 10px rgba(0, 0, 0, 0.05);}
 .better-product-video .elementor-custom-embed-play {position:absolute; top:100%; left:0%; -webkit-transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); transform:translate(0%,-100%);}
 .better-product-video .elementor-custom-embed-play i{ display:none;}
-.better-product-video .elementor-custom-embed-play:after{content:''; position:absolute; right:-50px; bottom:-30px; background:url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/video-play-icon.png) no-repeat; width:150px; height:150px; background-size:100% !important;}
+.elementor-element.better-product-video .elementor-custom-embed-play:after{content:''; position:absolute; right:-50px; bottom:-30px; background:url(https://demosktthemes.com/free/skt-ui-ux/wp-content/uploads/2022/09/video-play-icon.png) no-repeat; width:150px; height:150px; background-size:100% !important;}
 .better-product-video .elementor-widget-container{overflow:visible !important;}
-.ui-ux-video-title {height:360px; width:360px !important; border-radius: 100%; background-image:linear-gradient(to right, #f8e4e0 , #f6eed6); text-align:left; padding-top:135px !important; margin-top:-280px; margin-left:-180px; padding-left:90px !important;}
-.ui-ux-video-title:before{ width: 270px; height: 270px; background: #fff; content: ''; position: absolute; left: 50%; top: 50%; border-radius: 100%; transform:translate(-50%,-50%);}
+.elementor-element.ui-ux-video-title {height:360px; width:360px !important; border-radius: 100%; background-image:linear-gradient(to right, #f8e4e0 , #f6eed6); text-align:left; padding-top:135px !important; margin-top:-280px; margin-left:-180px; padding-left:90px !important;}
+.elementor-element.ui-ux-video-title:before{ width: 270px; height: 270px; background: #fff; content: ''; position: absolute; left: 50%; top: 50%; border-radius: 100%; transform:translate(-50%,-50%);}
 
 
 @media screen and (max-width: 29.938em) {
@@ -3491,9 +3497,9 @@ padding-bottom:10px !important; transition: 0.3s;}
 .skt-cyber-monday-section-1-inner-column-first {transform: skewX(-6deg) rotate(-7deg);right: -130px;z-index: 8;}
 .skt-cyber-monday-section-1-inner-column-btn-first {transform: rotate(-7deg) skewX(-7deg);right: -72px;top: -12px;}
 .skt-cyber-monday-section-1-inner-column-special {transform: rotate(-7deg) skewX(-7deg);right: 150px;top: 18px;}
-.skt-cyber-monday-circle {position: absolute !important;left: -29px;top: -80px;width: 410px !important;height: 212px;   background-color: transparent;border-top-left-radius: 600px;border-top-right-radius: 600px;border: 2px solid #d60000;    border-bottom: 0;transform: rotate(-46deg);}
+/*.skt-cyber-monday-circle{position: absolute !important;left: -29px;top: -80px;width: 410px !important;height: 212px;   background-color: transparent;border-top-left-radius: 600px;border-top-right-radius: 600px;border: 2px solid #d60000;    border-bottom: 0;transform: rotate(-46deg);}
 .skt-cyber-monday-circle::before {content: '';position: absolute !important;left: 0;top: 14px;width: 30px;height: 220px;    background: #000;transform: rotate(13deg);}
-.skt-cyber-monday-circle::after {content: '';position: absolute !important;right: -11px;top: 194px;width: 20px;height: 20px;background: #d60000;border-radius: 100%;}
+.skt-cyber-monday-circle::after {content: '';position: absolute !important;right: -11px;top: 194px;width: 20px;height: 20px;background: #d60000;border-radius: 100%;}*/
 .skt-cyber-monday-elements::before {content: '';width: 380px;height: 237px;background: url(https://demosktthemes.com/free/cybermonday/images/section-elements-2.png);left: 130px;top: -70px;position: absolute;background-repeat: no-repeat; z-index:5;}
 .skt-cyber-monday-elements::after {content: '';width: 581px;height: 111px;background: url(https://demosktthemes.com/free/cybermonday/images/section-elements-1.png);left: -10px;bottom: 40px;position: absolute;background-repeat: no-repeat; z-index:5;}
 .skt-cyber-monday-bigtext::before {content: '';position: absolute;width: 0;height: 0;border-top: 10px solid transparent;    border-bottom: 15px solid transparent;border-left: 80px solid #190131;left: -1px;top: 50%;}
@@ -3583,14 +3589,14 @@ padding-bottom:10px !important; transition: 0.3s;}
 .skt-blackfriday-section-1-offer { position: absolute !important; width:170px !important; height:170px; border-radius:100%; background: linear-gradient(176deg, rgba(236,95,29,1) 0%, rgba(125,21,87,1) 100%); right:-120px; top:20%;box-shadow: 0px 0px 80px 0px rgb(0 0 0 / 60%);}
 .skt-blackfriday-section-1-offer span { font-size:22px; display:block;}
 .skt-blackfriday-section-1-offer .elementor-heading-title { margin-top:50px;}
-.skt-blackfriday-inner-sectioncenter::before {content: '';width: 141px;height: 171px;background: url(https://demosktthemes.com/free/blackfriday/images/blackfriday-text-before.png);left: -40px;top: -30px;position: absolute;background-size: 100%;background-repeat: no-repeat; z-index:5;}
-.skt-blackfriday-inner-sectioncenter::after {content: '';width: 86px;height: 208px;background: url(https://demosktthemes.com/free/blackfriday/images/blackfriday-text-after.png);right: -40px;bottom: -30px;position: absolute;background-size: 100%;background-repeat: no-repeat; z-index:-1;}
-.skt-blackfriday-inner-section-mid::before {content: '';width: 12%;height: 630px;background: url(https://demosktthemes.com/free/blackfriday/images/middle-before.png); left: 180px;top: -90px;position: absolute;background-size: 100%;background-repeat: no-repeat;z-index: 5;}
-.skt-blackfriday-inner-section-mid::after {content: '';width: 36%;height: 680px;background: url(https://demosktthemes.com/free/blackfriday/images/middle-after.png);   right: 20px;top: -140px;position: absolute;background-size: 100%;background-repeat: no-repeat;z-index: 5;}
-.skt-blackfriday-section-1-mid::before {content: '';width: 43%;height: 150px;background: url(https://demosktthemes.com/free/blackfriday/images/section-before.png);left: 0;top: 0px;position: absolute;background-size: 100%;background-repeat: no-repeat; z-index:5;border-radius: 15px 0 0 0;}
-.skt-blackfriday-section-1-mid::after {content: '';width: 43%;height: 100px;background: url(https://demosktthemes.com/free/blackfriday/images/section-after.png);right: 0;bottom: 0px;position: absolute;background-size: 100%;background-repeat: no-repeat; z-index:5;border-radius: 0 0 15px 0;}
+.skt-blackfriday-inner-sectioncenter::before {content: '' !important; width: 141px  !important; height: 171px !important; background: url(https://demosktthemes.com/free/blackfriday/images/blackfriday-text-before.png) !important; left: -40px !important; top: -30px !important; position: absolute !important; background-size: 100% !important; background-repeat: no-repeat !important; z-index:5 !important;}
+.skt-blackfriday-inner-sectioncenter::after {content: '' !important;width: 86px !important;height: 208px !important;background: url(https://demosktthemes.com/free/blackfriday/images/blackfriday-text-after.png) !important; right: -40px !important; bottom: -30px !important; position: absolute !important; background-size: 100% !important; background-repeat: no-repeat !important; z-index:-1 !important;}
+.skt-blackfriday-inner-section-mid::before {content: '' !important; width: 12% !important; height: 630px !important; background: url(https://demosktthemes.com/free/blackfriday/images/middle-before.png) !important; left: 180px !important; top: -90px !important; position: absolute !important;background-size: 100% !important;background-repeat: no-repeat !important;z-index: 5 !important;}
+.skt-blackfriday-inner-section-mid::after {content: '' !important; width: 36% !important; height: 680px !important; background: url(https://demosktthemes.com/free/blackfriday/images/middle-after.png) !important; right: 20px  !important; top: -140px !important; position: absolute  !important;background-size: 100%  !important;background-repeat: no-repeat  !important;z-index: 5  !important;}
+.skt-blackfriday-section-1-mid::before {content: '' !important; width: 43% !important; height: 150px !important; background: url(https://demosktthemes.com/free/blackfriday/images/section-before.png) !important; left: 0 !important; top: 0px !important; position: absolute !important;background-size: 100% !important; background-repeat: no-repeat !important; z-index:5 !important; border-radius: 15px 0 0 0 !important;}
+.skt-blackfriday-section-1-mid::after {content: ''  !important;width: 43% !important;height: 100px !important;background: url(https://demosktthemes.com/free/blackfriday/images/section-after.png) !important;right: 0 !important;bottom: 0px !important;position: absolute !important;background-size: 100% !important;background-repeat: no-repeat !important; z-index:5 !important; border-radius: 0 0 15px 0 !important;}
 .skt-blackfriday-section-1-mid {overflow:hidden;}
-.skt-blackfriday-section-1-inner1-text-2::before {content: '';width: 108px;height: 55px;background: url(https://demosktthemes.com/free/blackfriday/images/yellow-tel.png);left: 0;bottom: -93px;position: absolute;background-size: 100%;background-repeat: no-repeat; z-index:5;}
+.skt-blackfriday-section-1-inner1-text-2::before {content: ''  !important; width: 108px !important; height: 55px !important; background: url(https://demosktthemes.com/free/blackfriday/images/yellow-tel.png) !important; left: 0 !important; bottom: -75px !important; position: absolute !important;background-size: 100% !important;background-repeat: no-repeat !important; z-index:5 !important;}
 
 
 
@@ -3599,7 +3605,7 @@ padding-bottom:10px !important; transition: 0.3s;}
 .skt-blackfriday-section-1-offer {bottom: -190px;left: 50%;transform: translateX(-50%);right: 0;top: auto;}
 .skt-blackfriday-inner-section-mid::after {right: 0 !important;}
 .skt-blackfriday-inner-section-mid::before {left: 10px !important;}
-.skt-blackfriday-section-1-inner1-text-2::before { bottom:-75px !important;}
+.skt-blackfriday-section-1-inner1-text-2::before { bottom:-54px !important;}
 .skt-blackfriday-inner-sectioncenter::before, .skt-blackfriday-inner-sectioncenter::after { display:none;}
 .skt-blackfriday-section-1-mid::before {width: 60% !important;height: 80px !important;}
 .skt-blackfriday-section-1-mid::after {width: 60% !important;height: 37px !important;}
@@ -3646,15 +3652,16 @@ padding-bottom:10px !important; transition: 0.3s;}
 .skt-trekking-section-2-right { position:relative !important;}
 .skt-trekking-section-2-right-text {width: 85% !important;position: absolute !important;left: -240px;top: 33% !important;   transform: rotate(-90deg);}
 .skt-trekking-section-2-left-inner-section {width: 860px !important;position: absolute !important;bottom: -60px;z-index: 5;}
-.skt-trekking-section-3-inner-box1-img .elementor-widget-container { width:240px !important; height:240px !important; margin:0 auto !important;}
-.skt-trekking-section-3-inner-box1-img .elementor-widget-container img { margin-top:20px !important;}
+.skt-trekking-section-3-inner-box1-img .elementor-widget-container, .skt-trekking-section-3-inner-box1-img{ width:240px !important; height:240px !important; margin:0 auto !important;}
+.skt-trekking-section-3-inner-box1-img .elementor-widget-container img, .skt-trekking-section-3-inner-box1-img img{ margin-top:20px !important;}
 .skt-trekking-section-6-right { position:relative !important;}
 .skt-trekking-section-6-right-img2 {position: absolute !important;left: -230px;top: -10px;}
 .skt-trekking-section-6-right::before {content: '';background: #e9e9e9;width: 23%;height: 35%;position: absolute !important;top: 55%;left: -12%;transform: translateY(-50%);border-radius: 50px;}
-.skt-trekking-section-6-right-inner-mid { position:relative !important; border-radius:300px; overflow:hidden;}
-.skt-trekking-section-6-right-inner-mid-title { position:absolute !important; bottom:-165px; left:50%; transform:translateX(-50%);}
-.skt-trekking-section-6-right-inner-mid-title .elementor-widget-container {width:410px !important; height:410px; border-radius:100%; margin:0 auto;}
-.skt-trekking-section-8-inner-right-btn .elementor-widget-container { width:166px; height:166px; border-radius:100%; margin:0 auto; z-index:5; position:relative !important;}
+
+.elementor-element .skt-trekking-section-6-right-inner-mid, .skt-trekking-section-6-right-inner-mid{ position:relative !important; border-radius:300px; overflow:hidden;}
+.elementor-element .skt-trekking-section-6-right-inner-mid-title, .skt-trekking-section-6-right-inner-mid-title{ position:absolute !important; bottom:-165px; left:50%; transform:translateX(-50%);}
+.elementor-element .skt-trekking-section-6-right-inner-mid-title .elementor-widget-container, .skt-trekking-section-6-right-inner-mid-title{width:410px !important; height:410px; border-radius:100%; margin:0 auto;}
+.elementor-element .skt-trekking-section-8-inner-right-btn .elementor-widget-container, .skt-trekking-section-8-inner-right-btn{ width:166px; height:166px; border-radius:100%; margin:0 auto; z-index:5; position:relative !important;}
 .skt-trekking-section-8-inner-right-btn::before { content:''; background:#ff4c15; width:2px; height:100%; position:absolute; left:50%; transform:translateX(-50%); top:-80px;z-index: 1;}
 .skt-trekking-section-8-inner-2-products .woocommerce.columns-4 ul.products li.product .button {font-size: 0!important;right: 10px!important;transform: none;opacity: 1!important;width: 49px!important;height: 49px!important;visibility: visible!important;padding: 0;margin: 0;float: right;bottom: 15px!important;top: auto!important;left: auto!important; background-color: #fbf7f4 !important;}
 .skt-trekking-section-8-inner-2-products .woocommerce.columns-4 ul.products li.product .button::before {content: '' !important;    position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);background: url(https://demosktthemes.com/free/skt-trekking/wp-content/uploads/2023/05/shopping-icon.png);width: 38%;    height: 21px;background-size: 100%;background-repeat: no-repeat;}
@@ -3682,9 +3689,9 @@ padding-bottom:10px !important; transition: 0.3s;}
 .elementor-element.skt-trekking-section-6-right-img2 {position: relative !important;left: auto;top: auto;}
 .skt-trekking-section-6-right::before { display:none !important;}
 .elementor-element.skt-trekking-section-2-right-text {width: 100% !important;position: relative !important;left: auto;top: auto !important; transform:none !important;}
-.elementor-element.skt-trekking-section-6-right-inner-mid-title .elementor-widget-container {width: 360px !important;height: 360px !important;}
+.elementor-element.skt-trekking-section-6-right-inner-mid-title .elementor-widget-container, .elementor-element.skt-trekking-section-6-right-inner-mid-title{width: 360px !important;height: 360px !important;}
 .elementor-element.skt-trekking-section-8-inner-2-products .woocommerce.columns-4 ul.products li.product { width:100% !important;}
-.elementor-element.skt-trekking-section-10-inner1-title .elementor-heading-title span { font-size:65px !important;}
+.elementor-element.skt-trekking-section-10-inner1-title .elementor-heading-title span, .elementor-element.skt-trekking-section-10-inner1-title span { font-size:65px !important;}
 .skt-trekking-section-10-inner1-title::after {top: -110px !important;right: 50px !important;width: 50% !important;}
 .skt-trekking-section-11-left::before { display:none;}
 .skt-trekking-section-8-inner-right {order:1 !important;}
@@ -3854,7 +3861,6 @@ padding-bottom:10px !important; transition: 0.3s;}
 /* SKT Glass */
 .skt-glaziers-btn .elementor-button-icon i {width: 34px !important;height: 34px;border-radius: 100%;background: #000000;text-align: center;line-height: 34px !important;}
 .skt-glaziers-btn-white .elementor-button-icon i { color:#ffffff;}
-.skt-glaziers-btn .elementor-button-text { margin-top:10px;}
 .skt-glaziers-section-4-right-inner-form .wpcf7-text, .skt-glaziers-section-4-right-inner-form .wpcf7-textarea { background:#ffffff !important; border:1px solid #d1d0c8 !important; padding: 12px 25px;}
 .skt-glaziers-section-4-right-inner-form .wpcf7-textarea { height:120px; min-height: unset !important;}
 .skt-glaziers-section-4-right-inner-form input[type="submit"] { float:none !important; text-transform:uppercase;padding: 15px 80px 15px 35px; position:relative; margin-top:20px;}
@@ -3896,6 +3902,7 @@ padding-bottom:10px !important; transition: 0.3s;}
 .coachpress-video .elementor-custom-embed-play {width: 89px;height: 89px;border-radius: 100%;background: #7d6a91;z-index: 5;}
 .coachpress-video .elementor-custom-embed-play i { line-height:50px;}
 .coachpress-video .elementor-custom-embed-image-overlay img { border-radius:30px;}
+.coachpress-logo-relll .swiper-pagination{bottom:-15px !important;}
 .coachpress-logo-relll .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction .swiper-horizontal>.coachpress-asfeatured-btn { position:relative;}
 .coachpress-asfeatured-btn::before {content: '';background: #7d6a91;width: 14px;height: 14px;position: absolute;top: -80px;  left: 50%;transform:translate(-50%, -50%); border-radius:100% !important;}
 .coachpress-asfeatured-btn::after {content: '';background: #7d6a91;width: 2px;height: 114%;position: absolute;top: -39px;  left: 50%;transform:translate(-50%, -50%);}
@@ -3962,8 +3969,9 @@ animation: qodefFloat 3s ease-in-out infinite;}
 .sktpizza-section-5 .woocommerce ul.products li h2{text-transform:uppercase; font-family:'Oswald'; font-weight:500 !important; font-size:20px;}
 .sktpizza-new-midtext .elementor-heading-title span { font-size:16px !important;margin: 0 8px;}
 .sktpizza-section-6-mid-text { position:relative;}
-.sktpizza-section-6-mid-text::before { content:''; background:#ffc139; width:218px; height:218px; border-radius:100%; position:absolute; left:50%;transform: translate(-50%,-50%); top:50%;z-index: -1;}
-.sktpizza-section-6-left::before {content: '';background: transparent;width: 140%;height: 91%;border: 1px solid #ff9839;    border-radius: 20px;position: absolute;top: 5px;left: 0;z-index: -1;}
+.sktpizza-section-6-mid-text:before{ content:''; background:#ffc139; width:218px; height:218px; border-radius:100%; position:absolute; left:50%;transform: translate(-50%,-50%); top:50%;z-index: -1;}
+.sktpizza-section-6-left{position:relative;}
+.sktpizza-section-6-left::before, .elementor-element.sktpizza-section-6-left::before {content: ''; background: transparent; width: 140%; height: 91%; border: 1px solid #ff9839; border-radius: 20px; position: absolute; top: 5px; left: 0; z-index: -1;}
 .sktpizza-delivery-bike img {
   animation: .3s qodefBounce ease-in-out infinite;
   -webkit-animation: .3s qodefBounce ease-in-out infinite;
@@ -3994,8 +4002,12 @@ animation: qodefFloat 3s ease-in-out infinite;}
 
 
 @media(max-width: 479px){
-.sktpizza-section-6-left:before{width:100%;}
+.sktpizza-section-6-left:before, .elementor-element.sktpizza-section-6-left::before{width:100%;}
 .sktpizza-section-6-mid-text .elementor-image-box-title {padding: 0 100px !important;}
+}
+
+@media(min-width: 768px) and (max-width: 1023px){
+.sktpizza-section-5-mid .woocommerce ul.products li.product{width:45.75% !important;}
 }
 /* Pizzeria */
 
@@ -4011,8 +4023,8 @@ animation: qodefFloat 3s ease-in-out infinite;}
 .skt-physiotherapy-section-5-right-video .elementor-custom-embed-play {background: #ffffff;border-radius: 100%;width: 102px;height: 102px;}
 .skt-physiotherapy-section-5-right-video .eicon-play:before {content: '\f04b' !important; color:#ce2066;font-family: "FontAwesome"; opacity:1 !important; font-size:24px !important;}
 .skt-physiotherapy-section-5-right-video .elementor-custom-embed-play i { line-height:50px; text-shadow:none !important;}
-.skt-physiotherapy-section-9-mid-inner-box1-lefticon .elementor-widget-container { width:243px !important; height:243px !important;}
-.skt-physiotherapy-section-9-mid-inner-box1-lefticon .elementor-widget-container img { margin-top:50px !important;}
+.skt-physiotherapy-section-9-mid-inner-box1-lefticon .elementor-widget-container, .skt-physiotherapy-section-9-mid-inner-box1-lefticon{ width:243px !important; height:225px !important;}
+.skt-physiotherapy-section-9-mid-inner-box1-lefticon .elementor-widget-container img, .skt-physiotherapy-section-9-mid-inner-box1-lefticon img{margin-top:50px !important;}
 .skt-physiotherapy-section-10-right-form .wpcf7-form-control-wrap {width: 50%;float: left;padding: 10px; padding-bottom:0 !important;}
 .skt-physiotherapy-section-10-right-form .wpcf7-form-control-wrap:nth-child(7) { width:100% !important;}
 .skt-physiotherapy-section-10-right-form input[type=date] { color:#4d4d4d !important;}
