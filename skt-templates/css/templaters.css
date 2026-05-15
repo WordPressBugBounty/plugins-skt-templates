@@ -6434,3 +6434,50 @@ height:380px!important;}
 .chemical-section1-right{padding-left:30px !important; padding-right:30px !important;}
 }
 /* SKT Chemical */
+
+/* SKT Plastic Surgery */
+.skt-plastic-surgery-sec2-left{position:relative;}
+.skt-plastic-surgery-sec2-left::after {content: ''; background:#ffffff;width: 500%;height: 100%;left: -500%;position: absolute;top: 0;}
+.skt-plastic-surgery-sec2-right-list .elementor-icon-list-icon svg {background: #fff;width: 76px !important;height: 68px !important;padding: 24px;border-radius: 100%;
+}
+.skt-plastic-surgery-sec2-right-btn .elementor-button-icon { position:relative;}
+.skt-plastic-surgery-sec2-right-btn .elementor-button-icon::after {content: ''; background:#ffffff;width: 48px;height: 48px;left: 50%;position: absolute;top: 50%; transform:translate(-50%,-50%); border-radius:100%;}
+.skt-plastic-surgery-sec2-bottom-right { position:relative;}
+.elementor-element.skt-plastic-surgery-sec2-bottom-right::before {content: '';width: 87px;height: 87px;background: url(https://sktperfectdemo.com/themepack/skt-plastic-surgery/wp-content/themes/skt-plastic-surgery/images/sec2-arrow.png) no-repeat;left: 40px;top: 50%;position: absolute; transform:translateY(-50%);}
+.skt-plastic-surgery-sec2-right-btn .elementor-button svg {z-index: 9;position: relative;}
+.skt-plastic-surgery-sec2-right-btn .elementor-button { fill: #bb733b !important;}
+.skt-plastic-surgery-sec2-right-btn .elementor-button:hover svg { fill: #282828 !important;}
+.skt-plastic-surgery-slidebtn a { position:relative;}
+.skt-plastic-surgery-slidebtn a::after{content: ''; background: #cb6d46 url(https://demosktthemes.com/free/skt-plastic-surgery/wp-content/uploads/2026/05/hero-btn-icon.png) no-repeat center center; position: absolute; right: 5px; top: 5px; color: #fff; border-radius: 100%; line-height: 47px; width: 48px; height: 48px; text-align: center; font-weight: 800;}
+/* ===== TABLET / iPad Responsive (max-width: 1024px) ===== */
+@media only screen and (max-width: 1024px) {
+.skt-plastic-surgery-sec2-left::after{width: 100%; left: 0; display: none;}
+.skt-plastic-surgery-sec2-right-list .elementor-icon-list-icon svg{width: 64px !important; height: 58px !important; padding: 18px;}
+.skt-plastic-surgery-sec2-right-btn .elementor-button-icon::after{width: 40px; height: 40px;}
+.elementor-element.skt-plastic-surgery-sec2-bottom-right::before{width: 70px; height: 70px; background-size: contain; left: 20px;}
+.skt-plastic-surgery-slidebtn a::after{width: 42px; height: 42px; line-height: 42px; background-size: 16px; right: 4px; top: 4px;}
+}
+/* ===== TABLET Portrait (max-width: 881px) ===== */
+@media only screen and (max-width: 881px) {
+.skt-plastic-surgery-sec2-left::after{display: none;}
+.skt-plastic-surgery-sec2-right-list .elementor-icon-list-icon svg{width: 60px !important; height: 54px !important; padding: 16px;}
+.skt-plastic-surgery-sec2-right-btn .elementor-button-icon::after{width: 38px; height: 38px;}
+.elementor-element.skt-plastic-surgery-sec2-bottom-right::before{width: 60px; height: 60px; background-size: contain; left: 15px;}
+.skt-plastic-surgery-slidebtn a::after{width: 40px; height: 40px; line-height: 40px; background-size: 14px; right: 4px; top: 4px;}
+}
+/* ===== MOBILE Responsive (max-width: 767px) ===== */
+@media only screen and (max-width: 767px) {
+.skt-plastic-surgery-sec2-left::after{display: none;}
+.skt-plastic-surgery-sec2-right-list .elementor-icon-list-icon svg{width: 56px !important; height: 50px !important; padding: 14px;}
+.skt-plastic-surgery-sec2-right-btn .elementor-button-icon::after{width: 36px; height: 36px;}
+.elementor-element.skt-plastic-surgery-sec2-bottom-right::before{width: 50px; height: 50px; background-size: contain; left: 10px; position: relative; transform: none; top: auto; margin: 0 auto 15px; display: block;}
+.skt-plastic-surgery-slidebtn a::after{width: 38px; height: 38px; line-height: 38px; background-size: 14px; right: 4px; top: 4px;}
+}
+/* ===== SMALL MOBILE Responsive (max-width: 480px) ===== */
+@media only screen and (max-width: 480px) {
+.skt-plastic-surgery-sec2-right-list .elementor-icon-list-icon svg{width: 50px !important; height: 46px !important; padding: 12px;}
+.skt-plastic-surgery-sec2-right-btn .elementor-button-icon::after{width: 32px; height: 32px;}
+.elementor-element.skt-plastic-surgery-sec2-bottom-right::before{width: 45px; height: 45px; background-size: contain;}
+.skt-plastic-surgery-slidebtn a::after{width: 36px; height: 36px; line-height: 36px; background-size: 12px; right: 3px; top: 3px;}
+}
+/* SKT Plastic Surgery */

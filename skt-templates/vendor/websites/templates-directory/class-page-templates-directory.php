@@ -397,6 +397,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-plastic-surgery'	=> array(
+					'title'       => __( 'SKT Plastic Surgery', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-plastic-surgery/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-plastic-surgery/skt-plastic-surgery.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-plastic-surgery/skt-plastic-surgery.json'),
+					'keywords'    => __( ' plastic surgery, plastic surgeon, cosmetic surgery, surgery, rhinoplasty, botox, plasticsurgery, cosmeticsurgery, liposuction, surgery, lipo, rhinoplasty, botox, breast augmentation, cirugiaplastica, skincare, aesthetics, surgeon, antiaging, aesthetic, cosmetic surgeon, aesthetic surgery, doctor, liposculpture, rhinoplasty' ),
+				),
 				'skt-chemical'	=> array(
 					'title'       => __( 'SKT Chemical', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
