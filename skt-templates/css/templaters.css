@@ -6481,3 +6481,64 @@ height:380px!important;}
 .skt-plastic-surgery-slidebtn a::after{width: 36px; height: 36px; line-height: 36px; background-size: 12px; right: 3px; top: 3px;}
 }
 /* SKT Plastic Surgery */
+
+/* SKT Copywriter */
+.skt-copywriter-section1-left::after {content: ''; width: 215px; height: 320px; background: #fff; position: absolute; right: 0; left: auto; top: 0; z-index: 0;}
+.skt-copywriter-section1-right-box::after {content: ''; width: 100%; height: 1px; background: #d5f0ed; position: absolute; bottom: 0; left: -105px; top: auto;}
+.skt-copywriter-counter-box .elementor-widget-container, .skt-copywriter-counter-box  {align-items: center !important; display: flex !important; justify-content: center !important; width: 135px; height: 135px !important; margin: 0 auto;}
+.skt-copywriterchoose-number .elementor-widget-container, .skt-copywriterchoose-number  {width: 85px; height: 85px !important; display: flex; align-items: center !important; justify-content: center !important; z-index: 9;  position: relative;}
+
+.skt-copywriter-webdesigner-section6-right::before {content:''; background:url(https://demosktthemes.com/free/skt-copywriter/wp-content/uploads/2026/05/video-before.png); position:absolute; top:-5px; left:-90px; width:82px; height:80px;}
+.skt-copywriter-webdesigner-section6-right-video::before {content: '';background: #ffffff;position: absolute;top: -45px;left: -50px;   width: 80%;height: 120%;box-shadow: 0px 0px 80px 0px rgb(0 0 0 / 25%); z-index:-1;}
+.skt-copywriter-webdesigner-section6-right-video::after {width: 100%; height: 100px; background: #f6f7fa; position: absolute; right: 0px; bottom: -60px; content: ''; left:1px; display:none;}
+.skt-copywriter-webdesigner-section6-right-video { position:relative;}
+.skt-copywriter-webdesigner-section6-right { position:relative;}
+.skt-copywriter-webdesigner-section6-right-video .elementor-custom-embed-play {left: 0 !important; width: 161px; height: 161px; border-radius: 100%; background: linear-gradient(180deg, #ff6821 0%, #ff8858 100%); z-index: 5; transform: translate(-70%,115%) !important; display: flex; justify-content: center; align-items: center;}
+.skt-copywriter-webdesigner-section6-right-video .elementor-widget-container, .skt-copywriter-webdesigner-section6-right-video { overflow:visible !important; position:relative; z-index:99;}
+.skt-copywriter-webdesigner-section6-right-video .elementor-custom-embed-play i {line-height: 135px; opacity:1 !important;}
+.skt-copywriter-webdesigner-section6-right::after {content:''; background:url(https://demosktthemes.com/free/skt-copywriter/wp-content/uploads/2026/05/video-before.png); position:absolute; bottom:-5px; right:-90px; width:82px; height:80px;}
+.skt-copywriter-webdesigner-section6-right::after {content: ''; background: url(https://demosktthemes.com/free/skt-copywriter/wp-content/uploads/2026/05/video-before.png); position: absolute; bottom: -10px; right: -40px; width: 82px;  height: 80px;transform: rotate(180deg);}
+.skt-copywriter-webdesigner-section6-right .elementor-custom-embed-play svg {opacity: 1; filter: inherit !important;}
+
+@media screen and (max-width: 29.938em) {
+.skt-copywriter-webdesigner-section6-right::after, .skt-copywriter-webdesigner-section6-right::before {display:none;}
+.skt-copywriter-webdesigner-section6-right-video .elementor-custom-embed-play {left:50% !important; top:50% !important; bottom:auto !important; transform:translate(-50%,-50% ) !important; width:100px; height:100px;}
+.skt-copywriter-webdesigner-section6-right-video::after {bottom:-30px;}	
+}
+
+@media screen and (max-width:47.938em) and (min-width:30.000em) {
+.skt-copywriter-choose-us::after {height:76%; width:100%; border-radius:30px 30px 0px 0px;}
+.skt-copywriter-webdesigner-section6-right::after, .webdesigner-section6-right::before {display:none;}
+.skt-copywriter-webdesigner-section6-right-video .elementor-custom-embed-play {left:50% !important; top:50% !important; bottom:auto !important; transform:translate(-50%,-50% ) !important; width:100px; height:100px;}
+.skt-copywriter-webdesigner-section6-right-video::after {bottom:-30px;}
+.skt-copywriter-webdesigner-section6-right-video::before {height:115%;}	
+}
+
+@media screen and (max-width:63.938em) and (min-width:48.000em) {
+.skt-copywriterchoose-number .elementor-widget-container, .skt-copywriterchoose-number {width:70px; height:70px !important;}
+.skt-copywriterchoose-number-box .elementor-widget-icon .elementor-widget-container, .skt-copywriterchoose-number-box .elementor-widget-icon { margin-top:4px !important;}
+
+.skt-copywriter-section1-left-image .elementor-widget-container, .skt-copywriter-section1-left-image{ margin-top:0px !important;}
+.skt-copywriter-section1-left::after {width:105px; height:450px;}
+.skt-copywriter-counter-box .elementor-widget-container, .skt-copywriter-counter-box {width:95px; height:95px !important;}
+.skt-copywriter-counter-box .elementor-counter-number-wrapper{font-size:26px !important;}
+.skt-copywriter-webdesigner-section6-right-video .elementor-custom-embed-play{width:110px; height:110px; transform:translate(-70%,105%) !important;}
+.skt-copywriter-webdesigner-section6-right::after {bottom:95px; right:-10px;}	
+}
+
+@media screen and (max-width:72.438em) and (min-width:63.250em) {
+.skt-copywriter-section1-left::after {width:185px; height:330px;}
+.skt-copywriter-webdesigner-section6-right-video .elementor-custom-embed-play {width:120px; height:120px; transform:translate(-70%,160%) !important;}
+.skt-copywriter-webdesigner-section6-right::after {display:none;}
+.skt-copywriter-webdesigner-section6 {padding-bottom:140px !important;}
+.skt-copywriter-webdesigner-section6 .elementor-widget-text-editor .elementor-widget-container, .skt-copywriter-webdesigner-section6 .elementor-widget-text-editor  {padding:20px 0px 35px !important;}
+.team-infobox h3 {width:90%;}
+.team-inner{padding:50px 35px 50px;}
+.skt-testimonials .owl-prev {left:-130px !important;}
+.skt-testimonials .owl-next{right:-130px !important;}
+.skt-home-posts-column{padding:5px;}
+.skt-copywriter-video-content .elementor-widget-heading {padding-top:50px !important;}
+.skt-copywriter-calculator-section{ margin-top:-350px !important;}
+.skt-copywriter-price-box {padding-left:50px !important;}	
+}
+/* SKT Copywriter */
