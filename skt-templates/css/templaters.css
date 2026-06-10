@@ -6542,3 +6542,41 @@ height:380px!important;}
 .skt-copywriter-price-box {padding-left:50px !important;}	
 }
 /* SKT Copywriter */
+
+/* SKT Coworking */
+.coworking-counter-section .elementor-counter-number-suffix span {font-size: 26px; position: absolute; top: 40px;}
+.coworking-counter-section .elementor-widget-counter {width: 195px !important; height: 195px !important; align-content: center; max-width: 200px !important;  margin-left: -75px;}
+.coworking-counter-section .elementor-counter-title{width:80%; margin:0 auto !important; text-align:center;}
+.coworking-services-box::after {content: ""; width: 120px; height: 116px; background-color: #f4f4f4; position: absolute; right: -1px; bottom: -1px; mask-image: url(https://demosktthemes.com/free/skt-coworking/wp-content/uploads/2026/06/services-box-curve.png); mask-position: left top; mask-size: cover; mask-repeat: no-repeat; z-index: 3;}
+.coworking-booking-button{ width: 220px !important; position: absolute !important; right: -20px; transform: rotate(270deg);  top: 35%;}
+.coworking-price-box-price span {font-size: 22px; position: absolute; top: 5px; left: 0; font-family: "Assistant", Sans-serif;}
+.coworking-price-box-list::before {content: ''; width: 0; height: 0; border-left: 15px solid transparent; border-right: 15px solid transparent; border-bottom: 15px solid #a0ce4e; position: absolute; left: 50px; top: -15px;}
+.coworking-price-box-list2::before{ border-bottom-color:#fda700}
+.coworking-price-box-list3::before{border-bottom-color:#54c1c4}
+.coworking-price-box-button{position: absolute !important; right: -50px !important; top: 40px !important;}
+.coworking-event-section::after { content:''; width:100%; height:20%; position:absolute; left:0px; bottom:0px; background:#fda700;}
+
+@media (max-width: 1199px){
+.coworking-counter-section .elementor-widget-counter{width:165px !important; height:165px !important; margin-left:-65px;}	
+}
+
+@media(max-width: 1079px){
+.skt-coworking-section1-heading::after {width:150px; height:150px;}
+}
+
+@media(max-width: 1023px){
+.coworking-counter-section .elementor-counter-number-suffix span{ top:30px;}	
+}
+
+@media(max-width: 767px){
+.skt-coworking-image-box .elementor-widget-heading {width: 100%;}
+.skt-coworking-image-box .elementor-widget-image .elementor-widget-container, .skt-coworking-image-box .elementor-widget-image{ margin-bottom:15px !important;}
+.skt-coworking-image-box::after { display:none;}
+.coworking-counter-section .elementor-widget-counter{ margin:0 auto !important;}
+.coworking-booking-button {width:100% !important; position:relative !important; right:0; transform:inherit; top:15px; text-align:center !important;}
+.coworking-counter-section .elementor-counter-number-suffix span{ top:30px;}
+.coworking-services-box::after {width:100px; height:100px;}
+.coworking-event-section::after {height:10%;}	
+.coworking-services-box .elementor-widget-image, .coworking-services-box .elementor-widget-image img {width:100% !important;}
+}
+/* SKT Coworking */

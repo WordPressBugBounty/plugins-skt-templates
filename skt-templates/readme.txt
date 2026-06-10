@@ -4,7 +4,7 @@ Tags: gutenberg, elementor, templates, page builder, one click import
 Requires at least: 5.0
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 6.30.11
+Stable tag: 6.30.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -131,6 +131,9 @@ Yes if your site import is done and you are currently editing via Elementor or i
 No. The plugin is lightweight and loads only when needed.
 
 == Changelog ==
+
+= 6.30.12 =
+* Added SKT Coworking in Elementor Templates.
 
 = 6.30.11 =
 * Added SKT Copywriter in Elementor Templates.

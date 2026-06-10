@@ -397,6 +397,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-coworking'	=> array(
+					'title'       => __( 'SKT Coworking', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-coworking/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-coworking/skt-coworking.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-coworking/skt-coworking.json'),
+					'keywords'    => __( ' meeting, cooperative, united, coordinate, office, employee, meet, gathering, conference, appointment, consultation, discussion, team work, independently, collaborate, shared office space, coworking space, professional coworking place, everybody coworking, lifestyle coworking, traditional coworking, meeting rooms, hot desks, permanent desks, private rooms, freelancers, small team, chit-chat, sound-proof offices, entrepremeurs, minimal distractions, conventional, open coworking space, high-end coworking space, full service coworking space, CoWorking' ),
+				),
 				'skt-copywriter'	=> array(
 					'title'       => __( 'SKT Copywriter', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
