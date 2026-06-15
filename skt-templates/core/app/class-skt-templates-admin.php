@@ -38,27 +38,27 @@ class Skt_Templates_Admin {
 	}
 
 	public function menu_pages() {
-		add_menu_page(
-			__( 'SKT Templates', 'skt-templates' ),
-			__( 'SKT Templates', 'skt-templates' ),
-			'manage_options',
-			'skt_template_about',
-			array( $this, 'page_modules_render' ),
-			SKTB_URL . 'images/skt-template-icon.svg',
-			'75'
-		);
-		add_submenu_page( 'skt_template_about', __( 'SKT Templates General Options', 'skt-templates' ), __( 'About Templates', 'skt-templates' ), 'manage_options', 'skt_template_about' );
-
-		add_menu_page(
-			__( 'SKT Templates', 'skt-templates' ),
-			__( 'SKT Templates', 'skt-templates' ),
-			'manage_options',
-			'skt_template_import',
-			array( $this, 'page_import_tempate' ),
-			'99'
-		);
-		add_submenu_page( 'skt_template_import', __( 'SKT Templates General Options', 'skt-templates' ), __( 'Import Templates', 'skt-templates' ), 'manage_options', 'skt_template_import' );
-	}
+	add_menu_page(
+		__( 'SKT Templates', 'skt-templates' ),
+		__( 'SKT Templates', 'skt-templates' ),
+		'manage_options',
+		'skt_template_about',
+		array( $this, 'page_modules_render' ),
+		SKTB_URL . 'images/skt-template-icon.svg',
+		'75'
+	);
+	add_submenu_page( 'skt_template_about', __( 'SKT Templates General Options', 'skt-templates' ), __( 'About Templates', 'skt-templates' ),       			'manage_options', 'skt_template_about' );
+	add_menu_page(
+		__( 'SKT Templates', 'skt-templates' ),
+		__( 'SKT Templates', 'skt-templates' ),
+		'manage_options',
+		'skt_template_import',
+		array( $this, 'page_import_tempate' ),
+		SKTB_URL . 'images/skt-template-icon.svg',
+		'99'
+	);
+	add_submenu_page( 'skt_template_import', __( 'SKT Templates General Options', 'skt-templates' ), __( 'Import Templates', 'skt-templates' ), 		    'manage_options', 'skt_template_import' );
+}
 
 	/**
 	 * Welcome banner shown at the top of the SKT Templates admin page.
