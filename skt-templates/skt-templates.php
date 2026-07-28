@@ -3,7 +3,7 @@
  * Plugin Name: SKT Templates
  * Plugin URI: https://www.sktthemes.org/shop/ready-to-import-wordpress-sites/
  * Description: SKT Templates is an Elementor and Gutenberg themes library and allows you to select from over 100s of designs to choose from. All you need to do is view the demo and then select import and install. It takes care of the importing and allows you to edit the template from within your dashboard. It works with any popular theme or you can choose to use any theme from our <a href="https://www.sktthemes.org/product-category/free-wordpress-themes/" rel="nofollow ugc">SKT Themes free.</a> These templates allow you to import them into your existing website and edit them and use them to build professional websites. Importing a single page template is very easy and you can do it on your existing WordPress website as well.
- * Version: 6.30.13
+ * Version: 6.30.15
  * Author: SKT Themes
  * Author URI: https://www.sktthemes.org
  * Text Domain: skt-templates
@@ -41,6 +41,19 @@ if ( ! function_exists( 'st_fs' ) ) {
 	st_fs();
 	do_action( 'st_fs_loaded' );
 }
+
+/**
+ * Prevent the PHP 8.1+ "strip_tags(): Passing null" deprecation notice on the
+ * Freemius opt-in screen (and any admin page that doesn't register a title).
+ * Core wp-admin/admin-header.php runs strip_tags( $title ) on the global $title,
+ * which stays null on those pages. We only coerce it when it isn't already a
+ * string, so no real page title is ever changed.
+ */
+add_action( 'current_screen', function () {
+	if ( ! isset( $GLOBALS['title'] ) || ! is_string( $GLOBALS['title'] ) ) {
+		$GLOBALS['title'] = '';
+	}
+} );
 
 // Set up the activation redirect
 register_activation_hook( __FILE__, 'skt_templates_activate' );

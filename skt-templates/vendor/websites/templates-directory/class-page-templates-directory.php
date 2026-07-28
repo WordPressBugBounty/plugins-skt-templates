@@ -397,6 +397,24 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-lace'	=> array(
+					'title'       => __( 'SKT Lace', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-lace/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-lace/skt-lace.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-lace/skt-lace.json'),
+					'keywords'    => __( ' laboratory, clinical lab, testing laboratory, research lab, medical laboratory, lab, pathology, science laboratory, independent, testing lab, analytical laboratory, Laboratory' ),
+				),
+				'skt-laboratory'	=> array(
+					'title'       => __( 'SKT Laboratory', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-laboratory/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-laboratory/skt-laboratory.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-laboratory/skt-laboratory.json'),
+					'keywords'    => __( ' laboratory, clinical lab, testing laboratory, research lab, medical laboratory, lab, pathology, science laboratory, independent, testing lab, analytical laboratory, Laboratory' ),
+				),
 				'skt-coworking'	=> array(
 					'title'       => __( 'SKT Coworking', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),

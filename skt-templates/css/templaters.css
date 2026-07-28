@@ -6580,3 +6580,24 @@ height:380px!important;}
 .coworking-services-box .elementor-widget-image, .coworking-services-box .elementor-widget-image img {width:100% !important;}
 }
 /* SKT Coworking */
+
+/* SKT Laboratory */
+.sktlab-number .elementor-widget-container, .sktlab-number{height:50px;}
+.sktlab-number .elementor-widget-container:before, .sktlab-number:before{content:''; width:2px; height:27px; position:absolute; left:48%; top:-27px; background-color:#333333;}
+.sktlab-number .elementor-widget-container:hover::before, .sktlab-number:hover::before{background-color:#3368c6;}
+.sktlab-accordion .elementor-accordion-item {margin-bottom:20px !important; box-shadow: 0px 0px 25px 0px rgb(191 191 193 / 20%); border-radius:10px;}
+/* SKT Laboratory */
+
+/* SKT Lace */
+.lace-welcome-image-box {width:140px !important; height:140px; border-radius:100%; align-content:center !important; margin:0 auto;}
+.lace-welcome-list .elementor-icon-list-items{column-count: 2;}
+.lace-pro-bar .elementor-progress-wrapper {overflow:visible !important; margin-top: 15px;}
+.lace-pro-bar .elementor-progress-percentage{margin-top:-40px; font-size:19px; padding:0px;}
+.lace-pro-bar .elementor-progress-bar{ border-radius:10px;}
+@media screen and (max-width:63.938em) and (min-width:48.000em) {
+.welcome-image-box {width:110px !important; height:110px !important;}
+.welcome-image-box img{ width:50%;}  
+.welcom-image-circle{ display:none !important;}	
+}
+
+/* SKT Lace */
