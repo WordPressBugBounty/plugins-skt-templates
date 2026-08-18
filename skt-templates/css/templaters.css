@@ -5545,7 +5545,7 @@ height:90px; background:url(https://demosktthemes.com/free/garden-care-lite/wp-c
 .skt-orthopedic-section-six-counter .elementor-counter-title{margin-top: 20px!important; text-align:center;}
 .skt-orthopedic-section-six-counter .elementor-counter-number-suffix{font-size: 20px!important;}
 .skt-orthopedic-section-seven-vedio img{visibility:hidden;}
-.skt-orthopedic-section-seven-vedio .elementor-custom-embed-play {background:#3facf9; border-radius:50px;padding-top:23px; padding-left: 29px;padding-right: 25px; padding-bottom:18px; left:40px!important;}
+.skt-orthopedic-section-seven-vedio .elementor-custom-embed-play {background:#3facf9; border-radius:50px;padding-top:26px; padding-left: 30px;padding-right: 25px; padding-bottom:26px; left:40px!important;}
 .skt-orthopedic-section-seven-vedio-col{height:0!important;}
 .skt-orthopedic-section-seven-vedio-col .elementor-custom-embed-play{top:0!important;}
 .skt-orthopedic-section-seven-vedio .elementor-custom-embed-play svg {opacity:1; filter:inherit;}
@@ -6601,3 +6601,151 @@ height:380px!important;}
 }
 
 /* SKT Lace */
+
+
+/* SKT Ortho */
+/* section-two-css starts here */
+.skt-orthopedic-section-two-heading h2{position: relative;}
+.skt-orthopedic-section-two-heading h5::before{content: ''; position:absolute; width:173px; height:60px; background:url(images/section-two-arrow-img.png); background-repeat:no-repeat; background-size:100%; top:65px; right:-132px;}
+.skt-orthopedic-section-two-years-of-expridence .elementor-image-box-description{margin-top: 5px!important;}
+.skt-orthopedic-section-two-para p{margin:0px;}
+.skt-orthopedic-section-two-appointment-form input{width:100%; padding:16px 35px; border-radius: 50px; border: none; background: #fff;}
+.skt-orthopedic-section-two-appointment-form input::placeholder {color:#444; opacity:1;}
+.skt-orthopedic-section-two-appointment-form input[type="date"]{margin-top:10px;}
+.skt-orthopedic-section-two-appointment-form input[type="submit"]{background:#0c225f!important; margin-top:20px;font-weight:500; text-align:center;}
+.skt-orthopedic-section-two-appointment-form  input[type="date"]{color:#444444!important;}
+.skt-orthopedic-section-two-appointment-form .wpcf7-response-output{border-color: #0c225f!important;}
+.skt-orthopedic-section-two-appointment-form .wpcf7-response-output{color:#fff!important; font-family:'Poppins';}
+.skt-garden-care-section-three-heading-text .elementor-widget-container{-webkit-background-clip:text; -webkit-text-fill-color:transparent;}
+.skt-orthopedic-section-two-years-of-expridence .elementor-image-box-title{-webkit-background-clip:text; -webkit-text-fill-color:transparent; background-image: linear-gradient(90deg, #4950D5 33%, #1BB2EF 74%);}
+.skt-orthopedic-section-two-appointment-form p{margin:0!important;}
+.skt-orthopedic-section-two-appointment-form .wpcf7-form-control-wrap select {background-color:#fff; padding:16px 35px; font-size:16px; color:#444; border-radius:100px; border:none; background-image:url(images/form-arrow.png); background-repeat:no-repeat; background-position:right; background-position-x:310px; -webkit-appearance:none;}
+.skt-orthopedic-section-two-appointment-form .wpcf7-form-control-wrap select {-moz-appearance:none;}
+/* section-two-css ends here */
+
+/*section-six css starts here */
+.skt-orthopedic-section-six-counter .elementor-counter-title{margin-top: 20px!important; text-align:center;}
+.skt-orthopedic-section-six-counter .elementor-counter-number-suffix{font-size: 20px!important;}
+/* section-six css ends here */
+
+/* section-three css starts here */
+.skt-orthopedic-section-three-button-col{align-items: center!important; justify-content:center!important;}
+.skt-orthopedic-section-three-button{position: absolute!important;}
+/* section-three css ends here */
+
+/* section-nine css starts here */
+.skt-orthopedic-section-nine-image-box .elementor-widget-container{position: relative!important;}
+.skt-orthopedic-section-nine-image-box .elementor-widget-container:after, .skt-orthopedic-section-nine-image-box:after{content:""; background:#45b2fe; position:absolute; width:242px; height:198px; top:0; clip-path:circle(43.0% at 50% 20%);z-index:1; transition:all 0.2s;}
+.skt-orthopedic-section-nine-image-box .elementor-image-box-img img{z-index:2; position:relative;}
+.skt-orthopedic-section-nine-image-box .elementor-widget-container:hover:after. .skt-orthopedic-section-nine-image-box:hover:after{background:#1a2f68!important;}
+.skt-orthopedic-section-nine-para p{margin:0;}
+.skt-orthopedic-section-fourteen-right-col-image { border-radius:100% !important;}
+/* section-nine css ends here */
+
+/* section ten css starts here */
+.skt-orthopedic-section-ten .e-con-inner{align-items: center!important;}
+.skt-orthopedic-section-ten-button{position: absolute!important; bottom:85px;}
+/* section ten css ends here */
+
+/* section-thirteen css starts here */
+.skt-orthopedic-section-thirteen-progress-bar .elementor-progress-percentage{position: absolute; right:0; top:-30px; padding-right:0px;height: 6px;line-height: 6px;color: #16253D;font-family: "Poppins", Sans-serif;font-size: 18px;font-weight: 500;}
+.skt-orthopedic-section-thirteen-progress-bar .elementor-title{margin-bottom:20px!important;}
+.skt-orthopedic-section-thirteen-para p{margin-bottom:0;}
+/* section-thirteen css ends here */
+
+/* section-fourteen css starts here */
+.skt-orthopedic-section-fourteen-right-col-image .elementor-widget-container{border-radius:100%;}
+.skt-orthopedic-section-fourteen-right-col-shortcode input[type="submit"]{position:absolute; right:0;top: 10px; padding:18px 55px 18px 35px; border:none; border-radius:100px; background-color:#031b4e!important; font-family: 'Poppins'; font-size:14px; background-image:url(images/newsletter-submit.jpg); background-repeat:no-repeat; background-position: right;  background-position-x: 125px; font-weight: 500; letter-spacing: 1px;}
+.skt-orthopedic-section-fourteen-right-col-shortcode input[type="email"]::placeholder{font-family:'Poppins'; color:#3368c6; opacity:1; font-size:14px; font-weight:500;}
+.skt-orthopedic-section-fourteen-right-col-shortcode input[type="email"]{width:100%; padding:16px 30px; border-radius:30px; border:none; background:#fff;}
+.skt-orthopedic-section-fourteen-right-col-shortcode .wpcf7-response-output{color:#fff; font-family:'Poppins';font-size:16px; border-color: #031b4e!important;}
+.skt-orthopedic-section-fourteen-right-col-shortcode p{margin:0;}
+.skt-orthopedic-section-fourteen::after {content:''; width:100%; height:50%; position:absolute; left:0; bottom: 0; background:#f2f2f6; top:auto;}
+/* section-fourteen css ends here */
+
+/* section-seven css starts here */
+.skt-orthopedic-section-seven-vedio img{visibility:hidden;}
+.skt-orthopedic-section-seven-vedio .elementor-custom-embed-play {background:#3facf9; border-radius:50px;padding-top:29px; padding-left: 31px;padding-right: 28px; padding-bottom:29px; left:40px!important;}
+.skt-orthopedic-section-seven-vedio-col{height:0!important;}
+.skt-orthopedic-section-seven-vedio-col .elementor-custom-embed-play{top:0!important;}
+.skt-orthopedic-section-seven-vedio .elementor-custom-embed-play svg {opacity:1; filter:inherit;}
+/* section-seven css ends here */
+
+.skt-orthopedic-section-seven-button-one .elementor-button-icon .e-font-icon-svg {font-size:30px !important;}
+.skt-orthopedic-section-seven-button-one .elementor-button-text, .skt-orthopedic-section-seven-button-two .elementor-button-text{padding-top: 5px;}
+.skt-orthopedic-section-seven-button-two .elementor-button-icon .e-font-icon-svg {font-size:27px !important;}
+
+/* section five css starts here */
+.skt-orthopedic-section-seven-vedio .elementor-widget-container, .skt-orthopedic-section-seven-vedio{overflow: visible!important;}
+.skt-orthopedic-section-five-years-of-experidence{ position:absolute!important; right:-85px; bottom:100px;}
+.skt-orthopedic-section-five-list .elementor-icon-list-icon{border:2px solid #04a1eb; border-radius:100px; padding:9px!important;}
+.skt-orthopedic-section-five-list svg{position:absolute; top:-2px; left:6px;}
+.skt-orthopedic-section-five-list .elementor-icon-list-item{gap:15px!important;}
+.skt-orthopedic-section-five-para p{margin:0;}
+/* section-five css ends here */
+
+/* section-four css starts here */
+.skt-orthopedic-section-four-vedio .elementor-custom-embed-play{background:#3facf9; border-radius:100%; padding-top:43px; padding-left:37px; padding-right:37px; padding-bottom:26px; left:12.2% !important; top:47% !important; width:110px !important; height:110px !important;}
+.skt-orthopedic-section-four .e-con-inner{position: relative;}
+.skt-orthopedic-section-four .elementor-widget-heading{position:absolute; left:25%; z-index:1; top:5%;}
+/* section-four css ends here */
+
+.skt-orthopedic-section-two-appointment-testimonial-col .elementor-widget-image .elementor-widget-container img {width:90px !important; height:90px !important; overflow:hidden;}
+
+
+@media screen and (max-width:1200px) and (min-width:1025px){
+.skt-orthopedic-section-fourteen-right-col-image .elementor-widget-container{padding: 20px 15px 20px 15px!important;}
+.skt-orthopedic-section-fourteen-right-col-shortcode input[type="submit"]{padding: 15px 32px!important;}
+.skt-orthopedic-section-fourteen > .e-con-inner{gap:39px!important;}
+.skt-orthopedic-section-two-appointment-testimonial-col{margin-top:0!important;}
+.skt-orthopedic-section-two-year-of-experidence-main-col{gap:10px!important;}
+.skt-orthopedic-section-five-years-of-experidence{bottom:165px!important;}
+.skt-orthopedic-section-six .e-con-inner{gap:10px!important;}
+.skt-orthopedic-section-seven-col-two .e-con-inner{gap:10px!important;}
+.skt-orthopedic-section-twelve-heading .elementor-widget-container{padding:0!important;}
+.skt-orthopedic-section-seven-button-one .elementor-button{padding: 18px 25px 18px 25px!important;}
+.skt-orthopedic-section-nine-image-box .elementor-widget-container:after, .skt-orthopedic-section-nine-image-box:after{width:212px!important;}
+.skt-orthopedic-section-thirteen-para .elementor-widget-container{margin-bottom:20px!important;}
+.skt-orthopedic-section-fourteen-right-col-image { max-width:100px !important;}
+}
+
+
+@media screen and (max-width:1024px) and (min-width:768px){
+.skt-orthopedic-section-fourteen-right-col-shortcode input[type="email"]::placeholder{font-size: 16px!important;}
+.skt-orthopedic-section-fourteen-right-col-shortcode input[type="submit"]{padding: 14px 16px!important;}
+.skt-orthopedic-section-fourteen-right-col-shortcode input[type="email"]{padding: 12px 16px 12px 25px !important;}
+.skt-orthopedic-section-two-heading h5::before{display:none;}
+.skt-orthopedic-section-ten-button{bottom: 45px!important;}
+.skt-orthopedic-section-nine-image-box .elementor-widget-container:after, .skt-orthopedic-section-nine-image-box:after{display:none;}
+.skt-orthopedic-section-four .elementor-widget-heading{top:-10px!important;}
+.skt-orthopedic-section-fourteen-right-col-inner .elementor-heading-title br{display:none;}
+.skt-orthopedic-section-fourteen-right-col-inner {padding-top:10px;}
+.skt-orthopedic-section-fourteen-right-col-image { max-width:100px !important;}
+}
+
+@media screen and (max-width:1023px) and (min-width:768px){
+.skt-orthopedic-section-five-years-of-experidence{top:0% !important; position:relative !important; right:auto; bottom: auto; border-radius:10px !important;}
+.skt-orthopedic-section-five-years-of-experidence .elementor-widget-container {border-radius:40px !important;}
+}
+
+
+@media screen and (max-width:767px){
+.skt-orthopedic-section-nine-image-box .elementor-widget-container:after, .skt-orthopedic-section-nine-image-box:after{display: none;}
+.skt-orthopedic-section-two-heading h5::before{display: none;}
+.skt-orthopedic-section-two-years-of-expridence{width: max-content; margin:0 auto;}
+.skt-orthopedic-section-four-vedio .elementor-custom-embed-play{padding-top:14px; padding-left:20px; padding-right:16px; padding-bottom:10px; height:auto !important; width:auto !important;}
+.skt-orthopedic-section-five-years-of-experidence{position: unset!important;}
+.skt-orthopedic-section-ten-button{position: unset!important;}
+.skt-orthopedic-section-fourteen-right-col-image{width:max-content; margin:0 auto;}
+.skt-orthopedic-section-five-years-of-experidence{width:max-content; margin:0 auto;}
+
+.post_block_style4 {width:100%;margin:0 0px 20px 0;}
+.post_block_style4 .style4-post-thumb {height:inherit;}
+.skt-orthopedic-section-four .elementor-widget-heading{ top:15%;}
+
+.skt-testimonials .owl-nav{left:auto; bottom:-30px; text-align:center;}
+.skt-testimonials .owl-nav button {width:50px; height:50px; font-size:17px !important;}
+.skt-orthopedic-section-seven-vedio-col .elementor-custom-embed-play{ left:50% !important;}
+.skt-orthopedic-section-fourteen::after { height:30%;}
+}
+/* SKT Ortho */
