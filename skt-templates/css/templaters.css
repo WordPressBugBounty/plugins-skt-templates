@@ -6749,3 +6749,8 @@ height:380px!important;}
 .skt-orthopedic-section-fourteen::after { height:30%;}
 }
 /* SKT Ortho */
+
+/* SKT Marketer */
+.skt-digital-marketing-sec6-number{transform: translateX(-50%);}
+.skt-marketer-banner-thumb{position: relative; bottom: -87px;}
+/* SKT Marketer */

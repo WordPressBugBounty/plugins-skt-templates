@@ -2,9 +2,9 @@
 Contributors: sonalsinha21
 Tags: gutenberg, elementor, templates, page builder, one click import
 Requires at least: 5.0
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 6.30.16
+Stable tag: 6.30.17
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -131,6 +131,9 @@ Yes if your site import is done and you are currently editing via Elementor or i
 No. The plugin is lightweight and loads only when needed.
 
 == Changelog ==
+
+= 6.30.17 =
+* Added SKT Marketer in Elementor Templates.
 
 = 6.30.16 =
 * Added SKT Ortho in Elementor Templates.
