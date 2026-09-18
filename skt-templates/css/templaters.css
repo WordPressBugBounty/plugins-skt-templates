@@ -6754,3 +6754,52 @@ height:380px!important;}
 .skt-digital-marketing-sec6-number{transform: translateX(-50%);}
 .skt-marketer-banner-thumb{position: relative; bottom: -87px;}
 /* SKT Marketer */
+
+/* SKT Alumni */
+.skt-agents-grid .skt-agents-column .skt-agents-box {min-height : 450px; height: 350px;}
+.skt-alumni-gathering-sec1-left-inner { position:absolute !important; top:137px; right:-150px;}
+.skt-alumni-gathering-sec2-inner2-box, .skt-alumni-gathering-sec2-inner2-box-title { position:relative !important;}
+.skt-alumni-gathering-sec2-inner2-box::after { content:''; position:absolute; width:15px; height:15px; border-radius:100%; left:50%; top:-10px; transform:translateX(-50%); background:#1f4d8f;}
+.skt-alumni-gathering-sec2-inner2-box-title::before { content:''; position:absolute; width:2px; height:60px;left:50%; top:-60px; transform:translateX(-50%); background:#1f4d8f;}
+.skt-alumni-gathering-sec2-inner2-box-title::after {content: '';width: 0;height: 0;border-left: 15px solid transparent;border-right: 15px solid transparent;    border-top: 13px solid #1f4d8f;position: absolute;bottom: -12px;left: 50%;transform: translateX(-50%);}
+.skt-alumni-gathering-sec3-right-inner-box-img { width:195px !important; height:195px !important; border-radius:100%; margin:0 auto !important;align-content: center !important;}
+.skt-alumni-gathering-sec3-right-inner-box-img img { margin-top:-50px !important;}
+.skt-alumni-gathering-sec3-right-inner-box-counter .elementor-counter-number-suffix {font-size: 27px;margin-top: 15px;margin-left: 10px;margin-right: -30px;}
+.skt-alumni-gathering-sec3-right-inner-box1-counter .elementor-counter-number-wrapper {margin:0 auto !important;}
+.skt-alumni-gathering-sec3-right-inner-box1-counter .elementor-counter-number-prefix {font-size: 27px; position:absolute; right:30px; top:15px;}
+.skt-alumni-gathering-sec3-left-inner-img { width:65px !important; height:65px !important;object-fit: cover;}
+.skt-alumni-gathering-sec3-left-inner-plus {width:65px !important; height:65px !important;align-content: center !important;}
+@media(max-width: 479px){
+.skt-alumni-gathering-sec1-left-inner { position:relative !important; top:auto !important; right:auto !important; left:auto !important;}
+.skt-alumni-gathering-sec3-left-inner-plus, .skt-alumni-gathering-sec3-left-inner-img { width:55px !important; height:55px !important; margin-left:-16px !important;}
+}
+@media screen and (max-width:72.438em) and (min-width:63.250em) {
+.skt-alumni-gathering-sec2-inner2-box {padding-left: 20px !important;padding-right: 20px !important;}
+.skt-alumni-gathering-sec1-left-inner { top: 244px !important;right: -60px !important;}
+.skt-alumni-gathering-sec3-mid {--width: 3% !important;}
+.skt-alumni-gathering-sec3-left {--width: 45% !important;}
+.skt-alumni-gathering-sec3-left-inner {--padding-left: 25px !important; --padding-right: 25px !important;--margin-top: 75px !important;}
+.skt-alumni-gathering-sec3-right-inner-box {--padding-left: 30px !important;--padding-right: 30px !important;}
+.skt-alumni-gathering-sec3-right-inner-box1-counter .elementor-counter-number-prefix{right:225px !important;}
+}
+@media(min-width: 768px) and (max-width: 1023px){
+.skt-alumni-gathering-sec1-left-inner { right:-60px !important; top:auto !important; bottom:0;}
+.skt-alumni-gathering-sec3-right { width:80% !important; margin:0 auto !important;}
+.skt-alumni-gathering-sec3-mid { width:80% !important; margin:0 auto !important;}
+.skt-alumni-gathering-sec3-left { width:80% !important; margin:0 auto !important;}
+.skt-alumni-gathering-sec3-left-inner { display: flex !important;justify-content: center !important;align-items: center !important; margin:65px auto 0 !important;}
+.skt-alumni-gathering-sec3-left-inner-1, .skt-alumni-gathering-sec3-left-inner-2 { width:400px !important;}
+.skt-alumni-gathering-sec3-left-title { text-align:center !important;}
+.skt-alumni-gathering-sec3-left-text { text-align:center !important;}
+.skt-alumni-gathering-sec3-left-btn { text-align:center !important;}
+.skt-alumni-gathering-sec8-right-inner-form input, .skt-alumni-gathering-sec8-right-inner-form select, .skt-alumni-gathering-sec8-right-inner-form textarea { font-size:15px;letter-spacing: -0.2px;}
+.skt-alumni-gathering-sec8-right {--width: 59% !important;}
+.skt-alumni-gathering-sec8-left {--width: 39% !important;}
+.skt-alumni-gathering-sec8-left-title .elementor-heading-title {font-size: 30px !important;line-height: 40px !important;}
+}
+@media screen and (max-width:47.938em) and (min-width:30.000em) {
+.elementor-element.skt-alumni-gathering-sec1-left-inner { position:relative !important; top:auto !important; right:auto !important; left:auto !important;}
+.skt-alumni-gathering-sec3-left-inner-plus, .skt-alumni-gathering-sec3-left-inner-img { width:55px !important; height:55px !important; margin-left:-16px !important;}
+.skt-alumni-gathering-sec3-right-inner-box1-counter .elementor-counter-number-prefix{right:225px !important;}
+}
+/* SKT Alumni */

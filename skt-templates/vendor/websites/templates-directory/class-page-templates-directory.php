@@ -397,6 +397,15 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 				'required_plugins' => array( 'elementor' => array( 'title' => __( 'Elementor Page Builder', 'skt-templates' ) ) ),
 			);
 			$templates_list = array(
+				'skt-alumni'	=> array(
+					'title'       => __( 'SKT Alumni', 'skt-templates' ),
+					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
+					'theme_url'   => esc_url('#'),
+					'demo_url'    => esc_url('https://demosktthemes.com/free/skt-alumni/'),
+					'screenshot'  => esc_url('https://demosktthemes.com/free/skt-alumni/skt-alumni.jpg'),
+					'import_file' => esc_url('https://demosktthemes.com/free/skt-alumni/skt-alumni.json'),
+					'keywords'    => __( ' alumni graduate, graduate association, university graduate, college graduate, alumni network, graduation website, graduate community, alumni association, student alumni, university alumni, graduate network, education website, alumni organization, class reunion, graduate portfolio, graduate website, alumni community, higher education, academic alumni, graduate organization, alumni directory, student network, university community, college alumni, graduation celebration, graduate association website, alumni engagement, educational institution, academic community, alumni website, Alumni' ),
+				),
 				'skt-marketer'	=> array(
 					'title'       => __( 'SKT Marketer', 'skt-templates' ),
 					'description' => __( 'It downloads from our website sktthemes.org, once you do it you will get the exact preview like shown in the demo. Steps after downloading the theme: Upload it via appearance>themes>add new>upload theme zip file and activate the theme.', 'skt-templates' ),
