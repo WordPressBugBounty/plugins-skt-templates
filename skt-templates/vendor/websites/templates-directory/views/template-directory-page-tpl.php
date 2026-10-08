@@ -6,7 +6,50 @@ $preview_url = add_query_arg( 'sktb_templates', '', home_url() ); // Define quer
 $html = '';
 if ( is_array( $templates_array ) ) { ?>
 	<div class="sktb-template-dir wrap">
+	<?php
+	$sktb_bf_all_url      = 'https://www.sktthemes.org/shop/all-themes/';
+	$sktb_bf_lifetime_url = 'https://www.sktthemes.org/shop/lifetime-access-wordpress-themes/';
+?>
+<div class="sktb-bf-banner">
+	<div class="sktb-bf-left">
+		<div class="sktb-bf-tags">
+			<span class="sktb-bf-tag"><?php esc_html_e( '420+ premium themes', 'skt-templates' ); ?></span>
+		</div>
+		<h3 class="sktb-bf-title"><?php esc_html_e( 'WordPress Themes Bundle', 'skt-templates' ); ?></h3>
+		<p class="sktb-bf-desc">
+			<?php esc_html_e( 'Get access to 420+ premium WordPress themes for every kind of business, with regular updates and dedicated support.', 'skt-templates' ); ?>
+		</p>
+		<ul class="sktb-bf-features">
+			<li><span class="dashicons dashicons-yes"></span><?php esc_html_e( 'Customization flexibility', 'skt-templates' ); ?></li>
+			<li><span class="dashicons dashicons-yes"></span><?php esc_html_e( 'Dedicated support', 'skt-templates' ); ?></li>
+		</ul>
+	</div>
 
+	<div class="sktb-bf-image">
+		<img src="<?php echo esc_url( SKTB_URL . 'images/bf-themes.png' ); ?>" alt="<?php esc_attr_e( 'SKT Themes Bundle', 'skt-templates' ); ?>">
+	</div>
+
+	<div class="sktb-bf-plans">
+	<div class="sktb-bf-card">
+		<span class="sktb-bf-plan-name"><?php esc_html_e( 'All Themes', 'skt-templates' ); ?></span>
+		<span class="sktb-bf-price">
+			<del class="sktb-bf-old-price"><?php echo esc_html('$199.00');?></del>
+			<ins class="sktb-bf-new-price"><?php echo esc_html('$69.00');?></ins>
+		</span>
+		<span class="sktb-bf-plan-note"><?php esc_html_e( '1 year of updates & support', 'skt-templates' ); ?></span>
+		<a class="sktb-bf-btn" href="<?php echo esc_url( $sktb_bf_all_url ); ?>" target="_blank" rel="noopener"><?php esc_html_e( 'Buy Now', 'skt-templates' ); ?></a>
+	</div>
+	<div class="sktb-bf-card">
+		<span class="sktb-bf-plan-name"><?php esc_html_e( 'Lifetime', 'skt-templates' ); ?></span>
+		<span class="sktb-bf-price">
+			<del class="sktb-bf-old-price"><?php echo esc_html('$399.00');?></del>
+			<ins class="sktb-bf-new-price"><?php echo esc_html('$199.00');?></ins>
+		</span>
+		<span class="sktb-bf-plan-note"><?php esc_html_e( 'Lifetime updates & support', 'skt-templates' ); ?></span>
+		<a class="sktb-bf-btn" href="<?php echo esc_url( $sktb_bf_lifetime_url ); ?>" target="_blank" rel="noopener"><?php esc_html_e( 'Buy Now', 'skt-templates' ); ?></a>
+	</div>
+</div>
+</div>
     <h2 class="wp-heading-inline sktb-first-heading">
         <?php echo apply_filters(
             'sktb_template_dir_page_title',

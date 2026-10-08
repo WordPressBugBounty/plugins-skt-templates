@@ -4,7 +4,7 @@ Tags: gutenberg, elementor, templates, page builder, one click import
 Requires at least: 5.0
 Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 6.30.18
+Stable tag: 6.30.19
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -131,6 +131,8 @@ Yes if your site import is done and you are currently editing via Elementor or i
 No. The plugin is lightweight and loads only when needed.
 
 == Changelog ==
+= 6.30.19 =
+* Modified the About Template page and corrected the author.
 
 = 6.30.18 =
 * Added SKT Alumni in Elementor Templates.
