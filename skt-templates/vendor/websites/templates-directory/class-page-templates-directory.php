@@ -62,7 +62,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 		 * Enqueue the scripts for the dashboard page of the
 		 */
 		public function enqueue_template_dir_scripts() {
-			$templatepage = isset($_REQUEST['page']) ? $_REQUEST['page'] :'';
+			$templatepage = isset( $_REQUEST['page'] ) ? sanitize_key( wp_unslash( $_REQUEST['page'] ) ) : '';
 			if ( $templatepage === 'skt_template_directory') {
 				if ( $templatepage === 'skt_template_directory') {
 					$plugin_slug = 'sktb';
@@ -84,7 +84,7 @@ if ( ! class_exists( '\SktThemes\PageTemplatesDirectory' ) ) {
 		}
 		
 		public function gutenberg_enqueue_template_dir_scripts() {
-			$templatepage = isset($_REQUEST['page']) ? $_REQUEST['page'] :'';
+			$templatepage = isset( $_REQUEST['page'] ) ? sanitize_key( wp_unslash( $_REQUEST['page'] ) ) : '';
 			if ( $templatepage === 'skt_template_gutenberg') {
 				if ( $templatepage === 'skt_template_gutenberg') {
 					$plugin_slug = 'sktb';

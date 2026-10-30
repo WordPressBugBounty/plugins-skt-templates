@@ -62,9 +62,9 @@ if ( is_array( $templates_array ) ) { ?>
    BASIC SETUP
    =============================== */
 
-$mode   = isset($_POST['mode']) ? sanitize_text_field($_POST['mode']) : '';
-$search = isset($_POST['search']) ? sanitize_text_field($_POST['search']) : '';
-$url    = $_SERVER['REQUEST_URI'];
+$mode   = isset($_POST['mode']) ? sanitize_text_field( wp_unslash( $_POST['mode'] ) ) : '';
+$search = isset($_POST['search']) ? sanitize_text_field( wp_unslash( $_POST['search'] ) ) : '';
+$url    = isset( $_SERVER['REQUEST_URI'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REQUEST_URI'] ) ) : '';
 $template_text = 'skt_template_directory';
 
 $current_admin_page = isset($_GET['page']) ? sanitize_key($_GET['page']) : '';
@@ -239,6 +239,7 @@ if ($mode !== 'action' && $total_pages > 1) :
                 <input type="hidden"class="template_name" name="template_name" value="" />
                 <input type="hidden"class="json_url" name="json_url" value="" />
                 <input type="hidden" name="gbimport" id="selectId" value="import" />
+                <?php wp_nonce_field( 'skt_template_import', 'skt_import_nonce' ); ?>
                 </form>
 				<?php
       		} 

@@ -3,9 +3,11 @@
  * Plugin Name: SKT Templates
  * Plugin URI: https://www.sktthemes.org/shop/ready-to-import-wordpress-sites/
  * Description: SKT Templates is an Elementor and Gutenberg themes library and allows you to select from over 100s of designs to choose from. All you need to do is view the demo and then select import and install. It takes care of the importing and allows you to edit the template from within your dashboard. It works with any popular theme or you can choose to use any theme from our <a href="https://www.sktthemes.org/product-category/free-wordpress-themes/" rel="nofollow ugc">SKT Themes free.</a> These templates allow you to import them into your existing website and edit them and use them to build professional websites. Importing a single page template is very easy and you can do it on your existing WordPress website as well.
- * Version: 6.30.20
+ * Version: 6.30.21
  * Author: sonalsinha21
  * Author URI: https://profiles.wordpress.org/sonalsinha21/
+ * License: GPLv2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html 
  * Text Domain: skt-templates
  *
  * @package SKT Templates
@@ -62,7 +64,7 @@ add_action( 'admin_init', 'skt_templates_activation_redirect' );
 function skt_templates_activate() {
 	if (
 		( isset( $_REQUEST['action'] ) && 'activate-selected' === $_REQUEST['action'] ) &&
-		( isset( $_POST['checked'] ) && count( $_POST['checked'] ) > 1 )
+		( isset( $_POST['checked'] ) && is_array( $_POST['checked'] ) && count( $_POST['checked'] ) > 1 )
 	) {
 		return;
 	}
@@ -181,25 +183,28 @@ function skt_templates_render_custom_html() {
 	<div id="skt-templates-content">
     	<center>
 		<?php
-		$paragraphs = array(
-			sprintf(
-				__( 'Visit the <a href="%1$s" target="_blank">SKT Themes</a> website to see all the options.', 'skt-templates' ),
-				esc_url( 'https://www.sktthemes.org/' )
-			),
-			sprintf(
-				__( 'Kindly check our <a href="%1$s" target="_blank">WordPress themes bundle</a>.', 'skt-templates' ),
-				esc_url( 'https://www.sktthemes.org/shop/all-themes/' )
-			),
-			sprintf(
-				__( 'Try our <a href="%1$s" target="_blank">free WordPress themes</a>.', 'skt-templates' ),
-				esc_url( 'https://www.sktthemes.org/product-category/free-wordpress-themes/' )
-			),						 
-		);
-
-		foreach ( $paragraphs as $para ) {
-			echo '<p>' . wp_kses_post( $para ) . '</p>';
-		}
-		?>
+        $paragraphs = array(
+            sprintf(
+                /* translators: %1$s: URL of the SKT Themes website. */
+                __( 'Visit the <a href="%1$s" target="_blank">SKT Themes</a> website to see all the options.', 'skt-templates' ),
+                esc_url( 'https://www.sktthemes.org/' )
+            ),
+            sprintf(
+                /* translators: %1$s: URL of the WordPress themes bundle page. */
+                __( 'Kindly check our <a href="%1$s" target="_blank">WordPress themes bundle</a>.', 'skt-templates' ),
+                esc_url( 'https://www.sktthemes.org/shop/all-themes/' )
+            ),
+            sprintf(
+                /* translators: %1$s: URL of the free WordPress themes page. */
+                __( 'Try our <a href="%1$s" target="_blank">free WordPress themes</a>.', 'skt-templates' ),
+                esc_url( 'https://www.sktthemes.org/product-category/free-wordpress-themes/' )
+            ),
+        );
+        
+        foreach ( $paragraphs as $para ) {
+            echo '<p>' . wp_kses_post( $para ) . '</p>';
+        }
+        ?>
         </center>
 	</div>
 </body>

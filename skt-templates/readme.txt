@@ -1,10 +1,10 @@
 === SKT Templates - 100% Free Templates for Elementor & Gutenberg ===
 Contributors: sonalsinha21
 Tags: gutenberg, elementor, templates, page builder, one click import
-Requires at least: 5.0
+Requires at least: 6.0
 Tested up to: 7.1
-Requires PHP: 5.6
-Stable tag: 6.30.20
+Requires PHP: 7.4
+Stable tag: 6.30.21
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -131,6 +131,10 @@ Yes if your site import is done and you are currently editing via Elementor or i
 No. The plugin is lightweight and loads only when needed.
 
 == Changelog ==
+
+= 6.30.21 =
+* Security: fixed CSRF to Stored XSS in the Gutenberg template import (added nonce and capability checks, restricted import URL to trusted https hosts, switched to wp_safe_remote_get(), sanitized imported content (scripts and event handlers removed), escaped redirect URL).
+
 = 6.30.20 =
 * Upgraded the Freemius WordPress SDK to version 2.13.5
 

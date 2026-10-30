@@ -85,10 +85,14 @@ class Skt_Templates_Admin {
 			?>
 			<div class="notice notice-info skt-compact-notice" style="display:flex;align-items:center;justify-content:space-between;padding:10px 16px;gap:12px;">
 				<p style="margin:0;font-size:13px;">
-					<strong>SKT Templates</strong> <?php echo sprintf(
-						esc_html__( 'Import 200+ free website templates directly into Elementor. %s', 'skt-templates' ),
-						'<a href="' . esc_url( $dir_url ) . '">' . esc_html__( 'Browse Templates', 'skt-templates' ) . '</a>'
-					); ?>
+					<strong>SKT Templates</strong> <?php echo wp_kses(
+	sprintf(
+		/* translators: %s: link to the Browse Templates page. */
+		esc_html__( 'Import 200+ free website templates directly into Elementor. %s', 'skt-templates' ),
+		'<a href="' . esc_url( $dir_url ) . '">' . esc_html__( 'Browse Templates', 'skt-templates' ) . '</a>'
+	),
+	array( 'a' => array( 'href' => array() ) )
+); ?>
 				</p>
 				<button type="button" class="skt-notice-dismiss" style="background:none;border:none;cursor:pointer;font-size:18px;color:#888;line-height:1;padding:0 4px;" aria-label="Dismiss">&#x2715;</button>
 			</div>
@@ -255,7 +259,7 @@ class Skt_Templates_Admin {
 	 */
 	public function visit_dashboard_notice_dismiss() {
 		// Legacy URL-based dismiss now handled by AJAX, but keep redirect working.
-		if ( isset( $_GET['skt_templates_ignore_visit_dashboard_notice'] ) && '0' == $_GET['skt_templates_ignore_visit_dashboard_notice'] ) {
+		if ( isset( $_GET['skt_templates_ignore_visit_dashboard_notice'] ) && '0' === sanitize_text_field( wp_unslash( $_GET['skt_templates_ignore_visit_dashboard_notice'] ) ) ) {
 			$user_id = get_current_user_id();
 			update_user_meta( $user_id, 'skt_welcome_dismissed', '1' );
 			// Also set old meta for backward compat.
@@ -276,47 +280,202 @@ class Skt_Templates_Admin {
 		wp_send_json_success();
 	}
 
+	/**
+	 * Hosts that templates may be imported from. Sub-domains are allowed.
+	 * Can be extended with the `skt_templates_allowed_import_hosts` filter.
+	 *
+	 * @return string[]
+	 */
+	private function get_allowed_import_hosts() {
+		return (array) apply_filters(
+			'skt_templates_allowed_import_hosts',
+			array( 'demosktthemes.com', 'sktthemes.org', 'sktperfectdemo.com', 'sktthemesdemo.net' )
+		);
+	}
+
+	/**
+	 * Check that a URL is https and belongs to an allowed template host.
+	 *
+	 * @param string $url URL to check.
+	 * @return bool
+	 */
+	private function is_allowed_import_url( $url ) {
+		if ( empty( $url ) || ! wp_http_validate_url( $url ) ) {
+			return false;
+		}
+		$parts = wp_parse_url( $url );
+		if ( empty( $parts['scheme'] ) || empty( $parts['host'] ) || 'https' !== strtolower( $parts['scheme'] ) ) {
+			return false;
+		}
+		$host = strtolower( $parts['host'] );
+		foreach ( $this->get_allowed_import_hosts() as $allowed ) {
+			$allowed = strtolower( $allowed );
+			if ( $host === $allowed || substr( $host, -strlen( '.' . $allowed ) ) === '.' . $allowed ) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	/**
+	 * Allowed HTML for imported templates: everything wp_kses_post() allows, plus
+	 * inline SVG icons, https iframes (maps / videos) and data-/aria- attributes
+	 * that the SKT Blocks markup relies on. Scripts, event handlers (onclick, onerror ...)
+	 * and javascript: URLs are NOT allowed.
+	 *
+	 * @return array
+	 */
+	private function get_template_allowed_html() {
+		$allowed   = wp_kses_allowed_html( 'post' );
+		$svg_attrs = array(
+			'xmlns' => true, 'viewbox' => true, 'width' => true, 'height' => true, 'fill' => true, 'stroke' => true,
+			'stroke-width' => true, 'stroke-linecap' => true, 'stroke-linejoin' => true, 'd' => true, 'cx' => true,
+			'cy' => true, 'r' => true, 'rx' => true, 'ry' => true, 'x' => true, 'y' => true, 'x1' => true, 'x2' => true,
+			'y1' => true, 'y2' => true, 'points' => true, 'transform' => true, 'opacity' => true, 'fill-rule' => true,
+			'clip-rule' => true, 'fill-opacity' => true, 'stroke-opacity' => true, 'offset' => true, 'stop-color' => true,
+			'preserveaspectratio' => true, 'focusable' => true, 'aria-hidden' => true, 'gradientunits' => true,
+			'gradienttransform' => true,
+		);
+		foreach ( array( 'svg', 'g', 'path', 'circle', 'ellipse', 'rect', 'line', 'polyline', 'polygon', 'defs', 'lineargradient', 'radialgradient', 'stop', 'clippath', 'title' ) as $tag ) {
+			$allowed[ $tag ] = array_merge( isset( $allowed[ $tag ] ) ? $allowed[ $tag ] : array(), $svg_attrs );
+		}
+		$allowed['iframe'] = array(
+			'src' => true, 'width' => true, 'height' => true, 'frameborder' => true, 'allowfullscreen' => true,
+			'allow' => true, 'loading' => true, 'title' => true, 'referrerpolicy' => true,
+		);
+		foreach ( $allowed as $tag => $attrs ) {
+			if ( is_array( $attrs ) ) {
+				$allowed[ $tag ] = array_merge(
+					$attrs,
+					array( 'class' => true, 'id' => true, 'style' => true, 'role' => true, 'data-*' => true, 'aria-*' => true )
+				);
+			}
+		}
+		return $allowed;
+	}
+
+	/**
+	 * Extra CSS properties allowed in inline style="" attributes of imported templates.
+	 *
+	 * @param string[] $props Allowed CSS properties.
+	 * @return string[]
+	 */
+	public function extend_safe_style_css( $props ) {
+		return array_merge(
+			$props,
+			array( 'z-index', 'position', 'top', 'right', 'bottom', 'left', 'transform', 'opacity', 'box-shadow', 'fill', 'stroke',
+				'background-image', 'background-size', 'background-position', 'background-repeat', 'background-attachment',
+				'object-fit', 'min-height', 'max-height', 'max-width', 'gap', 'flex', 'flex-direction', 'flex-wrap',
+				'justify-content', 'align-items', 'text-transform', 'text-shadow', 'letter-spacing', 'font-family' )
+		);
+	}
+
+	/**
+	 * Sanitize imported template content.
+	 *
+	 * SKT Blocks saves its CSS inside <style> tags, which wp_kses_post() removes (this makes every
+	 * block fail validation in the editor). So <style> blocks are parked first, with "<" removed
+	 * (no tag can be opened or closed from inside the CSS) and script-like CSS removed, the rest of
+	 * the markup is filtered by wp_kses(), and the cleaned <style> blocks are put back.
+	 *
+	 * @param string $content Raw template content.
+	 * @return string
+	 */
+	private function sanitize_template_content( $content ) {
+		$token  = 'skt' . wp_generate_password( 12, false );
+		$styles = array();
+
+		$content = preg_replace_callback(
+			'#<style\b[^>]*>(.*?)</style\s*>#is',
+			function ( $m ) use ( &$styles, $token ) {
+				$css = str_replace( '<', '', $m[1] );
+				do {
+					$prev = $css;
+					$css  = preg_replace( '#(expression\s*\(|javascript\s*:|vbscript\s*:|-moz-binding|behavior\s*:)#i', '', $css );
+				} while ( $prev !== $css );
+				$styles[] = $css;
+				return '<!--' . $token . ( count( $styles ) - 1 ) . '-->';
+			},
+			$content
+		);
+		if ( null === $content ) {
+			return '';
+		}
+
+		add_filter( 'safe_style_css', array( $this, 'extend_safe_style_css' ) );
+		$content = wp_kses( $content, $this->get_template_allowed_html(), array( 'http', 'https', 'mailto', 'tel' ) );
+		remove_filter( 'safe_style_css', array( $this, 'extend_safe_style_css' ) );
+
+		foreach ( $styles as $i => $css ) {
+			$content = str_replace( '<!--' . $token . $i . '-->', '<style type="text/css">' . $css . '</style>', $content );
+		}
+		return $content;
+	}
+
 	public function page_import_tempate() {
-		$gbimport = isset($_POST['gbimport']) ? $_POST['gbimport']: '';
-		if($gbimport=="import"){
+		$gbimport = isset( $_POST['gbimport'] ) ? sanitize_text_field( wp_unslash( $_POST['gbimport'] ) ) : '';
+		if ( 'import' !== $gbimport ) {
+			return;
+		}
+
+		// Capability check.
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( esc_html__( 'Sorry, you are not allowed to import templates.', 'skt-templates' ), '', array( 'response' => 403 ) );
+		}
+
+		// CSRF protection: dies if the nonce is missing or invalid.
+		check_admin_referer( 'skt_template_import', 'skt_import_nonce' );
 		?>
 		<style>body.toplevel_page_skt_template_import{display:block;}</style>
-		<?php }
-		if($gbimport=="import"){
-			$json_url = isset($_POST['json_url']) ? $_POST['json_url']: '';
-			$template_name = isset($_POST['template_name']) ? $_POST['template_name']: '';
-
-			$curl = curl_init();
-			curl_setopt($curl, CURLOPT_URL, $json_url);
-			curl_setopt($curl, CURLOPT_HEADER, false);
-			curl_setopt($curl, CURLOPT_TIMEOUT, 60);
-			curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
-			curl_setopt($curl, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
-			$content = curl_exec($curl);
-			$response = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-			curl_close($curl);
-
-			if($response != 200){ return false; }
-			$data = json_decode($content, true);
-			$page_content = $data['original_content'];
-			$insertId = $data['id'];
-
-			$new_template_page = array(
-				'post_type'     => 'page',
-				'post_title'    => $template_name,
-				'post_status'   => 'publish',
-				'post_content'  => $page_content,
-				'page_template' => apply_filters( 'template_directory_default_template', 'templates/builder-fullwidth-gb.php' )
-			);
-
-			$post_id = wp_insert_post( $new_template_page );
-			$redirect_url = add_query_arg( array('post' => $post_id, 'action' => 'edit'), admin_url( 'post.php' ) );
-			echo("<script>document.location.href = '".$redirect_url."'</script>");
-			exit;
-		}
-		?>
 		<?php
+		$json_url      = isset( $_POST['json_url'] ) ? esc_url_raw( wp_unslash( $_POST['json_url'] ) ) : '';
+		$template_name = isset( $_POST['template_name'] ) ? sanitize_text_field( wp_unslash( $_POST['template_name'] ) ) : '';
+
+		// Only fetch from trusted https template hosts (prevents SSRF / attacker supplied JSON).
+		if ( ! $this->is_allowed_import_url( $json_url ) ) {
+			wp_die( esc_html__( 'Invalid template URL.', 'skt-templates' ), '', array( 'response' => 400 ) );
+		}
+
+		// wp_safe_remote_get() rejects private/loopback addresses, also on redirects.
+		$response = wp_safe_remote_get(
+			$json_url,
+			array(
+				'timeout'             => 60,
+				'redirection'         => 3,
+				'limit_response_size' => 10 * MB_IN_BYTES,
+				'headers'             => array( 'Accept' => 'application/json' ),
+			)
+		);
+		if ( is_wp_error( $response ) || 200 !== (int) wp_remote_retrieve_response_code( $response ) ) {
+			wp_die( esc_html__( 'Could not download the template.', 'skt-templates' ), '', array( 'response' => 502 ) );
+		}
+
+		$data = json_decode( wp_remote_retrieve_body( $response ), true );
+		if ( ! is_array( $data ) || ! isset( $data['original_content'] ) || ! is_string( $data['original_content'] ) ) {
+			wp_die( esc_html__( 'Invalid template data.', 'skt-templates' ), '', array( 'response' => 400 ) );
+		}
+
+		// Sanitize remote content: strips <script>, event handler attributes, javascript: URLs etc.
+		// (runs even for users with unfiltered_html, so remote content can never inject scripts).
+		$page_content = $this->sanitize_template_content( $data['original_content'] );
+
+		$new_template_page = array(
+			'post_type'     => 'page',
+			'post_title'    => $template_name,
+			'post_status'   => 'publish',
+			'post_content'  => wp_slash( $page_content ),
+			'page_template' => apply_filters( 'template_directory_default_template', 'templates/builder-fullwidth-gb.php' ),
+		);
+
+		$post_id = wp_insert_post( $new_template_page );
+		if ( is_wp_error( $post_id ) || ! $post_id ) {
+			wp_die( esc_html__( 'Could not create the page.', 'skt-templates' ), '', array( 'response' => 500 ) );
+		}
+
+		$redirect_url = add_query_arg( array( 'post' => $post_id, 'action' => 'edit' ), admin_url( 'post.php' ) );
+		// Escaped for use inside a JS string.
+		echo '<script>document.location.href = ' . wp_json_encode( esc_url_raw( $redirect_url ), JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT ) . ';</script>';
+		exit;
 	}
 
 	public function load_modules() {
@@ -353,7 +512,7 @@ class Skt_Templates_Admin {
 		}
 		$data   = array('panels' => $panels);
 		$output = $rdh->get_view( 'modules', $data );
-		echo $output;
+echo $output; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- HTML is built from the plugin's own view templates, whose values are escaped where they are printed.
 	}
 
 }
